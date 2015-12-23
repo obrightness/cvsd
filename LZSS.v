@@ -53,7 +53,6 @@ parameter   S_START     =   4'd01;
 parameter   S_COMPARE   =   4'd02;
 parameter   S_ENCODE    =   4'd03;
 parameter   S_STOP      =   4'd04;
-parameter   S_CHECK     =   4'd05;
 parameter   S_READ      =   4'd06;
 parameter   S_PUT       =   4'd07;
 
@@ -125,22 +124,22 @@ always@(*)begin
                     n_l_r_buf   =   3'd0;
                 end
                 3'd1:begin
-                    n_LA_buf    =   {r_buf, LA_buf[7:0]};
+                    n_LA_buf    =   {r_buf, LA_buf[39:32]};
                     n_r_buf     =   32'd0;
                     n_l_r_buf   =   3'd0;
                 end
                 3'd2:begin
-                    n_LA_buf    =   {r_buf[23:0], LA_buf[15:0]};
+                    n_LA_buf    =   {r_buf[23:0], LA_buf[39:24]};
                     n_r_buf     =   r_buf >> 3;
                     n_l_r_buf   =   l_r_buf > 2 ?   (l_r_buf - 3'd3) : 3'd0;
                 end
                 3'd3:begin
-                    n_LA_buf    =   {r_buf[15:0], LA_buf[23:0]};
+                    n_LA_buf    =   {r_buf[15:0], LA_buf[39:16]};
                     n_r_buf     =   r_buf >> 2;
                     n_l_r_buf   =   l_r_buf > 1 ?   (l_r_buf - 3'd2) : 3'd0;
                 end
                 3'd4:begin
-                    n_LA_buf    =   {r_buf[7:0], LA_buf[31:0]};
+                    n_LA_buf    =   {r_buf[7:0], LA_buf[39:8]};
                     n_r_buf     =   r_buf >> 1;
                     n_l_r_buf   =   l_r_buf > 0 ?   (l_r_buf - 3'd1) : 3'd0;
                 end
@@ -152,11 +151,20 @@ always@(*)begin
             endcase
         end
         S_READ:begin
+            n_r_buf     =   data;
+            n_l_r_buf   =   3'd4;
             if( l_LA_buf == 3'd0 && l_r_buf == 3'd0 )begin
-                n_busy  =   3'd0;
+                n_busy      =   3'd0;
             end
             else begin
                 n_busy  =   3'd1;
+            end
+            //TODO::this is not correct!
+            if( drop_done == 1'b1 )begin
+                n_finish    =   1'b1;
+            end
+            else begin
+                n_finish    =   1'b0;
             end
         end
         S_START:begin
@@ -186,13 +194,30 @@ end
 //========================sequential============================
 always@(posedge clk or posedge reset)begin
 	if(reset)begin
-		
+        busy        =   1'd1; 
+        codeword    =   11'd0; 
+        enc_num     =   12'd0; 
+        out_valid   =   1'd0; 
+        finish      =   1'd0; 
+        state       =   4'd0; 
+        r_buf       =   32'd0; 
+        LA_buf      =   40'd0; 
+        l_r_buf     =   3'd0; 
+        l_LA_buf    =   3'd0; 
 	end
-	else begin
-	
-	
-	end
-end
+    else begin
+        busy        =   n_busy        ;  
+        codeword    =   n_codeword    ;  
+        enc_num     =   n_enc_num     ;  
+        out_valid   =   n_out_valid   ;  
+        finish      =   n_finish      ;  
+        state       =   n_state       ;  
+        r_buf       =   n_r_buf       ;  
+        LA_buf      =   n_LA_buf      ;  
+        l_r_buf     =   n_l_r_buf     ;  	
+        l_LA_buf    =   n_l_LA_buf    ;  	
+        end
+    end
 
 
 endmodule
