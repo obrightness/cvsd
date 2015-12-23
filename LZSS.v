@@ -116,7 +116,7 @@ always@(*)begin
         end
         S_PUT:begin
             n_busy      =   1'b1;
-            n_l_LA_buf  =   l_r_buf;
+            n_l_LA_buf  =   ({1'b0, l_LA_buf} + {1'b0, l_r_buf} > 4'd5) ? 3'd5 : (l_LA_buf + l_r_buf);
             case(l_LA_buf)
                 3'd0:begin
                     n_LA_buf    =   {8'd0, r_buf};
