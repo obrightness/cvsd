@@ -84,7 +84,7 @@ always@(*)begin
                 n_state =   S_STOP;
             end
             else begin
-                n_state =   S_COMAPRE;
+                n_state =   S_COMPARE;
             end
         end
         S_COMPARE:begin
