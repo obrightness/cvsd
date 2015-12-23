@@ -124,23 +124,23 @@ always@(*)begin
                     n_l_r_buf   =   3'd0;
                 end
                 3'd1:begin
-                    n_LA_buf    =   {r_buf, LA_buf[39:32]};
+                    n_LA_buf    =   {r_buf, LA_buf[7:0]};
                     n_r_buf     =   32'd0;
                     n_l_r_buf   =   3'd0;
                 end
                 3'd2:begin
-                    n_LA_buf    =   {r_buf[23:0], LA_buf[39:24]};
-                    n_r_buf     =   r_buf >> 3;
+                    n_LA_buf    =   {r_buf[23:0], LA_buf[15:0]};
+                    n_r_buf     =   r_buf >> 24;
                     n_l_r_buf   =   l_r_buf > 2 ?   (l_r_buf - 3'd3) : 3'd0;
                 end
                 3'd3:begin
-                    n_LA_buf    =   {r_buf[15:0], LA_buf[39:16]};
-                    n_r_buf     =   r_buf >> 2;
+                    n_LA_buf    =   {r_buf[15:0], LA_buf[23:0]};
+                    n_r_buf     =   r_buf >> 16;
                     n_l_r_buf   =   l_r_buf > 1 ?   (l_r_buf - 3'd2) : 3'd0;
                 end
                 3'd4:begin
-                    n_LA_buf    =   {r_buf[7:0], LA_buf[39:8]};
-                    n_r_buf     =   r_buf >> 1;
+                    n_LA_buf    =   {r_buf[7:0], LA_buf[31:0]};
+                    n_r_buf     =   r_buf >> 8;
                     n_l_r_buf   =   l_r_buf > 0 ?   (l_r_buf - 3'd1) : 3'd0;
                 end
                 default:begin
