@@ -1,0 +1,46 @@
+### Custom WaveView session file (version G-2012.06-SP2 build 1120) ###
+### saved at 20:44:10 on Fri Dec 25 2015 ###
+wdf 0 "/data2/home/lou/cvsd2015/final/cvsd/LZSS.vcd" load=used 
+scalar list
+waveview_begin 1  stack  offset=0 name_b=247 mntr_b=273 name_width=232 mcur=5.9805e-04   vc=cur-pnl "name=waveview 1" 
+  panel_begin digital pidx=0 spath=true marker=on xmin=5.9805E-04   xmax=5.9806E-04   vecname=state[3:0] radix=hex 
+    line src=wdf lidx=0 fidx=0 "delim=/" sigtype=9 "name=test/LZSS/state[3:0]" disp=show 
+  panel_end
+  panel_begin digital pidx=1 spath=true marker=on xmin=5.9805E-04   xmax=5.9806E-04   radix=bin 
+    line src=wdf lidx=0 fidx=0 "delim=/" sigtype=9 "name=test/drop_done" disp=show 
+  panel_end
+  panel_begin digital pidx=2 spath=true marker=on xmin=5.9805E-04   xmax=5.9806E-04   radix=bin 
+    line src=wdf lidx=0 fidx=0 "delim=/" sigtype=20 "name=test/busy" disp=show 
+  panel_end
+  panel_begin digital pidx=3 spath=true marker=on xmin=5.9805E-04   xmax=5.9806E-04   vecname=data[31:0] radix=hex 
+    line src=wdf lidx=0 fidx=0 "delim=/" sigtype=9 "name=test/data[31:0]" disp=show 
+  panel_end
+  panel_begin digital pidx=4 spath=true marker=on xmin=5.9805E-04   xmax=5.9806E-04   vecname=r_buf[31:0] radix=hex 
+    line src=wdf lidx=0 fidx=0 "delim=/" sigtype=9 "name=test/LZSS/r_buf[31:0]" disp=show 
+  panel_end
+  panel_begin digital pidx=5 spath=true marker=on xmin=5.9805E-04   xmax=5.9806E-04   vecname=l_LA_buf[2:0] radix=hex 
+    line src=wdf lidx=0 fidx=0 "delim=/" sigtype=9 "name=test/LZSS/l_LA_buf[2:0]" disp=show 
+  panel_end
+  panel_begin digital pidx=6 spath=true marker=on xmin=5.9805E-04   xmax=5.9806E-04   vecname=l_r_buf[2:0] radix=hex 
+  panel_end
+  panel_begin digital pidx=7 spath=true marker=on xmin=5.9805E-04   xmax=5.9806E-04   vecname=codeword[10] radix=bin 
+    line src=wdf lidx=0 fidx=0 "delim=/" sigtype=9 "name=test/LZSS/codeword[10:0]" bitidx=10 disp=show 
+  panel_end
+  panel_begin digital pidx=8 spath=true marker=on xmin=5.9805E-04   xmax=5.9806E-04   vecname=codeword[9:2] radix=hex 
+    line src=wdf lidx=0 fidx=0 "delim=/" sigtype=9 "name=test/LZSS/codeword[10:0]" bitidx=9 disp=show 
+    line src=wdf lidx=1 fidx=0 "delim=/" sigtype=9 "name=test/LZSS/codeword[10:0]" bitidx=8 disp=show 
+    line src=wdf lidx=2 fidx=0 "delim=/" sigtype=9 "name=test/LZSS/codeword[10:0]" bitidx=7 disp=show 
+    line src=wdf lidx=3 fidx=0 "delim=/" sigtype=9 "name=test/LZSS/codeword[10:0]" bitidx=6 disp=show 
+    line src=wdf lidx=4 fidx=0 "delim=/" sigtype=9 "name=test/LZSS/codeword[10:0]" bitidx=5 disp=show 
+    line src=wdf lidx=5 fidx=0 "delim=/" sigtype=9 "name=test/LZSS/codeword[10:0]" bitidx=4 disp=show 
+    line src=wdf lidx=6 fidx=0 "delim=/" sigtype=9 "name=test/LZSS/codeword[10:0]" bitidx=3 disp=show 
+    line src=wdf lidx=7 fidx=0 "delim=/" sigtype=9 "name=test/LZSS/codeword[10:0]" bitidx=2 disp=show 
+  panel_end
+  panel_begin digital pidx=9 spath=true marker=on xmin=5.9805E-04   xmax=5.9806E-04   vecname=len radix=dec 
+    line src=wdf lidx=0 fidx=0 "delim=/" sigtype=9 "name=test/LZSS/codeword[10:0]" bitidx=1 disp=show 
+    line src=wdf lidx=1 fidx=0 "delim=/" sigtype=9 "name=test/LZSS/codeword[10:0]" bitidx=0 disp=show 
+  panel_end
+  panel_begin digital pidx=10 spath=true marker=on xmin=5.9805E-04   xmax=5.9806E-04   vecname=tmp_buf[31:0] radix=hex 
+    line src=wdf lidx=0 fidx=0 "delim=/" sigtype=9 "name=test/LZSS/tmp_buf[31:0]" disp=show 
+  panel_end
+waveview_end
