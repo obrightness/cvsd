@@ -23,13 +23,15 @@ output			finish;
 
 //=========wire & reg declaration================================
 reg     [8:0]   i           ;
+reg     [2:0]   tmp_largest ;
+reg     [7:0]   tmp_largest_pos;
 
 reg             busy        ;
 reg     [10:0]  codeword    ;
 reg     [11:0]  enc_num     ;
 reg             out_valid   ;
 reg             finish      ;
-reg     [3:0]   state       ;
+reg     [2:0]   state       ;
 reg     [31:0]  r_buf       ;
 reg		[31:0]	tmp_buf		;
 reg     [39:0]  LA_buf      ;
@@ -37,7 +39,7 @@ reg     [2:0]   l_r_buf     ;//buf length
 reg     [2:0]   l_LA_buf    ;//buf length
 reg		[7:0] 	dict[0:255]	;
 reg     [8:0]   dict_size   ;
-reg     [7:0]   dict_pos    ;
+reg     [8:0]   dict_pos    ;
 reg     [2:0]   largest     ;
 reg     [7:0]   largest_pos ;
 reg             data_done   ;
@@ -49,14 +51,14 @@ reg     [10:0]  n_codeword    ;
 reg     [11:0]  n_enc_num     ;
 reg             n_out_valid   ;
 reg             n_finish      ;
-reg     [3:0]   n_state       ;
+reg     [2:0]   n_state       ;
 reg     [31:0]  n_r_buf       ;
 reg     [39:0]  n_LA_buf      ;
 reg     [2:0]   n_l_r_buf     ;//buf length
 reg     [2:0]   n_l_LA_buf    ;//buf length
 reg		[7:0]	n_dict[0:255] ;
 reg     [8:0]   n_dict_size   ;
-reg     [7:0]   n_dict_pos    ;
+reg     [8:0]   n_dict_pos    ;
 reg     [2:0]   n_largest     ;
 reg     [7:0]   n_largest_pos ;
 reg             n_data_done   ;
@@ -67,13 +69,13 @@ wire    [7:0]   symbol3       ;
 wire    [7:0]   symbol4       ;
 wire    [7:0]   symbol5       ;
 
-parameter   S_IDLE      =   4'd00;
-parameter   S_START     =   4'd01;
-parameter   S_COMPARE   =   4'd02;
-parameter   S_ENCODE    =   4'd03;
-parameter   S_STOP      =   4'd04;
-parameter   S_READ      =   4'd06;
-parameter   S_PUT       =   4'd07;
+parameter   S_IDLE      =   3'd00;
+parameter   S_START     =   3'd01;
+parameter   S_COMPARE   =   3'd02;
+parameter   S_ENCODE    =   3'd03;
+parameter   S_STOP      =   3'd04;
+parameter   S_READ      =   3'd05;
+parameter   S_PUT       =   3'd06;
 
 assign symbol1 = LA_buf[39:32];
 assign symbol2 = LA_buf[31:24];
@@ -85,7 +87,6 @@ assign symbol5 = LA_buf[7:0];
 //========================combinational==========================
 //
 always@(*)begin
-
     n_state =   state;
     case(state)
         S_IDLE:begin
@@ -119,12 +120,7 @@ always@(*)begin
             end
         end
         S_COMPARE:begin
-            if({1'b0,dict_pos} + 9'd1 >= dict_size)begin
-                n_state =   S_ENCODE;
-            end
-            else begin
-                n_state =   S_COMPARE;
-            end
+            n_state =   S_ENCODE;
         end
         S_ENCODE:begin
             n_state =   S_PUT;
@@ -153,6 +149,8 @@ always@(*)begin
     n_dict_pos    =   dict_pos    ;
     n_largest     =   largest     ;
     n_largest_pos =   largest_pos ;
+    n_data_done   =   data_done   ;
+
     for(i = 256; i != 0; i = i - 1)
         n_dict[i-1] =   dict[i-1] ;
     case(state)
@@ -170,6 +168,8 @@ always@(*)begin
             n_dict_pos  =   8'd1;
             n_largest   =   3'd0;
             n_largest_pos = 8'd255;
+            tmp_largest =   3'd0;
+            tmp_largest_pos = 8'd255;
             n_out_valid = 1'd0;
             case(l_LA_buf)
                 3'd0:begin
@@ -220,45 +220,43 @@ always@(*)begin
                 n_data_done =   1'b0;
             end
         end
-        S_START:begin
-
-        end
         S_COMPARE:begin
             if(dict_size > 9'd0) begin
                 // 2
-                if(dict[dict_pos] == symbol1 && dict[dict_pos-8'd1] == symbol2) begin
-                    if(largest < 3'd2 && l_LA_buf > 3'd1) begin
-                        n_largest = 3'd2;
-                        n_largest_pos = dict_pos - 8'd1;
+                for(dict_pos = 9'd1; dict_pos != dict_size; dict_pos = dict_pos + 9'd1) begin
+                    if(dict[dict_pos] == symbol1 && dict[dict_pos-8'd1] == symbol2) begin
+                        if(tmp_largest < 3'd2 && l_LA_buf > 3'd1) begin
+                            tmp_largest = 3'd2;
+                            tmp_largest_pos = dict_pos - 8'd1;
+                        end
+                    end
+                    // 3
+                    if(dict[dict_pos] == symbol1 && dict[dict_pos-8'd1] == symbol2 && dict[dict_pos-8'd2] == symbol3) begin
+                        if(tmp_largest < 3'd3 && dict_pos >= 8'd2 && l_LA_buf > 3'd2) begin
+                            tmp_largest = 3'd3;
+                            tmp_largest_pos = dict_pos - 8'd2;
+                        end
+                    end
+                    // 4
+                    if(dict[dict_pos] == symbol1 && dict[dict_pos-8'd1] == symbol2 && dict[dict_pos-8'd2] == symbol3 && dict[dict_pos-8'd3] == symbol4) begin
+                        if(tmp_largest < 3'd4 && dict_pos >= 8'd3 && l_LA_buf > 3'd3) begin
+                            tmp_largest = 3'd4;
+                            tmp_largest_pos = dict_pos - 8'd3;
+                        end
+                    end
+                    // 5
+                    if(dict[dict_pos] == symbol1 && dict[dict_pos-8'd1] == symbol2 && dict[dict_pos-8'd2] == symbol3 && dict[dict_pos-8'd3] == symbol4 && dict[dict_pos-8'd4] == symbol5) begin
+                        if(tmp_largest < 3'd5 && dict_pos >= 8'd4 && l_LA_buf > 3'd4) begin
+                            tmp_largest = 3'd5;
+                            tmp_largest_pos = dict_pos - 8'd4;
+                        end
                     end
                 end
-                // 3
-                if(dict[dict_pos] == symbol1 && dict[dict_pos-8'd1] == symbol2 && dict[dict_pos-8'd2] == symbol3) begin
-                    if(largest < 3'd3 && dict_pos >= 8'd2 && l_LA_buf > 3'd2) begin
-                        n_largest = 3'd3;
-                        n_largest_pos = dict_pos - 8'd2;
-                    end
-                end
-                // 4
-                if(dict[dict_pos] == symbol1 && dict[dict_pos-8'd1] == symbol2 && dict[dict_pos-8'd2] == symbol3 && dict[dict_pos-8'd3] == symbol4) begin
-                    if(largest < 3'd4 && dict_pos >= 8'd3 && l_LA_buf > 3'd3) begin
-                        n_largest = 3'd4;
-                        n_largest_pos = dict_pos - 8'd3;
-                    end
-                end
-                // 5
-                if(dict[dict_pos] == symbol1 && dict[dict_pos-8'd1] == symbol2 && dict[dict_pos-8'd2] == symbol3 && dict[dict_pos-8'd3] == symbol4 && dict[dict_pos-8'd4] == symbol5) begin
-                    if(largest < 3'd5 && dict_pos >= 8'd4 && l_LA_buf > 3'd4) begin
-                        n_largest = 3'd5;
-                        n_largest_pos = dict_pos - 8'd4;
-                    end
-                end
+                n_largest = tmp_largest;
+                n_largest_pos = tmp_largest_pos;
             end
-            n_dict_pos = dict_pos + 8'd1;
         end
         S_ENCODE:begin
-            // TODO:remember to set n_busy here!!!
-            //      check n_state's l_r_buf + l_LA_buf
             if(largest == 3'd0) begin
                 for(i = 256; i != 1 ; i = i - 1)
                     n_dict[i-1] = dict[i-2];
@@ -360,7 +358,6 @@ always@(*)begin
             n_finish    =   1'b1;
         end
         default:begin
-
         end
     endcase 
 end
@@ -376,14 +373,14 @@ always@(posedge clk or posedge reset)begin
         enc_num     <=   12'd0; 
         out_valid   <=   1'd0; 
         finish      <=   1'd0; 
-        state       <=   4'd0; 
+        state       <=   3'd0; 
         r_buf       <=   32'd0; 
         LA_buf      <=   40'd0; 
         l_r_buf     <=   3'd0; 
         l_LA_buf    <=   3'd0; 
 		tmp_buf	    <=	 32'd0;
         dict_size   <=   9'd0;
-        dict_pos    <=   8'd0;
+        dict_pos    <=   9'd0;
         largest     <=   3'd0;
         largest_pos <=   8'd0;
         data_done   <=   1'b0;
