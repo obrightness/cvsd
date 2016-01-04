@@ -1,12 +1,12 @@
 ncverilog: 10.20-s114: (c) Copyright 1995-2012 Cadence Design Systems, Inc.
-TOOL:	ncverilog	10.20-s114: Started on Dec 25, 2015 at 20:59:20 CST
+TOOL:	ncverilog	10.20-s114: Started on Jan 04, 2016 at 15:37:56 CST
 ncverilog
 	testfixture1.v
 	LZSS.v
 	+access+r
 Recompiling... reason: file './LZSS.v' is newer than expected.
-	expected: Fri Dec 25 20:55:40 2015
-	actual:   Fri Dec 25 20:59:19 2015
+	expected: Fri Dec 25 20:59:19 2015
+	actual:   Mon Jan  4 15:37:53 2016
 file: LZSS.v
 	module worklib.LZSS:v
 		errors: 0, warnings: 0
@@ -14,36 +14,506 @@ file: LZSS.v
 	Elaborating the design hierarchy:
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.LZSS:v <0x71163b09>
-			streams:   8, words: 25237
+		worklib.LZSS:v <0x080aad82>
+			streams:  14, words: 612915
 	Loading native compiled code:     .................... Done
 	Building instance specific data structures.
 	Design hierarchy summary:
 		                  Instances  Unique
 		Modules:                  2       2
-		Registers:               50      50
-		Scalar wires:             7       -
+		Registers:               54      54
+		Scalar wires:          1287       -
 		Vectored wires:           8       -
 		Always blocks:            8       8
 		Initial blocks:           8       8
-		Cont. assignments:        1       5
+		Cont. assignments:        6    1285
 		Pseudo assignments:       1       1
 		Simulation timescale:  10ps
 	Writing initial simulation snapshot: worklib.test:v
 Loading snapshot worklib.test:v .................... Done
 ncsim> source /usr/Cadence/INCISIV/INCISIV/cur/tools/inca/files/ncsimrc
 ncsim> run
+ERROR at    17:output 01aX !=expect 0430 
+ERROR at    18:output 018X !=expect 01d0 
+ERROR at    19:output 0408 !=expect 0080 
+ERROR at    22:output 019X !=expect 043c 
+ERROR at    23:output 008X !=expect 0190 
+ERROR at    24:output 019X !=expect 0184 
+ERROR at    25:output 018X !=expect 01e4 
+ERROR at    26:output 01eX !=expect 0429 
+ERROR at    27:output 041c !=expect 01a4 
+ERROR at    28:output 01aX !=expect 01cc 
+ERROR at    29:output 01aX !=expect 0080 
+ERROR at    30:output 01cX !=expect 01b8 
+ERROR at    31:output 008X !=expect 043c 
+ERROR at    32:output 01bX !=expect 01a4 
+ERROR at    33:output 018X !=expect 043c 
+ERROR at    34:output 01dX !=expect 0080 
+ERROR at    35:output 01aX !=expect 01dc 
+ERROR at    36:output 01bX !=expect 01a4 
+ERROR at    37:output 0410 !=expect 01b0 
+ERROR at    38:output 01dX !=expect 01b0 
+ERROR at    39:output 01aX !=expect 0080 
+ERROR at    40:output 01bX !=expect 01c8 
+ERROR at    41:output 01bX !=expect 0438 
+ERROR at    42:output 008X !=expect 0460 
+ERROR at    43:output 01cX !=expect 01d4 
+ERROR at    44:output 01aX !=expect 01c0 
+ERROR at    45:output 01cX !=expect 04b0 
+ERROR at    46:output 019X !=expect 01b8 
+ERROR at    47:output 008X !=expect 0190 
+ERROR at    48:output 01dX !=expect 0080 
+ERROR at    49:output 01cX !=expect 01b0 
+ERROR at    50:output 04ac !=expect 01a4 
+ERROR at    51:output 01bX !=expect 04d1 
+ERROR at    52:output 0478 !=expect 01bc 
+ERROR at    53:output 0438 !=expect 01d4 
+ERROR at    54:output 01dX !=expect 04b0 
+ERROR at    55:output 019X !=expect 0490 
+ERROR at    56:output 008X !=expect 0418 
+ERROR at    57:output 01bX !=expect 01d0 
+ERROR at    58:output 01dX !=expect 01c8 
+ERROR at    59:output 048c !=expect 01d4 
+ERROR at    60:output 01dX !=expect 040c 
+ERROR at    61:output 01aX !=expect 01b4 
+ERROR at    62:output 019X !=expect 04fc 
+ERROR at    63:output 040c !=expect 01b8 
+ERROR at    64:output 01cX !=expect 01a4 
+ERROR at    65:output 01dX !=expect 01b8 
+ERROR at    66:output 019X !=expect 019c 
+ERROR at    67:output 04ec !=expect 044c 
+ERROR at    68:output 019X !=expect 0198 
+ERROR at    69:output 04a8 !=expect 0080 
+ERROR at    71:output 01bX !=expect 01d0 
+ERROR at    72:output 019X !=expect 04dc 
+ERROR at    73:output 008X !=expect 018c 
+ERROR at    74:output 01bX !=expect 053c 
+ERROR at    75:output 019X !=expect 0194 
+ERROR at    76:output 008X !=expect 0190 
+ERROR at    77:output 04c4 !=expect 00b8 
+ERROR at    78:output 01cX !=expect 0034 
+ERROR at    79:output 008X !=expect 0028 
+ERROR at    80:output 018X !=expect 0577 
+ERROR at    81:output 01cX !=expect 0577 
+ERROR at    82:output 019X !=expect 0577 
+ERROR at    83:output 019X !=expect 0577 
+ERROR at    84:output 019X !=expect 0577 
+ERROR at    85:output 00bX !=expect 057d 
+ERROR at    86:output 003X !=expect 0559 
+ERROR at    87:output 002X !=expect 04ee 
+ERROR at    88:output 012X !=expect 045c 
+ERROR at    89:output 008X !=expect 0538 
+ERROR at    90:output 01aX !=expect 05a8 
+ERROR at    91:output 018X !=expect 057c 
+ERROR at    92:output 01dX !=expect 04cc 
+ERROR at    93:output 019X !=expect 04e5 
+ERROR at    94:output 057d !=expect 011c 
+ERROR at    95:output 019X !=expect 0194 
+ERROR at    96:output 01cX !=expect 01bc 
+ERROR at    97:output 019X !=expect 01c8 
+ERROR at    98:output 018X !=expect 019c 
+ERROR at    99:output 048c !=expect 01a4 
+ERROR at   100:output 01dX !=expect 0184 
+ERROR at   101:output 01aX !=expect 00b0 
+ERROR at   102:output 018X !=expect 0457 
+ERROR at   103:output 0408 !=expect 01cc 
+ERROR at   104:output 01bX !=expect 0480 
+ERROR at   105:output 01bX !=expect 0443 
+ERROR at   106:output 019X !=expect 0198 
+ERROR at   107:output 0500 !=expect 0448 
+ERROR at   108:output 018X !=expect 0574 
+ERROR at   109:output 01eX !=expect 01c8 
+ERROR at   110:output 008X !=expect 0434 
+ERROR at   111:output 01bX !=expect 01b0 
+ERROR at   112:output 0574 !=expect 0521 
+ERROR at   113:output 01dX !=expect 043c 
+ERROR at   114:output 01aX !=expect 05f2 
+ERROR at   115:output 019X !=expect 0467 
+ERROR at   116:output 008X !=expect 0467 
+ERROR at   117:output 01cX !=expect 0467 
+ERROR at   118:output 019X !=expect 0467 
+ERROR at   119:output 0430 !=expect 046a 
+ERROR at   120:output 01aX !=expect 0438 
+ERROR at   121:output 053c !=expect 01dc 
+ERROR at   122:output 01bX !=expect 056c 
+ERROR at   123:output 01cX !=expect 01c8 
+ERROR at   124:output 008X !=expect 0454 
+ERROR at   125:output 01bX !=expect 06b3 
+ERROR at   126:output 019X !=expect 0188 
+ERROR at   127:output 008X !=expect 05d5 
+ERROR at   128:output 011X !=expect 0188 
+ERROR at   129:output 019X !=expect 01b0 
+ERROR at   130:output 01bX !=expect 0675 
+ERROR at   131:output 01cX !=expect 01bc 
+ERROR at   132:output 019X !=expect 046c 
+ERROR at   133:output 01aX !=expect 0648 
+ERROR at   134:output 018X !=expect 05c4 
+ERROR at   135:output 00bX !=expect 0465 
+ERROR at   136:output 0490 !=expect 0425 
+ERROR at   137:output 01aX !=expect 019c 
+ERROR at   139:output 043c !=expect 04e9 
+ERROR at   140:output 01bX !=expect 04b4 
+ERROR at   141:output 01bX !=expect 0615 
+ERROR at   142:output 0408 !=expect 06df 
+ERROR at   143:output 01bX !=expect 0477 
+ERROR at   144:output 019X !=expect 050d 
+ERROR at   145:output 0451 !=expect 0188 
+ERROR at   147:output 01bX !=expect 01bc 
+ERROR at   148:output 0491 !=expect 0452 
+ERROR at   149:output 0480 !=expect 01a0 
+ERROR at   150:output 018X !=expect 01bc 
+ERROR at   151:output 01dX !=expect 01bc 
+ERROR at   152:output 0604 !=expect 06cb 
+ERROR at   153:output 0524 !=expect 06cb 
+ERROR at   154:output 01bX !=expect 06cb 
+ERROR at   155:output 04f0 !=expect 06cb 
+ERROR at   156:output 01dX !=expect 06cb 
+ERROR at   157:output 01aX !=expect 06cb 
+ERROR at   158:output 019X !=expect 06d4 
+ERROR at   159:output 041c !=expect 0194 
+ERROR at   160:output 01bX !=expect 045c 
+ERROR at   161:output 01bX !=expect 06d3 
+ERROR at   162:output 0408 !=expect 054c 
+ERROR at   163:output 0467 !=expect 04ec 
+ERROR at   164:output 01cX !=expect 01d0 
+ERROR at   165:output 01bX !=expect 04df 
+ERROR at   166:output 0509 !=expect 0134 
+ERROR at   167:output 04f8 !=expect 01a4 
+ERROR at   168:output 018X !=expect 01cc 
+ERROR at   169:output 01dX !=expect 057c 
+ERROR at   170:output 019X !=expect 0401 
+ERROR at   171:output 008X !=expect 01c0 
+ERROR at   172:output 01bX !=expect 01c0 
+ERROR at   173:output 01dX !=expect 01a4 
+ERROR at   174:output 01bX !=expect 06dc 
+ERROR at   175:output 0538 !=expect 04c8 
+ERROR at   176:output 0428 !=expect 044f 
+ERROR at   177:output 01dX !=expect 0410 
+ERROR at   178:output 067c !=expect 01dc 
+ERROR at   179:output 0688 !=expect 0194 
+ERROR at   180:output 018X !=expect 01b0 
+ERROR at   181:output 019X !=expect 0414 
+ERROR at   182:output 05d4 !=expect 01c8 
+ERROR at   183:output 018X !=expect 01a4 
+ERROR at   184:output 01bX !=expect 01b8 
+ERROR at   185:output 019X !=expect 019c 
+ERROR at   186:output 05bc !=expect 062d 
+ERROR at   187:output 0491 !=expect 04b4 
+ERROR at   188:output 0714 !=expect 04b7 
+ERROR at   189:output 04cc !=expect 0404 
+ERROR at   190:output 01bX !=expect 0512 
+ERROR at   191:output 01dX !=expect 04bc 
+ERROR at   192:output 0738 !=expect 044c 
+ERROR at   193:output 01dX !=expect 01a8 
+ERROR at   194:output 01bX !=expect 01d4 
+ERROR at   195:output 019X !=expect 0490 
+ERROR at   196:output 019X !=expect 01a4 
+ERROR at   197:output 01dX !=expect 018c 
+ERROR at   198:output 01aX !=expect 0194 
+ERROR at   199:output 05c5 !=expect 04b4 
+ERROR at   200:output 018X !=expect 048b 
+ERROR at   201:output 06e5 !=expect 048b 
+ERROR at   202:output 01aX !=expect 048b 
+ERROR at   203:output 019X !=expect 048b 
+ERROR at   204:output 040d !=expect 048b 
+ERROR at   205:output 018X !=expect 0491 
+ERROR at   206:output 01bX !=expect 01bc 
+ERROR at   207:output 019X !=expect 053c 
+ERROR at   208:output 0478 !=expect 05f4 
+ERROR at   209:output 050c !=expect 0555 
+ERROR at   210:output 018X !=expect 05e0 
+ERROR at   211:output 0510 !=expect 0498 
+ERROR at   212:output 01dX !=expect 0737 
+ERROR at   213:output 01aX !=expect 073d 
+ERROR at   214:output 0624 !=expect 01d0 
+ERROR at   215:output 01aX !=expect 01c8 
+ERROR at   216:output 01bX !=expect 07f8 
+ERROR at   217:output 0494 !=expect 01cc 
+ERROR at   218:output 00bX !=expect 07bb 
+ERROR at   219:output 003X !=expect 0190 
+ERROR at   220:output 002X !=expect 0511 
+ERROR at   221:output 012X !=expect 0761 
+ERROR at   222:output 008X !=expect 0434 
+ERROR at   223:output 01aX !=expect 0498 
+ERROR at   225:output 01dX !=expect 05f1 
+ERROR at   226:output 019X !=expect 04b6 
+ERROR at   227:output 06d1 !=expect 0198 
+ERROR at   228:output 019X !=expect 04b4 
+ERROR at   229:output 0444 !=expect 0454 
+ERROR at   230:output 018X !=expect 01bc 
+ERROR at   231:output 0768 !=expect 06b8 
+ERROR at   232:output 01dX !=expect 0448 
+ERROR at   233:output 01aX !=expect 046c 
+ERROR at   234:output 0499 !=expect 0577 
+ERROR at   235:output 01bX !=expect 0580 
+ERROR at   236:output 01bX !=expect 0723 
+ERROR at   237:output 019X !=expect 0723 
+ERROR at   238:output 05dc !=expect 0723 
+ERROR at   239:output 018X !=expect 0723 
+ERROR at   240:output 01eX !=expect 056d 
+ERROR at   241:output 0451 !=expect 01b4 
+ERROR at   242:output 041c !=expect 0718 
+ERROR at   243:output 0430 !=expect 050c 
+ERROR at   244:output 01aX !=expect 01d4 
+ERROR at   245:output 0418 !=expect 01c8 
+ERROR at   246:output 0794 !=expect 0080 
+ERROR at   247:output 04f0 !=expect 01b0 
+ERROR at   248:output 0430 !=expect 05c8 
+ERROR at   249:output 05f5 !=expect 01d0 
+ERROR at   250:output 013X !=expect 01b0 
+ERROR at   251:output 0574 !=expect 0468 
+ERROR at   252:output 0400 !=expect 018c 
+ERROR at   253:output 0405 !=expect 01a0 
+ERROR at   254:output 01cX !=expect 0574 
+ERROR at   255:output 0400 !=expect 046d 
+ERROR at   256:output 00bX !=expect 0524 
+ERROR at   257:output 04c5 !=expect 058b 
+ERROR at   258:output 07f4 !=expect 0797 
+ERROR at   259:output 045c !=expect 079d 
+ERROR at   260:output 0490 !=expect 046c 
+ERROR at   261:output 01cX !=expect 04d1 
+ERROR at   262:output 01dX !=expect 058c 
+ERROR at   263:output 055c !=expect 04dd 
+ERROR at   264:output 05a4 !=expect 01b8 
+ERROR at   265:output 01cX !=expect 04c4 
+ERROR at   266:output 01aX !=expect 060d 
+ERROR at   267:output 01bX !=expect 0470 
+ERROR at   268:output 019X !=expect 0660 
+ERROR at   269:output 008X !=expect 048c 
+ERROR at   270:output 01dX !=expect 067e 
+ERROR at   271:output 01aX !=expect 0468 
+ERROR at   272:output 01dX !=expect 0493 
+ERROR at   273:output 0538 !=expect 01b8 
+ERROR at   274:output 01dX !=expect 01bc 
+ERROR at   275:output 01aX !=expect 0520 
+ERROR at   276:output 04e0 !=expect 0645 
+ERROR at   277:output 01aX !=expect 05a4 
+ERROR at   278:output 019X !=expect 0190 
+ERROR at   279:output 05b9 !=expect 019c 
+ERROR at   280:output 06b9 !=expect 0631 
+ERROR at   281:output 01aX !=expect 0188 
+ERROR at   282:output 01bX !=expect 0450 
+ERROR at   283:output 01aX !=expect 06ea 
+ERROR at   284:output 01dX !=expect 018c 
+ERROR at   285:output 01cX !=expect 01bc 
+ERROR at   286:output 044c !=expect 01b0 
+ERROR at   287:output 018X !=expect 0674 
+ERROR at   288:output 019X !=expect 062a 
+ERROR at   289:output 00bX !=expect 0429 
+ERROR at   290:output 06a4 !=expect 01a4 
+ERROR at   291:output 01dX !=expect 041c 
+ERROR at   292:output 05f8 !=expect 01cc 
+ERROR at   293:output 0640 !=expect 01ac 
+ERROR at   294:output 01cX !=expect 04fd 
+ERROR at   295:output 01aX !=expect 0188 
+ERROR at   296:output 01bX !=expect 01d4 
+ERROR at   297:output 019X !=expect 0499 
+ERROR at   298:output 008X !=expect 046b 
+ERROR at   299:output 01dX !=expect 0471 
+ERROR at   300:output 0440 !=expect 06d0 
+ERROR at   301:output 0480 !=expect 059c 
+ERROR at   302:output 01dX !=expect 076f 
+ERROR at   303:output 01aX !=expect 0473 
+ERROR at   304:output 057c !=expect 05e5 
+ERROR at   305:output 01aX !=expect 0184 
+ERROR at   306:output 019X !=expect 0748 
+ERROR at   307:output 0655 !=expect 018c 
+ERROR at   308:output 0755 !=expect 0448 
+ERROR at   309:output 01bX !=expect 01c8 
+ERROR at   310:output 053c !=expect 069b 
+ERROR at   311:output 0460 !=expect 069b 
+ERROR at   312:output 0559 !=expect 069b 
+ERROR at   313:output 01bX !=expect 069e 
+ERROR at   314:output 01bX !=expect 01bc 
+ERROR at   315:output 00bX !=expect 0611 
+ERROR at   316:output 008X !=expect 0084 
+ERROR at   317:output 01dX !=expect 0080 
+ERROR at   318:output 01aX !=expect 0080 
+ERROR at   319:output 0740 !=expect 0xxx 
+ERROR at   320:output 008X !=expect 0xxx 
+ERROR at   321:output 018X !=expect 0xxx 
+ERROR at   322:output 05ec !=expect 0xxx 
+ERROR at   323:output 01dX !=expect 0xxx 
+ERROR at   324:output 01cX !=expect 0xxx 
+ERROR at   325:output 018X !=expect 0xxx 
+ERROR at   326:output 01bX !=expect 0xxx 
+ERROR at   327:output 01cX !=expect 0xxx 
+ERROR at   328:output 0468 !=expect 0xxx 
+ERROR at   329:output 01cX !=expect 0xxx 
+ERROR at   330:output 01bX !=expect 0xxx 
+ERROR at   331:output 019X !=expect 0xxx 
+ERROR at   332:output 062c !=expect 0xxx 
+ERROR at   333:output 01aX !=expect 0xxx 
+ERROR at   334:output 01bX !=expect 0xxx 
+ERROR at   335:output 06c8 !=expect 0xxx 
+ERROR at   336:output 05b4 !=expect 0xxx 
+ERROR at   337:output 01bX !=expect 0xxx 
+ERROR at   338:output 0408 !=expect 0xxx 
+ERROR at   339:output 018X !=expect 0xxx 
+ERROR at   340:output 05f1 !=expect 0xxx 
+ERROR at   341:output 0420 !=expect 0xxx 
+ERROR at   342:output 019X !=expect 0xxx 
+ERROR at   343:output 04c0 !=expect 0xxx 
+ERROR at   344:output 051c !=expect 0xxx 
+ERROR at   345:output 019X !=expect 0xxx 
+ERROR at   346:output 06f8 !=expect 0xxx 
+ERROR at   347:output 01bX !=expect 0xxx 
+ERROR at   348:output 0604 !=expect 0xxx 
+ERROR at   349:output 01bX !=expect 0xxx 
+ERROR at   350:output 06a0 !=expect 0xxx 
+ERROR at   351:output 01aX !=expect 0xxx 
+ERROR at   352:output 01dX !=expect 0xxx 
+ERROR at   353:output 01cX !=expect 0xxx 
+ERROR at   354:output 0538 !=expect 0xxx 
+ERROR at   355:output 018X !=expect 0xxx 
+ERROR at   356:output 019X !=expect 0xxx 
+ERROR at   357:output 00bX !=expect 0xxx 
+ERROR at   358:output 003X !=expect 0xxx 
+ERROR at   359:output 002X !=expect 0xxx 
+ERROR at   360:output 012X !=expect 0xxx 
+ERROR at   361:output 0550 !=expect 0xxx 
+ERROR at   362:output 018X !=expect 0xxx 
+ERROR at   363:output 06cd !=expect 0xxx 
+ERROR at   364:output 0450 !=expect 0xxx 
+ERROR at   365:output 019X !=expect 0xxx 
+ERROR at   366:output 0598 !=expect 0xxx 
+ERROR at   367:output 018X !=expect 0xxx 
+ERROR at   368:output 01bX !=expect 0xxx 
+ERROR at   369:output 0560 !=expect 0xxx 
+ERROR at   370:output 01aX !=expect 0xxx 
+ERROR at   371:output 07cd !=expect 0xxx 
+ERROR at   372:output 01bX !=expect 0xxx 
+ERROR at   373:output 01eX !=expect 0xxx 
+ERROR at   374:output 04b1 !=expect 0xxx 
+ERROR at   375:output 01dX !=expect 0xxx 
+ERROR at   376:output 01cX !=expect 0xxx 
+ERROR at   377:output 0544 !=expect 0xxx 
+ERROR at   378:output 0488 !=expect 0xxx 
+ERROR at   379:output 05f5 !=expect 0xxx 
+ERROR at   380:output 008X !=expect 0xxx 
+ERROR at   381:output 018X !=expect 0xxx 
+ERROR at   382:output 01aX !=expect 0xxx 
+ERROR at   383:output 041c !=expect 0xxx 
+ERROR at   384:output 019X !=expect 0xxx 
+ERROR at   385:output 0610 !=expect 0xxx 
+ERROR at   386:output 01bX !=expect 0xxx 
+ERROR at   387:output 008X !=expect 0xxx 
+ERROR at   388:output 01dX !=expect 0xxx 
+ERROR at   389:output 043c !=expect 0xxx 
+ERROR at   390:output 0448 !=expect 0xxx 
+ERROR at   391:output 01bX !=expect 0xxx 
+ERROR at   392:output 041c !=expect 0xxx 
+ERROR at   393:output 04f8 !=expect 0xxx 
+ERROR at   394:output 018X !=expect 0xxx 
+ERROR at   395:output 01eX !=expect 0xxx 
+ERROR at   396:output 041c !=expect 0xxx 
+ERROR at   397:output 01aX !=expect 0xxx 
+ERROR at   398:output 07a9 !=expect 0xxx 
+ERROR at   399:output 01aX !=expect 0xxx 
+ERROR at   400:output 01bX !=expect 0xxx 
+ERROR at   401:output 04dd !=expect 0xxx 
+ERROR at   402:output 053c !=expect 0xxx 
+ERROR at   403:output 0498 !=expect 0xxx 
+ERROR at   404:output 01bX !=expect 0xxx 
+ERROR at   405:output 0410 !=expect 0xxx 
+ERROR at   406:output 01dX !=expect 0xxx 
+ERROR at   407:output 01aX !=expect 0xxx 
+ERROR at   408:output 0488 !=expect 0xxx 
+ERROR at   409:output 07f8 !=expect 0xxx 
+ERROR at   410:output 01dX !=expect 0xxx 
+ERROR at   411:output 01aX !=expect 0xxx 
+ERROR at   412:output 019X !=expect 0xxx 
+ERROR at   413:output 01eX !=expect 0xxx 
+ERROR at   414:output 008X !=expect 0xxx 
+ERROR at   415:output 01dX !=expect 0xxx 
+ERROR at   416:output 046c !=expect 0xxx 
+ERROR at   417:output 0478 !=expect 0xxx 
+ERROR at   418:output 0444 !=expect 0xxx 
+ERROR at   419:output 042c !=expect 0xxx 
+ERROR at   420:output 018X !=expect 0xxx 
+ERROR at   421:output 019X !=expect 0xxx 
+ERROR at   422:output 008X !=expect 0xxx 
+ERROR at   423:output 01aX !=expect 0xxx 
+ERROR at   424:output 01dX !=expect 0xxx 
+ERROR at   425:output 019X !=expect 0xxx 
+ERROR at   426:output 019X !=expect 0xxx 
+ERROR at   427:output 019X !=expect 0xxx 
+ERROR at   428:output 04c0 !=expect 0xxx 
+ERROR at   429:output 018X !=expect 0xxx 
+ERROR at   430:output 01eX !=expect 0xxx 
+ERROR at   431:output 0430 !=expect 0xxx 
+ERROR at   432:output 01aX !=expect 0xxx 
+ERROR at   433:output 019X !=expect 0xxx 
+ERROR at   434:output 008X !=expect 0xxx 
+ERROR at   435:output 018X !=expect 0xxx 
+ERROR at   436:output 01bX !=expect 0xxx 
+ERROR at   437:output 01bX !=expect 0xxx 
+ERROR at   438:output 01bX !=expect 0xxx 
+ERROR at   439:output 01cX !=expect 0xxx 
+ERROR at   440:output 0658 !=expect 0xxx 
+ERROR at   441:output 0578 !=expect 0xxx 
+ERROR at   442:output 01dX !=expect 0xxx 
+ERROR at   443:output 01aX !=expect 0xxx 
+ERROR at   444:output 019X !=expect 0xxx 
+ERROR at   445:output 0758 !=expect 0xxx 
+ERROR at   446:output 0658 !=expect 0xxx 
+ERROR at   447:output 01aX !=expect 0xxx 
+ERROR at   448:output 01aX !=expect 0xxx 
+ERROR at   449:output 0498 !=expect 0xxx 
+ERROR at   450:output 018X !=expect 0xxx 
+ERROR at   451:output 01dX !=expect 0xxx 
+ERROR at   452:output 0430 !=expect 0xxx 
+ERROR at   453:output 018X !=expect 0xxx 
+ERROR at   454:output 01eX !=expect 0xxx 
+ERROR at   455:output 0408 !=expect 0xxx 
+ERROR at   456:output 01aX !=expect 0xxx 
+ERROR at   457:output 019X !=expect 0xxx 
+ERROR at   458:output 008X !=expect 0xxx 
+ERROR at   459:output 018X !=expect 0xxx 
+ERROR at   460:output 04cc !=expect 0xxx 
+ERROR at   461:output 01dX !=expect 0xxx 
+ERROR at   462:output 0578 !=expect 0xxx 
+ERROR at   463:output 0424 !=expect 0xxx 
+ERROR at   464:output 05f5 !=expect 0xxx 
+ERROR at   465:output 01dX !=expect 0xxx 
+ERROR at   466:output 01aX !=expect 0xxx 
+ERROR at   467:output 019X !=expect 0xxx 
+ERROR at   468:output 07dc !=expect 0xxx 
+ERROR at   469:output 008X !=expect 0xxx 
+ERROR at   470:output 018X !=expect 0xxx 
+ERROR at   471:output 01aX !=expect 0xxx 
+ERROR at   472:output 0744 !=expect 0xxx 
+ERROR at   473:output 018X !=expect 0xxx 
+ERROR at   474:output 018X !=expect 0xxx 
+ERROR at   475:output 01dX !=expect 0xxx 
+ERROR at   476:output 055c !=expect 0xxx 
+ERROR at   477:output 00bX !=expect 0xxx 
+ERROR at   478:output 003X !=expect 0xxx 
+ERROR at   479:output 002X !=expect 0xxx 
+ERROR at   480:output 012X !=expect 0xxx 
+ERROR at   481:output 008X !=expect 0xxx 
+ERROR at   482:output 01aX !=expect 0xxx 
+ERROR at   483:output 018X !=expect 0xxx 
+ERROR at   484:output 01dX !=expect 0xxx 
+ERROR at   485:output 019X !=expect 0xxx 
+ERROR at   486:output 05b9 !=expect 0xxx 
+ERROR at   487:output 019X !=expect 0xxx 
+ERROR at   488:output 0434 !=expect 0xxx 
+ERROR at   489:output 018X !=expect 0xxx 
+ERROR at   490:output 068d !=expect 0xxx 
+ERROR at   491:output 072c !=expect 0xxx 
+ERROR at   492:output 018X !=expect 0xxx 
+ERROR at   493:output 01eX !=expect 0xxx 
+ERROR at   494:output 008X !=expect 0xxx 
+ERROR at   495:output 008X !=expect 0xxx 
+ERROR at   496:output 008X !=expect 0xxx 
 ---------------------------------------------------------------
 
-Congratulations! All data have been encoded successfully!
-
--------------------------PASS----------------------------------
-
-The compression ratio is 0.575790 
+There are         296 encoding errors!
 
 ---------------------------------------------------------------
 
-Simulation complete via $finish(1) at time 608370 NS + 0
+Simulation complete via $finish(1) at time 18330 NS + 0
 ./testfixture1.v:168 		#(`CYCLE/2) $finish;		
 ncsim> exit
-TOOL:	ncverilog	10.20-s114: Exiting on Dec 25, 2015 at 20:59:31 CST  (total: 00:00:11)
+TOOL:	ncverilog	10.20-s114: Exiting on Jan 04, 2016 at 15:38:06 CST  (total: 00:00:10)
