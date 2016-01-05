@@ -1509,6085 +1509,6085 @@ always@(*)begin
         end
         S_COMPARE:begin
             if(dict_size > 9'd0) begin
-                if(dict5[8'd4] && dict4[8'd3] && dict3[8'd2] && dict2[8'd1] && dict1[8'd0] ) begin
+                if(dict1[8'd4] && dict2[8'd3] && dict3[8'd2] && dict4[8'd1] && dict5[8'd0] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd4) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd0;
                     end
                 end
-                else if(dict5[8'd5] && dict4[8'd4] && dict3[8'd3] && dict2[8'd2] && dict1[8'd1] ) begin
+                else if(dict1[8'd5] && dict2[8'd4] && dict3[8'd3] && dict4[8'd2] && dict5[8'd1] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd5) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd1;
                     end
                 end
-                else if(dict5[8'd6] && dict4[8'd5] && dict3[8'd4] && dict2[8'd3] && dict1[8'd2] ) begin
+                else if(dict1[8'd6] && dict2[8'd5] && dict3[8'd4] && dict4[8'd3] && dict5[8'd2] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd6) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd2;
                     end
                 end
-                else if(dict5[8'd7] && dict4[8'd6] && dict3[8'd5] && dict2[8'd4] && dict1[8'd3] ) begin
+                else if(dict1[8'd7] && dict2[8'd6] && dict3[8'd5] && dict4[8'd4] && dict5[8'd3] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd7) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd3;
                     end
                 end
-                else if(dict5[8'd8] && dict4[8'd7] && dict3[8'd6] && dict2[8'd5] && dict1[8'd4] ) begin
+                else if(dict1[8'd8] && dict2[8'd7] && dict3[8'd6] && dict4[8'd5] && dict5[8'd4] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd8) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd4;
                     end
                 end
-                else if(dict5[8'd9] && dict4[8'd8] && dict3[8'd7] && dict2[8'd6] && dict1[8'd5] ) begin
+                else if(dict1[8'd9] && dict2[8'd8] && dict3[8'd7] && dict4[8'd6] && dict5[8'd5] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd9) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd5;
                     end
                 end
-                else if(dict5[8'd10] && dict4[8'd9] && dict3[8'd8] && dict2[8'd7] && dict1[8'd6] ) begin
+                else if(dict1[8'd10] && dict2[8'd9] && dict3[8'd8] && dict4[8'd7] && dict5[8'd6] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd10) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd6;
                     end
                 end
-                else if(dict5[8'd11] && dict4[8'd10] && dict3[8'd9] && dict2[8'd8] && dict1[8'd7] ) begin
+                else if(dict1[8'd11] && dict2[8'd10] && dict3[8'd9] && dict4[8'd8] && dict5[8'd7] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd11) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd7;
                     end
                 end
-                else if(dict5[8'd12] && dict4[8'd11] && dict3[8'd10] && dict2[8'd9] && dict1[8'd8] ) begin
+                else if(dict1[8'd12] && dict2[8'd11] && dict3[8'd10] && dict4[8'd9] && dict5[8'd8] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd12) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd8;
                     end
                 end
-                else if(dict5[8'd13] && dict4[8'd12] && dict3[8'd11] && dict2[8'd10] && dict1[8'd9] ) begin
+                else if(dict1[8'd13] && dict2[8'd12] && dict3[8'd11] && dict4[8'd10] && dict5[8'd9] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd13) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd9;
                     end
                 end
-                else if(dict5[8'd14] && dict4[8'd13] && dict3[8'd12] && dict2[8'd11] && dict1[8'd10] ) begin
+                else if(dict1[8'd14] && dict2[8'd13] && dict3[8'd12] && dict4[8'd11] && dict5[8'd10] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd14) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd10;
                     end
                 end
-                else if(dict5[8'd15] && dict4[8'd14] && dict3[8'd13] && dict2[8'd12] && dict1[8'd11] ) begin
+                else if(dict1[8'd15] && dict2[8'd14] && dict3[8'd13] && dict4[8'd12] && dict5[8'd11] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd15) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd11;
                     end
                 end
-                else if(dict5[8'd16] && dict4[8'd15] && dict3[8'd14] && dict2[8'd13] && dict1[8'd12] ) begin
+                else if(dict1[8'd16] && dict2[8'd15] && dict3[8'd14] && dict4[8'd13] && dict5[8'd12] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd16) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd12;
                     end
                 end
-                else if(dict5[8'd17] && dict4[8'd16] && dict3[8'd15] && dict2[8'd14] && dict1[8'd13] ) begin
+                else if(dict1[8'd17] && dict2[8'd16] && dict3[8'd15] && dict4[8'd14] && dict5[8'd13] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd17) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd13;
                     end
                 end
-                else if(dict5[8'd18] && dict4[8'd17] && dict3[8'd16] && dict2[8'd15] && dict1[8'd14] ) begin
+                else if(dict1[8'd18] && dict2[8'd17] && dict3[8'd16] && dict4[8'd15] && dict5[8'd14] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd18) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd14;
                     end
                 end
-                else if(dict5[8'd19] && dict4[8'd18] && dict3[8'd17] && dict2[8'd16] && dict1[8'd15] ) begin
+                else if(dict1[8'd19] && dict2[8'd18] && dict3[8'd17] && dict4[8'd16] && dict5[8'd15] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd19) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd15;
                     end
                 end
-                else if(dict5[8'd20] && dict4[8'd19] && dict3[8'd18] && dict2[8'd17] && dict1[8'd16] ) begin
+                else if(dict1[8'd20] && dict2[8'd19] && dict3[8'd18] && dict4[8'd17] && dict5[8'd16] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd20) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd16;
                     end
                 end
-                else if(dict5[8'd21] && dict4[8'd20] && dict3[8'd19] && dict2[8'd18] && dict1[8'd17] ) begin
+                else if(dict1[8'd21] && dict2[8'd20] && dict3[8'd19] && dict4[8'd18] && dict5[8'd17] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd21) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd17;
                     end
                 end
-                else if(dict5[8'd22] && dict4[8'd21] && dict3[8'd20] && dict2[8'd19] && dict1[8'd18] ) begin
+                else if(dict1[8'd22] && dict2[8'd21] && dict3[8'd20] && dict4[8'd19] && dict5[8'd18] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd22) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd18;
                     end
                 end
-                else if(dict5[8'd23] && dict4[8'd22] && dict3[8'd21] && dict2[8'd20] && dict1[8'd19] ) begin
+                else if(dict1[8'd23] && dict2[8'd22] && dict3[8'd21] && dict4[8'd20] && dict5[8'd19] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd23) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd19;
                     end
                 end
-                else if(dict5[8'd24] && dict4[8'd23] && dict3[8'd22] && dict2[8'd21] && dict1[8'd20] ) begin
+                else if(dict1[8'd24] && dict2[8'd23] && dict3[8'd22] && dict4[8'd21] && dict5[8'd20] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd24) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd20;
                     end
                 end
-                else if(dict5[8'd25] && dict4[8'd24] && dict3[8'd23] && dict2[8'd22] && dict1[8'd21] ) begin
+                else if(dict1[8'd25] && dict2[8'd24] && dict3[8'd23] && dict4[8'd22] && dict5[8'd21] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd25) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd21;
                     end
                 end
-                else if(dict5[8'd26] && dict4[8'd25] && dict3[8'd24] && dict2[8'd23] && dict1[8'd22] ) begin
+                else if(dict1[8'd26] && dict2[8'd25] && dict3[8'd24] && dict4[8'd23] && dict5[8'd22] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd26) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd22;
                     end
                 end
-                else if(dict5[8'd27] && dict4[8'd26] && dict3[8'd25] && dict2[8'd24] && dict1[8'd23] ) begin
+                else if(dict1[8'd27] && dict2[8'd26] && dict3[8'd25] && dict4[8'd24] && dict5[8'd23] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd27) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd23;
                     end
                 end
-                else if(dict5[8'd28] && dict4[8'd27] && dict3[8'd26] && dict2[8'd25] && dict1[8'd24] ) begin
+                else if(dict1[8'd28] && dict2[8'd27] && dict3[8'd26] && dict4[8'd25] && dict5[8'd24] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd28) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd24;
                     end
                 end
-                else if(dict5[8'd29] && dict4[8'd28] && dict3[8'd27] && dict2[8'd26] && dict1[8'd25] ) begin
+                else if(dict1[8'd29] && dict2[8'd28] && dict3[8'd27] && dict4[8'd26] && dict5[8'd25] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd29) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd25;
                     end
                 end
-                else if(dict5[8'd30] && dict4[8'd29] && dict3[8'd28] && dict2[8'd27] && dict1[8'd26] ) begin
+                else if(dict1[8'd30] && dict2[8'd29] && dict3[8'd28] && dict4[8'd27] && dict5[8'd26] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd30) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd26;
                     end
                 end
-                else if(dict5[8'd31] && dict4[8'd30] && dict3[8'd29] && dict2[8'd28] && dict1[8'd27] ) begin
+                else if(dict1[8'd31] && dict2[8'd30] && dict3[8'd29] && dict4[8'd28] && dict5[8'd27] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd31) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd27;
                     end
                 end
-                else if(dict5[8'd32] && dict4[8'd31] && dict3[8'd30] && dict2[8'd29] && dict1[8'd28] ) begin
+                else if(dict1[8'd32] && dict2[8'd31] && dict3[8'd30] && dict4[8'd29] && dict5[8'd28] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd32) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd28;
                     end
                 end
-                else if(dict5[8'd33] && dict4[8'd32] && dict3[8'd31] && dict2[8'd30] && dict1[8'd29] ) begin
+                else if(dict1[8'd33] && dict2[8'd32] && dict3[8'd31] && dict4[8'd30] && dict5[8'd29] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd33) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd29;
                     end
                 end
-                else if(dict5[8'd34] && dict4[8'd33] && dict3[8'd32] && dict2[8'd31] && dict1[8'd30] ) begin
+                else if(dict1[8'd34] && dict2[8'd33] && dict3[8'd32] && dict4[8'd31] && dict5[8'd30] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd34) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd30;
                     end
                 end
-                else if(dict5[8'd35] && dict4[8'd34] && dict3[8'd33] && dict2[8'd32] && dict1[8'd31] ) begin
+                else if(dict1[8'd35] && dict2[8'd34] && dict3[8'd33] && dict4[8'd32] && dict5[8'd31] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd35) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd31;
                     end
                 end
-                else if(dict5[8'd36] && dict4[8'd35] && dict3[8'd34] && dict2[8'd33] && dict1[8'd32] ) begin
+                else if(dict1[8'd36] && dict2[8'd35] && dict3[8'd34] && dict4[8'd33] && dict5[8'd32] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd36) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd32;
                     end
                 end
-                else if(dict5[8'd37] && dict4[8'd36] && dict3[8'd35] && dict2[8'd34] && dict1[8'd33] ) begin
+                else if(dict1[8'd37] && dict2[8'd36] && dict3[8'd35] && dict4[8'd34] && dict5[8'd33] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd37) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd33;
                     end
                 end
-                else if(dict5[8'd38] && dict4[8'd37] && dict3[8'd36] && dict2[8'd35] && dict1[8'd34] ) begin
+                else if(dict1[8'd38] && dict2[8'd37] && dict3[8'd36] && dict4[8'd35] && dict5[8'd34] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd38) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd34;
                     end
                 end
-                else if(dict5[8'd39] && dict4[8'd38] && dict3[8'd37] && dict2[8'd36] && dict1[8'd35] ) begin
+                else if(dict1[8'd39] && dict2[8'd38] && dict3[8'd37] && dict4[8'd36] && dict5[8'd35] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd39) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd35;
                     end
                 end
-                else if(dict5[8'd40] && dict4[8'd39] && dict3[8'd38] && dict2[8'd37] && dict1[8'd36] ) begin
+                else if(dict1[8'd40] && dict2[8'd39] && dict3[8'd38] && dict4[8'd37] && dict5[8'd36] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd40) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd36;
                     end
                 end
-                else if(dict5[8'd41] && dict4[8'd40] && dict3[8'd39] && dict2[8'd38] && dict1[8'd37] ) begin
+                else if(dict1[8'd41] && dict2[8'd40] && dict3[8'd39] && dict4[8'd38] && dict5[8'd37] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd41) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd37;
                     end
                 end
-                else if(dict5[8'd42] && dict4[8'd41] && dict3[8'd40] && dict2[8'd39] && dict1[8'd38] ) begin
+                else if(dict1[8'd42] && dict2[8'd41] && dict3[8'd40] && dict4[8'd39] && dict5[8'd38] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd42) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd38;
                     end
                 end
-                else if(dict5[8'd43] && dict4[8'd42] && dict3[8'd41] && dict2[8'd40] && dict1[8'd39] ) begin
+                else if(dict1[8'd43] && dict2[8'd42] && dict3[8'd41] && dict4[8'd40] && dict5[8'd39] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd43) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd39;
                     end
                 end
-                else if(dict5[8'd44] && dict4[8'd43] && dict3[8'd42] && dict2[8'd41] && dict1[8'd40] ) begin
+                else if(dict1[8'd44] && dict2[8'd43] && dict3[8'd42] && dict4[8'd41] && dict5[8'd40] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd44) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd40;
                     end
                 end
-                else if(dict5[8'd45] && dict4[8'd44] && dict3[8'd43] && dict2[8'd42] && dict1[8'd41] ) begin
+                else if(dict1[8'd45] && dict2[8'd44] && dict3[8'd43] && dict4[8'd42] && dict5[8'd41] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd45) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd41;
                     end
                 end
-                else if(dict5[8'd46] && dict4[8'd45] && dict3[8'd44] && dict2[8'd43] && dict1[8'd42] ) begin
+                else if(dict1[8'd46] && dict2[8'd45] && dict3[8'd44] && dict4[8'd43] && dict5[8'd42] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd46) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd42;
                     end
                 end
-                else if(dict5[8'd47] && dict4[8'd46] && dict3[8'd45] && dict2[8'd44] && dict1[8'd43] ) begin
+                else if(dict1[8'd47] && dict2[8'd46] && dict3[8'd45] && dict4[8'd44] && dict5[8'd43] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd47) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd43;
                     end
                 end
-                else if(dict5[8'd48] && dict4[8'd47] && dict3[8'd46] && dict2[8'd45] && dict1[8'd44] ) begin
+                else if(dict1[8'd48] && dict2[8'd47] && dict3[8'd46] && dict4[8'd45] && dict5[8'd44] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd48) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd44;
                     end
                 end
-                else if(dict5[8'd49] && dict4[8'd48] && dict3[8'd47] && dict2[8'd46] && dict1[8'd45] ) begin
+                else if(dict1[8'd49] && dict2[8'd48] && dict3[8'd47] && dict4[8'd46] && dict5[8'd45] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd49) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd45;
                     end
                 end
-                else if(dict5[8'd50] && dict4[8'd49] && dict3[8'd48] && dict2[8'd47] && dict1[8'd46] ) begin
+                else if(dict1[8'd50] && dict2[8'd49] && dict3[8'd48] && dict4[8'd47] && dict5[8'd46] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd50) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd46;
                     end
                 end
-                else if(dict5[8'd51] && dict4[8'd50] && dict3[8'd49] && dict2[8'd48] && dict1[8'd47] ) begin
+                else if(dict1[8'd51] && dict2[8'd50] && dict3[8'd49] && dict4[8'd48] && dict5[8'd47] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd51) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd47;
                     end
                 end
-                else if(dict5[8'd52] && dict4[8'd51] && dict3[8'd50] && dict2[8'd49] && dict1[8'd48] ) begin
+                else if(dict1[8'd52] && dict2[8'd51] && dict3[8'd50] && dict4[8'd49] && dict5[8'd48] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd52) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd48;
                     end
                 end
-                else if(dict5[8'd53] && dict4[8'd52] && dict3[8'd51] && dict2[8'd50] && dict1[8'd49] ) begin
+                else if(dict1[8'd53] && dict2[8'd52] && dict3[8'd51] && dict4[8'd50] && dict5[8'd49] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd53) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd49;
                     end
                 end
-                else if(dict5[8'd54] && dict4[8'd53] && dict3[8'd52] && dict2[8'd51] && dict1[8'd50] ) begin
+                else if(dict1[8'd54] && dict2[8'd53] && dict3[8'd52] && dict4[8'd51] && dict5[8'd50] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd54) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd50;
                     end
                 end
-                else if(dict5[8'd55] && dict4[8'd54] && dict3[8'd53] && dict2[8'd52] && dict1[8'd51] ) begin
+                else if(dict1[8'd55] && dict2[8'd54] && dict3[8'd53] && dict4[8'd52] && dict5[8'd51] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd55) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd51;
                     end
                 end
-                else if(dict5[8'd56] && dict4[8'd55] && dict3[8'd54] && dict2[8'd53] && dict1[8'd52] ) begin
+                else if(dict1[8'd56] && dict2[8'd55] && dict3[8'd54] && dict4[8'd53] && dict5[8'd52] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd56) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd52;
                     end
                 end
-                else if(dict5[8'd57] && dict4[8'd56] && dict3[8'd55] && dict2[8'd54] && dict1[8'd53] ) begin
+                else if(dict1[8'd57] && dict2[8'd56] && dict3[8'd55] && dict4[8'd54] && dict5[8'd53] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd57) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd53;
                     end
                 end
-                else if(dict5[8'd58] && dict4[8'd57] && dict3[8'd56] && dict2[8'd55] && dict1[8'd54] ) begin
+                else if(dict1[8'd58] && dict2[8'd57] && dict3[8'd56] && dict4[8'd55] && dict5[8'd54] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd58) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd54;
                     end
                 end
-                else if(dict5[8'd59] && dict4[8'd58] && dict3[8'd57] && dict2[8'd56] && dict1[8'd55] ) begin
+                else if(dict1[8'd59] && dict2[8'd58] && dict3[8'd57] && dict4[8'd56] && dict5[8'd55] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd59) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd55;
                     end
                 end
-                else if(dict5[8'd60] && dict4[8'd59] && dict3[8'd58] && dict2[8'd57] && dict1[8'd56] ) begin
+                else if(dict1[8'd60] && dict2[8'd59] && dict3[8'd58] && dict4[8'd57] && dict5[8'd56] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd60) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd56;
                     end
                 end
-                else if(dict5[8'd61] && dict4[8'd60] && dict3[8'd59] && dict2[8'd58] && dict1[8'd57] ) begin
+                else if(dict1[8'd61] && dict2[8'd60] && dict3[8'd59] && dict4[8'd58] && dict5[8'd57] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd61) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd57;
                     end
                 end
-                else if(dict5[8'd62] && dict4[8'd61] && dict3[8'd60] && dict2[8'd59] && dict1[8'd58] ) begin
+                else if(dict1[8'd62] && dict2[8'd61] && dict3[8'd60] && dict4[8'd59] && dict5[8'd58] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd62) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd58;
                     end
                 end
-                else if(dict5[8'd63] && dict4[8'd62] && dict3[8'd61] && dict2[8'd60] && dict1[8'd59] ) begin
+                else if(dict1[8'd63] && dict2[8'd62] && dict3[8'd61] && dict4[8'd60] && dict5[8'd59] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd63) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd59;
                     end
                 end
-                else if(dict5[8'd64] && dict4[8'd63] && dict3[8'd62] && dict2[8'd61] && dict1[8'd60] ) begin
+                else if(dict1[8'd64] && dict2[8'd63] && dict3[8'd62] && dict4[8'd61] && dict5[8'd60] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd64) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd60;
                     end
                 end
-                else if(dict5[8'd65] && dict4[8'd64] && dict3[8'd63] && dict2[8'd62] && dict1[8'd61] ) begin
+                else if(dict1[8'd65] && dict2[8'd64] && dict3[8'd63] && dict4[8'd62] && dict5[8'd61] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd65) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd61;
                     end
                 end
-                else if(dict5[8'd66] && dict4[8'd65] && dict3[8'd64] && dict2[8'd63] && dict1[8'd62] ) begin
+                else if(dict1[8'd66] && dict2[8'd65] && dict3[8'd64] && dict4[8'd63] && dict5[8'd62] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd66) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd62;
                     end
                 end
-                else if(dict5[8'd67] && dict4[8'd66] && dict3[8'd65] && dict2[8'd64] && dict1[8'd63] ) begin
+                else if(dict1[8'd67] && dict2[8'd66] && dict3[8'd65] && dict4[8'd64] && dict5[8'd63] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd67) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd63;
                     end
                 end
-                else if(dict5[8'd68] && dict4[8'd67] && dict3[8'd66] && dict2[8'd65] && dict1[8'd64] ) begin
+                else if(dict1[8'd68] && dict2[8'd67] && dict3[8'd66] && dict4[8'd65] && dict5[8'd64] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd68) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd64;
                     end
                 end
-                else if(dict5[8'd69] && dict4[8'd68] && dict3[8'd67] && dict2[8'd66] && dict1[8'd65] ) begin
+                else if(dict1[8'd69] && dict2[8'd68] && dict3[8'd67] && dict4[8'd66] && dict5[8'd65] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd69) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd65;
                     end
                 end
-                else if(dict5[8'd70] && dict4[8'd69] && dict3[8'd68] && dict2[8'd67] && dict1[8'd66] ) begin
+                else if(dict1[8'd70] && dict2[8'd69] && dict3[8'd68] && dict4[8'd67] && dict5[8'd66] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd70) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd66;
                     end
                 end
-                else if(dict5[8'd71] && dict4[8'd70] && dict3[8'd69] && dict2[8'd68] && dict1[8'd67] ) begin
+                else if(dict1[8'd71] && dict2[8'd70] && dict3[8'd69] && dict4[8'd68] && dict5[8'd67] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd71) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd67;
                     end
                 end
-                else if(dict5[8'd72] && dict4[8'd71] && dict3[8'd70] && dict2[8'd69] && dict1[8'd68] ) begin
+                else if(dict1[8'd72] && dict2[8'd71] && dict3[8'd70] && dict4[8'd69] && dict5[8'd68] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd72) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd68;
                     end
                 end
-                else if(dict5[8'd73] && dict4[8'd72] && dict3[8'd71] && dict2[8'd70] && dict1[8'd69] ) begin
+                else if(dict1[8'd73] && dict2[8'd72] && dict3[8'd71] && dict4[8'd70] && dict5[8'd69] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd73) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd69;
                     end
                 end
-                else if(dict5[8'd74] && dict4[8'd73] && dict3[8'd72] && dict2[8'd71] && dict1[8'd70] ) begin
+                else if(dict1[8'd74] && dict2[8'd73] && dict3[8'd72] && dict4[8'd71] && dict5[8'd70] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd74) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd70;
                     end
                 end
-                else if(dict5[8'd75] && dict4[8'd74] && dict3[8'd73] && dict2[8'd72] && dict1[8'd71] ) begin
+                else if(dict1[8'd75] && dict2[8'd74] && dict3[8'd73] && dict4[8'd72] && dict5[8'd71] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd75) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd71;
                     end
                 end
-                else if(dict5[8'd76] && dict4[8'd75] && dict3[8'd74] && dict2[8'd73] && dict1[8'd72] ) begin
+                else if(dict1[8'd76] && dict2[8'd75] && dict3[8'd74] && dict4[8'd73] && dict5[8'd72] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd76) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd72;
                     end
                 end
-                else if(dict5[8'd77] && dict4[8'd76] && dict3[8'd75] && dict2[8'd74] && dict1[8'd73] ) begin
+                else if(dict1[8'd77] && dict2[8'd76] && dict3[8'd75] && dict4[8'd74] && dict5[8'd73] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd77) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd73;
                     end
                 end
-                else if(dict5[8'd78] && dict4[8'd77] && dict3[8'd76] && dict2[8'd75] && dict1[8'd74] ) begin
+                else if(dict1[8'd78] && dict2[8'd77] && dict3[8'd76] && dict4[8'd75] && dict5[8'd74] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd78) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd74;
                     end
                 end
-                else if(dict5[8'd79] && dict4[8'd78] && dict3[8'd77] && dict2[8'd76] && dict1[8'd75] ) begin
+                else if(dict1[8'd79] && dict2[8'd78] && dict3[8'd77] && dict4[8'd76] && dict5[8'd75] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd79) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd75;
                     end
                 end
-                else if(dict5[8'd80] && dict4[8'd79] && dict3[8'd78] && dict2[8'd77] && dict1[8'd76] ) begin
+                else if(dict1[8'd80] && dict2[8'd79] && dict3[8'd78] && dict4[8'd77] && dict5[8'd76] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd80) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd76;
                     end
                 end
-                else if(dict5[8'd81] && dict4[8'd80] && dict3[8'd79] && dict2[8'd78] && dict1[8'd77] ) begin
+                else if(dict1[8'd81] && dict2[8'd80] && dict3[8'd79] && dict4[8'd78] && dict5[8'd77] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd81) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd77;
                     end
                 end
-                else if(dict5[8'd82] && dict4[8'd81] && dict3[8'd80] && dict2[8'd79] && dict1[8'd78] ) begin
+                else if(dict1[8'd82] && dict2[8'd81] && dict3[8'd80] && dict4[8'd79] && dict5[8'd78] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd82) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd78;
                     end
                 end
-                else if(dict5[8'd83] && dict4[8'd82] && dict3[8'd81] && dict2[8'd80] && dict1[8'd79] ) begin
+                else if(dict1[8'd83] && dict2[8'd82] && dict3[8'd81] && dict4[8'd80] && dict5[8'd79] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd83) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd79;
                     end
                 end
-                else if(dict5[8'd84] && dict4[8'd83] && dict3[8'd82] && dict2[8'd81] && dict1[8'd80] ) begin
+                else if(dict1[8'd84] && dict2[8'd83] && dict3[8'd82] && dict4[8'd81] && dict5[8'd80] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd84) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd80;
                     end
                 end
-                else if(dict5[8'd85] && dict4[8'd84] && dict3[8'd83] && dict2[8'd82] && dict1[8'd81] ) begin
+                else if(dict1[8'd85] && dict2[8'd84] && dict3[8'd83] && dict4[8'd82] && dict5[8'd81] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd85) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd81;
                     end
                 end
-                else if(dict5[8'd86] && dict4[8'd85] && dict3[8'd84] && dict2[8'd83] && dict1[8'd82] ) begin
+                else if(dict1[8'd86] && dict2[8'd85] && dict3[8'd84] && dict4[8'd83] && dict5[8'd82] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd86) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd82;
                     end
                 end
-                else if(dict5[8'd87] && dict4[8'd86] && dict3[8'd85] && dict2[8'd84] && dict1[8'd83] ) begin
+                else if(dict1[8'd87] && dict2[8'd86] && dict3[8'd85] && dict4[8'd84] && dict5[8'd83] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd87) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd83;
                     end
                 end
-                else if(dict5[8'd88] && dict4[8'd87] && dict3[8'd86] && dict2[8'd85] && dict1[8'd84] ) begin
+                else if(dict1[8'd88] && dict2[8'd87] && dict3[8'd86] && dict4[8'd85] && dict5[8'd84] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd88) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd84;
                     end
                 end
-                else if(dict5[8'd89] && dict4[8'd88] && dict3[8'd87] && dict2[8'd86] && dict1[8'd85] ) begin
+                else if(dict1[8'd89] && dict2[8'd88] && dict3[8'd87] && dict4[8'd86] && dict5[8'd85] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd89) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd85;
                     end
                 end
-                else if(dict5[8'd90] && dict4[8'd89] && dict3[8'd88] && dict2[8'd87] && dict1[8'd86] ) begin
+                else if(dict1[8'd90] && dict2[8'd89] && dict3[8'd88] && dict4[8'd87] && dict5[8'd86] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd90) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd86;
                     end
                 end
-                else if(dict5[8'd91] && dict4[8'd90] && dict3[8'd89] && dict2[8'd88] && dict1[8'd87] ) begin
+                else if(dict1[8'd91] && dict2[8'd90] && dict3[8'd89] && dict4[8'd88] && dict5[8'd87] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd91) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd87;
                     end
                 end
-                else if(dict5[8'd92] && dict4[8'd91] && dict3[8'd90] && dict2[8'd89] && dict1[8'd88] ) begin
+                else if(dict1[8'd92] && dict2[8'd91] && dict3[8'd90] && dict4[8'd89] && dict5[8'd88] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd92) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd88;
                     end
                 end
-                else if(dict5[8'd93] && dict4[8'd92] && dict3[8'd91] && dict2[8'd90] && dict1[8'd89] ) begin
+                else if(dict1[8'd93] && dict2[8'd92] && dict3[8'd91] && dict4[8'd90] && dict5[8'd89] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd93) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd89;
                     end
                 end
-                else if(dict5[8'd94] && dict4[8'd93] && dict3[8'd92] && dict2[8'd91] && dict1[8'd90] ) begin
+                else if(dict1[8'd94] && dict2[8'd93] && dict3[8'd92] && dict4[8'd91] && dict5[8'd90] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd94) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd90;
                     end
                 end
-                else if(dict5[8'd95] && dict4[8'd94] && dict3[8'd93] && dict2[8'd92] && dict1[8'd91] ) begin
+                else if(dict1[8'd95] && dict2[8'd94] && dict3[8'd93] && dict4[8'd92] && dict5[8'd91] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd95) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd91;
                     end
                 end
-                else if(dict5[8'd96] && dict4[8'd95] && dict3[8'd94] && dict2[8'd93] && dict1[8'd92] ) begin
+                else if(dict1[8'd96] && dict2[8'd95] && dict3[8'd94] && dict4[8'd93] && dict5[8'd92] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd96) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd92;
                     end
                 end
-                else if(dict5[8'd97] && dict4[8'd96] && dict3[8'd95] && dict2[8'd94] && dict1[8'd93] ) begin
+                else if(dict1[8'd97] && dict2[8'd96] && dict3[8'd95] && dict4[8'd94] && dict5[8'd93] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd97) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd93;
                     end
                 end
-                else if(dict5[8'd98] && dict4[8'd97] && dict3[8'd96] && dict2[8'd95] && dict1[8'd94] ) begin
+                else if(dict1[8'd98] && dict2[8'd97] && dict3[8'd96] && dict4[8'd95] && dict5[8'd94] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd98) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd94;
                     end
                 end
-                else if(dict5[8'd99] && dict4[8'd98] && dict3[8'd97] && dict2[8'd96] && dict1[8'd95] ) begin
+                else if(dict1[8'd99] && dict2[8'd98] && dict3[8'd97] && dict4[8'd96] && dict5[8'd95] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd99) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd95;
                     end
                 end
-                else if(dict5[8'd100] && dict4[8'd99] && dict3[8'd98] && dict2[8'd97] && dict1[8'd96] ) begin
+                else if(dict1[8'd100] && dict2[8'd99] && dict3[8'd98] && dict4[8'd97] && dict5[8'd96] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd100) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd96;
                     end
                 end
-                else if(dict5[8'd101] && dict4[8'd100] && dict3[8'd99] && dict2[8'd98] && dict1[8'd97] ) begin
+                else if(dict1[8'd101] && dict2[8'd100] && dict3[8'd99] && dict4[8'd98] && dict5[8'd97] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd101) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd97;
                     end
                 end
-                else if(dict5[8'd102] && dict4[8'd101] && dict3[8'd100] && dict2[8'd99] && dict1[8'd98] ) begin
+                else if(dict1[8'd102] && dict2[8'd101] && dict3[8'd100] && dict4[8'd99] && dict5[8'd98] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd102) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd98;
                     end
                 end
-                else if(dict5[8'd103] && dict4[8'd102] && dict3[8'd101] && dict2[8'd100] && dict1[8'd99] ) begin
+                else if(dict1[8'd103] && dict2[8'd102] && dict3[8'd101] && dict4[8'd100] && dict5[8'd99] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd103) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd99;
                     end
                 end
-                else if(dict5[8'd104] && dict4[8'd103] && dict3[8'd102] && dict2[8'd101] && dict1[8'd100] ) begin
+                else if(dict1[8'd104] && dict2[8'd103] && dict3[8'd102] && dict4[8'd101] && dict5[8'd100] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd104) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd100;
                     end
                 end
-                else if(dict5[8'd105] && dict4[8'd104] && dict3[8'd103] && dict2[8'd102] && dict1[8'd101] ) begin
+                else if(dict1[8'd105] && dict2[8'd104] && dict3[8'd103] && dict4[8'd102] && dict5[8'd101] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd105) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd101;
                     end
                 end
-                else if(dict5[8'd106] && dict4[8'd105] && dict3[8'd104] && dict2[8'd103] && dict1[8'd102] ) begin
+                else if(dict1[8'd106] && dict2[8'd105] && dict3[8'd104] && dict4[8'd103] && dict5[8'd102] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd106) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd102;
                     end
                 end
-                else if(dict5[8'd107] && dict4[8'd106] && dict3[8'd105] && dict2[8'd104] && dict1[8'd103] ) begin
+                else if(dict1[8'd107] && dict2[8'd106] && dict3[8'd105] && dict4[8'd104] && dict5[8'd103] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd107) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd103;
                     end
                 end
-                else if(dict5[8'd108] && dict4[8'd107] && dict3[8'd106] && dict2[8'd105] && dict1[8'd104] ) begin
+                else if(dict1[8'd108] && dict2[8'd107] && dict3[8'd106] && dict4[8'd105] && dict5[8'd104] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd108) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd104;
                     end
                 end
-                else if(dict5[8'd109] && dict4[8'd108] && dict3[8'd107] && dict2[8'd106] && dict1[8'd105] ) begin
+                else if(dict1[8'd109] && dict2[8'd108] && dict3[8'd107] && dict4[8'd106] && dict5[8'd105] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd109) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd105;
                     end
                 end
-                else if(dict5[8'd110] && dict4[8'd109] && dict3[8'd108] && dict2[8'd107] && dict1[8'd106] ) begin
+                else if(dict1[8'd110] && dict2[8'd109] && dict3[8'd108] && dict4[8'd107] && dict5[8'd106] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd110) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd106;
                     end
                 end
-                else if(dict5[8'd111] && dict4[8'd110] && dict3[8'd109] && dict2[8'd108] && dict1[8'd107] ) begin
+                else if(dict1[8'd111] && dict2[8'd110] && dict3[8'd109] && dict4[8'd108] && dict5[8'd107] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd111) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd107;
                     end
                 end
-                else if(dict5[8'd112] && dict4[8'd111] && dict3[8'd110] && dict2[8'd109] && dict1[8'd108] ) begin
+                else if(dict1[8'd112] && dict2[8'd111] && dict3[8'd110] && dict4[8'd109] && dict5[8'd108] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd112) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd108;
                     end
                 end
-                else if(dict5[8'd113] && dict4[8'd112] && dict3[8'd111] && dict2[8'd110] && dict1[8'd109] ) begin
+                else if(dict1[8'd113] && dict2[8'd112] && dict3[8'd111] && dict4[8'd110] && dict5[8'd109] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd113) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd109;
                     end
                 end
-                else if(dict5[8'd114] && dict4[8'd113] && dict3[8'd112] && dict2[8'd111] && dict1[8'd110] ) begin
+                else if(dict1[8'd114] && dict2[8'd113] && dict3[8'd112] && dict4[8'd111] && dict5[8'd110] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd114) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd110;
                     end
                 end
-                else if(dict5[8'd115] && dict4[8'd114] && dict3[8'd113] && dict2[8'd112] && dict1[8'd111] ) begin
+                else if(dict1[8'd115] && dict2[8'd114] && dict3[8'd113] && dict4[8'd112] && dict5[8'd111] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd115) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd111;
                     end
                 end
-                else if(dict5[8'd116] && dict4[8'd115] && dict3[8'd114] && dict2[8'd113] && dict1[8'd112] ) begin
+                else if(dict1[8'd116] && dict2[8'd115] && dict3[8'd114] && dict4[8'd113] && dict5[8'd112] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd116) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd112;
                     end
                 end
-                else if(dict5[8'd117] && dict4[8'd116] && dict3[8'd115] && dict2[8'd114] && dict1[8'd113] ) begin
+                else if(dict1[8'd117] && dict2[8'd116] && dict3[8'd115] && dict4[8'd114] && dict5[8'd113] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd117) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd113;
                     end
                 end
-                else if(dict5[8'd118] && dict4[8'd117] && dict3[8'd116] && dict2[8'd115] && dict1[8'd114] ) begin
+                else if(dict1[8'd118] && dict2[8'd117] && dict3[8'd116] && dict4[8'd115] && dict5[8'd114] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd118) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd114;
                     end
                 end
-                else if(dict5[8'd119] && dict4[8'd118] && dict3[8'd117] && dict2[8'd116] && dict1[8'd115] ) begin
+                else if(dict1[8'd119] && dict2[8'd118] && dict3[8'd117] && dict4[8'd116] && dict5[8'd115] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd119) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd115;
                     end
                 end
-                else if(dict5[8'd120] && dict4[8'd119] && dict3[8'd118] && dict2[8'd117] && dict1[8'd116] ) begin
+                else if(dict1[8'd120] && dict2[8'd119] && dict3[8'd118] && dict4[8'd117] && dict5[8'd116] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd120) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd116;
                     end
                 end
-                else if(dict5[8'd121] && dict4[8'd120] && dict3[8'd119] && dict2[8'd118] && dict1[8'd117] ) begin
+                else if(dict1[8'd121] && dict2[8'd120] && dict3[8'd119] && dict4[8'd118] && dict5[8'd117] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd121) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd117;
                     end
                 end
-                else if(dict5[8'd122] && dict4[8'd121] && dict3[8'd120] && dict2[8'd119] && dict1[8'd118] ) begin
+                else if(dict1[8'd122] && dict2[8'd121] && dict3[8'd120] && dict4[8'd119] && dict5[8'd118] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd122) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd118;
                     end
                 end
-                else if(dict5[8'd123] && dict4[8'd122] && dict3[8'd121] && dict2[8'd120] && dict1[8'd119] ) begin
+                else if(dict1[8'd123] && dict2[8'd122] && dict3[8'd121] && dict4[8'd120] && dict5[8'd119] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd123) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd119;
                     end
                 end
-                else if(dict5[8'd124] && dict4[8'd123] && dict3[8'd122] && dict2[8'd121] && dict1[8'd120] ) begin
+                else if(dict1[8'd124] && dict2[8'd123] && dict3[8'd122] && dict4[8'd121] && dict5[8'd120] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd124) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd120;
                     end
                 end
-                else if(dict5[8'd125] && dict4[8'd124] && dict3[8'd123] && dict2[8'd122] && dict1[8'd121] ) begin
+                else if(dict1[8'd125] && dict2[8'd124] && dict3[8'd123] && dict4[8'd122] && dict5[8'd121] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd125) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd121;
                     end
                 end
-                else if(dict5[8'd126] && dict4[8'd125] && dict3[8'd124] && dict2[8'd123] && dict1[8'd122] ) begin
+                else if(dict1[8'd126] && dict2[8'd125] && dict3[8'd124] && dict4[8'd123] && dict5[8'd122] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd126) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd122;
                     end
                 end
-                else if(dict5[8'd127] && dict4[8'd126] && dict3[8'd125] && dict2[8'd124] && dict1[8'd123] ) begin
+                else if(dict1[8'd127] && dict2[8'd126] && dict3[8'd125] && dict4[8'd124] && dict5[8'd123] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd127) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd123;
                     end
                 end
-                else if(dict5[8'd128] && dict4[8'd127] && dict3[8'd126] && dict2[8'd125] && dict1[8'd124] ) begin
+                else if(dict1[8'd128] && dict2[8'd127] && dict3[8'd126] && dict4[8'd125] && dict5[8'd124] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd128) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd124;
                     end
                 end
-                else if(dict5[8'd129] && dict4[8'd128] && dict3[8'd127] && dict2[8'd126] && dict1[8'd125] ) begin
+                else if(dict1[8'd129] && dict2[8'd128] && dict3[8'd127] && dict4[8'd126] && dict5[8'd125] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd129) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd125;
                     end
                 end
-                else if(dict5[8'd130] && dict4[8'd129] && dict3[8'd128] && dict2[8'd127] && dict1[8'd126] ) begin
+                else if(dict1[8'd130] && dict2[8'd129] && dict3[8'd128] && dict4[8'd127] && dict5[8'd126] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd130) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd126;
                     end
                 end
-                else if(dict5[8'd131] && dict4[8'd130] && dict3[8'd129] && dict2[8'd128] && dict1[8'd127] ) begin
+                else if(dict1[8'd131] && dict2[8'd130] && dict3[8'd129] && dict4[8'd128] && dict5[8'd127] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd131) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd127;
                     end
                 end
-                else if(dict5[8'd132] && dict4[8'd131] && dict3[8'd130] && dict2[8'd129] && dict1[8'd128] ) begin
+                else if(dict1[8'd132] && dict2[8'd131] && dict3[8'd130] && dict4[8'd129] && dict5[8'd128] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd132) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd128;
                     end
                 end
-                else if(dict5[8'd133] && dict4[8'd132] && dict3[8'd131] && dict2[8'd130] && dict1[8'd129] ) begin
+                else if(dict1[8'd133] && dict2[8'd132] && dict3[8'd131] && dict4[8'd130] && dict5[8'd129] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd133) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd129;
                     end
                 end
-                else if(dict5[8'd134] && dict4[8'd133] && dict3[8'd132] && dict2[8'd131] && dict1[8'd130] ) begin
+                else if(dict1[8'd134] && dict2[8'd133] && dict3[8'd132] && dict4[8'd131] && dict5[8'd130] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd134) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd130;
                     end
                 end
-                else if(dict5[8'd135] && dict4[8'd134] && dict3[8'd133] && dict2[8'd132] && dict1[8'd131] ) begin
+                else if(dict1[8'd135] && dict2[8'd134] && dict3[8'd133] && dict4[8'd132] && dict5[8'd131] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd135) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd131;
                     end
                 end
-                else if(dict5[8'd136] && dict4[8'd135] && dict3[8'd134] && dict2[8'd133] && dict1[8'd132] ) begin
+                else if(dict1[8'd136] && dict2[8'd135] && dict3[8'd134] && dict4[8'd133] && dict5[8'd132] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd136) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd132;
                     end
                 end
-                else if(dict5[8'd137] && dict4[8'd136] && dict3[8'd135] && dict2[8'd134] && dict1[8'd133] ) begin
+                else if(dict1[8'd137] && dict2[8'd136] && dict3[8'd135] && dict4[8'd134] && dict5[8'd133] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd137) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd133;
                     end
                 end
-                else if(dict5[8'd138] && dict4[8'd137] && dict3[8'd136] && dict2[8'd135] && dict1[8'd134] ) begin
+                else if(dict1[8'd138] && dict2[8'd137] && dict3[8'd136] && dict4[8'd135] && dict5[8'd134] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd138) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd134;
                     end
                 end
-                else if(dict5[8'd139] && dict4[8'd138] && dict3[8'd137] && dict2[8'd136] && dict1[8'd135] ) begin
+                else if(dict1[8'd139] && dict2[8'd138] && dict3[8'd137] && dict4[8'd136] && dict5[8'd135] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd139) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd135;
                     end
                 end
-                else if(dict5[8'd140] && dict4[8'd139] && dict3[8'd138] && dict2[8'd137] && dict1[8'd136] ) begin
+                else if(dict1[8'd140] && dict2[8'd139] && dict3[8'd138] && dict4[8'd137] && dict5[8'd136] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd140) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd136;
                     end
                 end
-                else if(dict5[8'd141] && dict4[8'd140] && dict3[8'd139] && dict2[8'd138] && dict1[8'd137] ) begin
+                else if(dict1[8'd141] && dict2[8'd140] && dict3[8'd139] && dict4[8'd138] && dict5[8'd137] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd141) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd137;
                     end
                 end
-                else if(dict5[8'd142] && dict4[8'd141] && dict3[8'd140] && dict2[8'd139] && dict1[8'd138] ) begin
+                else if(dict1[8'd142] && dict2[8'd141] && dict3[8'd140] && dict4[8'd139] && dict5[8'd138] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd142) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd138;
                     end
                 end
-                else if(dict5[8'd143] && dict4[8'd142] && dict3[8'd141] && dict2[8'd140] && dict1[8'd139] ) begin
+                else if(dict1[8'd143] && dict2[8'd142] && dict3[8'd141] && dict4[8'd140] && dict5[8'd139] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd143) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd139;
                     end
                 end
-                else if(dict5[8'd144] && dict4[8'd143] && dict3[8'd142] && dict2[8'd141] && dict1[8'd140] ) begin
+                else if(dict1[8'd144] && dict2[8'd143] && dict3[8'd142] && dict4[8'd141] && dict5[8'd140] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd144) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd140;
                     end
                 end
-                else if(dict5[8'd145] && dict4[8'd144] && dict3[8'd143] && dict2[8'd142] && dict1[8'd141] ) begin
+                else if(dict1[8'd145] && dict2[8'd144] && dict3[8'd143] && dict4[8'd142] && dict5[8'd141] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd145) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd141;
                     end
                 end
-                else if(dict5[8'd146] && dict4[8'd145] && dict3[8'd144] && dict2[8'd143] && dict1[8'd142] ) begin
+                else if(dict1[8'd146] && dict2[8'd145] && dict3[8'd144] && dict4[8'd143] && dict5[8'd142] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd146) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd142;
                     end
                 end
-                else if(dict5[8'd147] && dict4[8'd146] && dict3[8'd145] && dict2[8'd144] && dict1[8'd143] ) begin
+                else if(dict1[8'd147] && dict2[8'd146] && dict3[8'd145] && dict4[8'd144] && dict5[8'd143] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd147) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd143;
                     end
                 end
-                else if(dict5[8'd148] && dict4[8'd147] && dict3[8'd146] && dict2[8'd145] && dict1[8'd144] ) begin
+                else if(dict1[8'd148] && dict2[8'd147] && dict3[8'd146] && dict4[8'd145] && dict5[8'd144] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd148) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd144;
                     end
                 end
-                else if(dict5[8'd149] && dict4[8'd148] && dict3[8'd147] && dict2[8'd146] && dict1[8'd145] ) begin
+                else if(dict1[8'd149] && dict2[8'd148] && dict3[8'd147] && dict4[8'd146] && dict5[8'd145] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd149) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd145;
                     end
                 end
-                else if(dict5[8'd150] && dict4[8'd149] && dict3[8'd148] && dict2[8'd147] && dict1[8'd146] ) begin
+                else if(dict1[8'd150] && dict2[8'd149] && dict3[8'd148] && dict4[8'd147] && dict5[8'd146] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd150) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd146;
                     end
                 end
-                else if(dict5[8'd151] && dict4[8'd150] && dict3[8'd149] && dict2[8'd148] && dict1[8'd147] ) begin
+                else if(dict1[8'd151] && dict2[8'd150] && dict3[8'd149] && dict4[8'd148] && dict5[8'd147] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd151) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd147;
                     end
                 end
-                else if(dict5[8'd152] && dict4[8'd151] && dict3[8'd150] && dict2[8'd149] && dict1[8'd148] ) begin
+                else if(dict1[8'd152] && dict2[8'd151] && dict3[8'd150] && dict4[8'd149] && dict5[8'd148] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd152) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd148;
                     end
                 end
-                else if(dict5[8'd153] && dict4[8'd152] && dict3[8'd151] && dict2[8'd150] && dict1[8'd149] ) begin
+                else if(dict1[8'd153] && dict2[8'd152] && dict3[8'd151] && dict4[8'd150] && dict5[8'd149] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd153) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd149;
                     end
                 end
-                else if(dict5[8'd154] && dict4[8'd153] && dict3[8'd152] && dict2[8'd151] && dict1[8'd150] ) begin
+                else if(dict1[8'd154] && dict2[8'd153] && dict3[8'd152] && dict4[8'd151] && dict5[8'd150] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd154) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd150;
                     end
                 end
-                else if(dict5[8'd155] && dict4[8'd154] && dict3[8'd153] && dict2[8'd152] && dict1[8'd151] ) begin
+                else if(dict1[8'd155] && dict2[8'd154] && dict3[8'd153] && dict4[8'd152] && dict5[8'd151] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd155) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd151;
                     end
                 end
-                else if(dict5[8'd156] && dict4[8'd155] && dict3[8'd154] && dict2[8'd153] && dict1[8'd152] ) begin
+                else if(dict1[8'd156] && dict2[8'd155] && dict3[8'd154] && dict4[8'd153] && dict5[8'd152] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd156) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd152;
                     end
                 end
-                else if(dict5[8'd157] && dict4[8'd156] && dict3[8'd155] && dict2[8'd154] && dict1[8'd153] ) begin
+                else if(dict1[8'd157] && dict2[8'd156] && dict3[8'd155] && dict4[8'd154] && dict5[8'd153] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd157) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd153;
                     end
                 end
-                else if(dict5[8'd158] && dict4[8'd157] && dict3[8'd156] && dict2[8'd155] && dict1[8'd154] ) begin
+                else if(dict1[8'd158] && dict2[8'd157] && dict3[8'd156] && dict4[8'd155] && dict5[8'd154] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd158) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd154;
                     end
                 end
-                else if(dict5[8'd159] && dict4[8'd158] && dict3[8'd157] && dict2[8'd156] && dict1[8'd155] ) begin
+                else if(dict1[8'd159] && dict2[8'd158] && dict3[8'd157] && dict4[8'd156] && dict5[8'd155] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd159) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd155;
                     end
                 end
-                else if(dict5[8'd160] && dict4[8'd159] && dict3[8'd158] && dict2[8'd157] && dict1[8'd156] ) begin
+                else if(dict1[8'd160] && dict2[8'd159] && dict3[8'd158] && dict4[8'd157] && dict5[8'd156] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd160) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd156;
                     end
                 end
-                else if(dict5[8'd161] && dict4[8'd160] && dict3[8'd159] && dict2[8'd158] && dict1[8'd157] ) begin
+                else if(dict1[8'd161] && dict2[8'd160] && dict3[8'd159] && dict4[8'd158] && dict5[8'd157] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd161) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd157;
                     end
                 end
-                else if(dict5[8'd162] && dict4[8'd161] && dict3[8'd160] && dict2[8'd159] && dict1[8'd158] ) begin
+                else if(dict1[8'd162] && dict2[8'd161] && dict3[8'd160] && dict4[8'd159] && dict5[8'd158] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd162) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd158;
                     end
                 end
-                else if(dict5[8'd163] && dict4[8'd162] && dict3[8'd161] && dict2[8'd160] && dict1[8'd159] ) begin
+                else if(dict1[8'd163] && dict2[8'd162] && dict3[8'd161] && dict4[8'd160] && dict5[8'd159] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd163) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd159;
                     end
                 end
-                else if(dict5[8'd164] && dict4[8'd163] && dict3[8'd162] && dict2[8'd161] && dict1[8'd160] ) begin
+                else if(dict1[8'd164] && dict2[8'd163] && dict3[8'd162] && dict4[8'd161] && dict5[8'd160] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd164) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd160;
                     end
                 end
-                else if(dict5[8'd165] && dict4[8'd164] && dict3[8'd163] && dict2[8'd162] && dict1[8'd161] ) begin
+                else if(dict1[8'd165] && dict2[8'd164] && dict3[8'd163] && dict4[8'd162] && dict5[8'd161] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd165) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd161;
                     end
                 end
-                else if(dict5[8'd166] && dict4[8'd165] && dict3[8'd164] && dict2[8'd163] && dict1[8'd162] ) begin
+                else if(dict1[8'd166] && dict2[8'd165] && dict3[8'd164] && dict4[8'd163] && dict5[8'd162] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd166) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd162;
                     end
                 end
-                else if(dict5[8'd167] && dict4[8'd166] && dict3[8'd165] && dict2[8'd164] && dict1[8'd163] ) begin
+                else if(dict1[8'd167] && dict2[8'd166] && dict3[8'd165] && dict4[8'd164] && dict5[8'd163] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd167) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd163;
                     end
                 end
-                else if(dict5[8'd168] && dict4[8'd167] && dict3[8'd166] && dict2[8'd165] && dict1[8'd164] ) begin
+                else if(dict1[8'd168] && dict2[8'd167] && dict3[8'd166] && dict4[8'd165] && dict5[8'd164] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd168) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd164;
                     end
                 end
-                else if(dict5[8'd169] && dict4[8'd168] && dict3[8'd167] && dict2[8'd166] && dict1[8'd165] ) begin
+                else if(dict1[8'd169] && dict2[8'd168] && dict3[8'd167] && dict4[8'd166] && dict5[8'd165] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd169) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd165;
                     end
                 end
-                else if(dict5[8'd170] && dict4[8'd169] && dict3[8'd168] && dict2[8'd167] && dict1[8'd166] ) begin
+                else if(dict1[8'd170] && dict2[8'd169] && dict3[8'd168] && dict4[8'd167] && dict5[8'd166] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd170) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd166;
                     end
                 end
-                else if(dict5[8'd171] && dict4[8'd170] && dict3[8'd169] && dict2[8'd168] && dict1[8'd167] ) begin
+                else if(dict1[8'd171] && dict2[8'd170] && dict3[8'd169] && dict4[8'd168] && dict5[8'd167] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd171) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd167;
                     end
                 end
-                else if(dict5[8'd172] && dict4[8'd171] && dict3[8'd170] && dict2[8'd169] && dict1[8'd168] ) begin
+                else if(dict1[8'd172] && dict2[8'd171] && dict3[8'd170] && dict4[8'd169] && dict5[8'd168] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd172) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd168;
                     end
                 end
-                else if(dict5[8'd173] && dict4[8'd172] && dict3[8'd171] && dict2[8'd170] && dict1[8'd169] ) begin
+                else if(dict1[8'd173] && dict2[8'd172] && dict3[8'd171] && dict4[8'd170] && dict5[8'd169] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd173) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd169;
                     end
                 end
-                else if(dict5[8'd174] && dict4[8'd173] && dict3[8'd172] && dict2[8'd171] && dict1[8'd170] ) begin
+                else if(dict1[8'd174] && dict2[8'd173] && dict3[8'd172] && dict4[8'd171] && dict5[8'd170] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd174) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd170;
                     end
                 end
-                else if(dict5[8'd175] && dict4[8'd174] && dict3[8'd173] && dict2[8'd172] && dict1[8'd171] ) begin
+                else if(dict1[8'd175] && dict2[8'd174] && dict3[8'd173] && dict4[8'd172] && dict5[8'd171] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd175) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd171;
                     end
                 end
-                else if(dict5[8'd176] && dict4[8'd175] && dict3[8'd174] && dict2[8'd173] && dict1[8'd172] ) begin
+                else if(dict1[8'd176] && dict2[8'd175] && dict3[8'd174] && dict4[8'd173] && dict5[8'd172] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd176) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd172;
                     end
                 end
-                else if(dict5[8'd177] && dict4[8'd176] && dict3[8'd175] && dict2[8'd174] && dict1[8'd173] ) begin
+                else if(dict1[8'd177] && dict2[8'd176] && dict3[8'd175] && dict4[8'd174] && dict5[8'd173] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd177) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd173;
                     end
                 end
-                else if(dict5[8'd178] && dict4[8'd177] && dict3[8'd176] && dict2[8'd175] && dict1[8'd174] ) begin
+                else if(dict1[8'd178] && dict2[8'd177] && dict3[8'd176] && dict4[8'd175] && dict5[8'd174] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd178) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd174;
                     end
                 end
-                else if(dict5[8'd179] && dict4[8'd178] && dict3[8'd177] && dict2[8'd176] && dict1[8'd175] ) begin
+                else if(dict1[8'd179] && dict2[8'd178] && dict3[8'd177] && dict4[8'd176] && dict5[8'd175] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd179) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd175;
                     end
                 end
-                else if(dict5[8'd180] && dict4[8'd179] && dict3[8'd178] && dict2[8'd177] && dict1[8'd176] ) begin
+                else if(dict1[8'd180] && dict2[8'd179] && dict3[8'd178] && dict4[8'd177] && dict5[8'd176] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd180) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd176;
                     end
                 end
-                else if(dict5[8'd181] && dict4[8'd180] && dict3[8'd179] && dict2[8'd178] && dict1[8'd177] ) begin
+                else if(dict1[8'd181] && dict2[8'd180] && dict3[8'd179] && dict4[8'd178] && dict5[8'd177] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd181) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd177;
                     end
                 end
-                else if(dict5[8'd182] && dict4[8'd181] && dict3[8'd180] && dict2[8'd179] && dict1[8'd178] ) begin
+                else if(dict1[8'd182] && dict2[8'd181] && dict3[8'd180] && dict4[8'd179] && dict5[8'd178] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd182) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd178;
                     end
                 end
-                else if(dict5[8'd183] && dict4[8'd182] && dict3[8'd181] && dict2[8'd180] && dict1[8'd179] ) begin
+                else if(dict1[8'd183] && dict2[8'd182] && dict3[8'd181] && dict4[8'd180] && dict5[8'd179] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd183) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd179;
                     end
                 end
-                else if(dict5[8'd184] && dict4[8'd183] && dict3[8'd182] && dict2[8'd181] && dict1[8'd180] ) begin
+                else if(dict1[8'd184] && dict2[8'd183] && dict3[8'd182] && dict4[8'd181] && dict5[8'd180] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd184) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd180;
                     end
                 end
-                else if(dict5[8'd185] && dict4[8'd184] && dict3[8'd183] && dict2[8'd182] && dict1[8'd181] ) begin
+                else if(dict1[8'd185] && dict2[8'd184] && dict3[8'd183] && dict4[8'd182] && dict5[8'd181] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd185) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd181;
                     end
                 end
-                else if(dict5[8'd186] && dict4[8'd185] && dict3[8'd184] && dict2[8'd183] && dict1[8'd182] ) begin
+                else if(dict1[8'd186] && dict2[8'd185] && dict3[8'd184] && dict4[8'd183] && dict5[8'd182] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd186) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd182;
                     end
                 end
-                else if(dict5[8'd187] && dict4[8'd186] && dict3[8'd185] && dict2[8'd184] && dict1[8'd183] ) begin
+                else if(dict1[8'd187] && dict2[8'd186] && dict3[8'd185] && dict4[8'd184] && dict5[8'd183] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd187) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd183;
                     end
                 end
-                else if(dict5[8'd188] && dict4[8'd187] && dict3[8'd186] && dict2[8'd185] && dict1[8'd184] ) begin
+                else if(dict1[8'd188] && dict2[8'd187] && dict3[8'd186] && dict4[8'd185] && dict5[8'd184] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd188) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd184;
                     end
                 end
-                else if(dict5[8'd189] && dict4[8'd188] && dict3[8'd187] && dict2[8'd186] && dict1[8'd185] ) begin
+                else if(dict1[8'd189] && dict2[8'd188] && dict3[8'd187] && dict4[8'd186] && dict5[8'd185] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd189) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd185;
                     end
                 end
-                else if(dict5[8'd190] && dict4[8'd189] && dict3[8'd188] && dict2[8'd187] && dict1[8'd186] ) begin
+                else if(dict1[8'd190] && dict2[8'd189] && dict3[8'd188] && dict4[8'd187] && dict5[8'd186] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd190) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd186;
                     end
                 end
-                else if(dict5[8'd191] && dict4[8'd190] && dict3[8'd189] && dict2[8'd188] && dict1[8'd187] ) begin
+                else if(dict1[8'd191] && dict2[8'd190] && dict3[8'd189] && dict4[8'd188] && dict5[8'd187] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd191) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd187;
                     end
                 end
-                else if(dict5[8'd192] && dict4[8'd191] && dict3[8'd190] && dict2[8'd189] && dict1[8'd188] ) begin
+                else if(dict1[8'd192] && dict2[8'd191] && dict3[8'd190] && dict4[8'd189] && dict5[8'd188] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd192) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd188;
                     end
                 end
-                else if(dict5[8'd193] && dict4[8'd192] && dict3[8'd191] && dict2[8'd190] && dict1[8'd189] ) begin
+                else if(dict1[8'd193] && dict2[8'd192] && dict3[8'd191] && dict4[8'd190] && dict5[8'd189] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd193) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd189;
                     end
                 end
-                else if(dict5[8'd194] && dict4[8'd193] && dict3[8'd192] && dict2[8'd191] && dict1[8'd190] ) begin
+                else if(dict1[8'd194] && dict2[8'd193] && dict3[8'd192] && dict4[8'd191] && dict5[8'd190] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd194) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd190;
                     end
                 end
-                else if(dict5[8'd195] && dict4[8'd194] && dict3[8'd193] && dict2[8'd192] && dict1[8'd191] ) begin
+                else if(dict1[8'd195] && dict2[8'd194] && dict3[8'd193] && dict4[8'd192] && dict5[8'd191] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd195) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd191;
                     end
                 end
-                else if(dict5[8'd196] && dict4[8'd195] && dict3[8'd194] && dict2[8'd193] && dict1[8'd192] ) begin
+                else if(dict1[8'd196] && dict2[8'd195] && dict3[8'd194] && dict4[8'd193] && dict5[8'd192] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd196) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd192;
                     end
                 end
-                else if(dict5[8'd197] && dict4[8'd196] && dict3[8'd195] && dict2[8'd194] && dict1[8'd193] ) begin
+                else if(dict1[8'd197] && dict2[8'd196] && dict3[8'd195] && dict4[8'd194] && dict5[8'd193] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd197) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd193;
                     end
                 end
-                else if(dict5[8'd198] && dict4[8'd197] && dict3[8'd196] && dict2[8'd195] && dict1[8'd194] ) begin
+                else if(dict1[8'd198] && dict2[8'd197] && dict3[8'd196] && dict4[8'd195] && dict5[8'd194] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd198) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd194;
                     end
                 end
-                else if(dict5[8'd199] && dict4[8'd198] && dict3[8'd197] && dict2[8'd196] && dict1[8'd195] ) begin
+                else if(dict1[8'd199] && dict2[8'd198] && dict3[8'd197] && dict4[8'd196] && dict5[8'd195] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd199) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd195;
                     end
                 end
-                else if(dict5[8'd200] && dict4[8'd199] && dict3[8'd198] && dict2[8'd197] && dict1[8'd196] ) begin
+                else if(dict1[8'd200] && dict2[8'd199] && dict3[8'd198] && dict4[8'd197] && dict5[8'd196] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd200) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd196;
                     end
                 end
-                else if(dict5[8'd201] && dict4[8'd200] && dict3[8'd199] && dict2[8'd198] && dict1[8'd197] ) begin
+                else if(dict1[8'd201] && dict2[8'd200] && dict3[8'd199] && dict4[8'd198] && dict5[8'd197] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd201) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd197;
                     end
                 end
-                else if(dict5[8'd202] && dict4[8'd201] && dict3[8'd200] && dict2[8'd199] && dict1[8'd198] ) begin
+                else if(dict1[8'd202] && dict2[8'd201] && dict3[8'd200] && dict4[8'd199] && dict5[8'd198] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd202) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd198;
                     end
                 end
-                else if(dict5[8'd203] && dict4[8'd202] && dict3[8'd201] && dict2[8'd200] && dict1[8'd199] ) begin
+                else if(dict1[8'd203] && dict2[8'd202] && dict3[8'd201] && dict4[8'd200] && dict5[8'd199] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd203) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd199;
                     end
                 end
-                else if(dict5[8'd204] && dict4[8'd203] && dict3[8'd202] && dict2[8'd201] && dict1[8'd200] ) begin
+                else if(dict1[8'd204] && dict2[8'd203] && dict3[8'd202] && dict4[8'd201] && dict5[8'd200] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd204) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd200;
                     end
                 end
-                else if(dict5[8'd205] && dict4[8'd204] && dict3[8'd203] && dict2[8'd202] && dict1[8'd201] ) begin
+                else if(dict1[8'd205] && dict2[8'd204] && dict3[8'd203] && dict4[8'd202] && dict5[8'd201] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd205) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd201;
                     end
                 end
-                else if(dict5[8'd206] && dict4[8'd205] && dict3[8'd204] && dict2[8'd203] && dict1[8'd202] ) begin
+                else if(dict1[8'd206] && dict2[8'd205] && dict3[8'd204] && dict4[8'd203] && dict5[8'd202] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd206) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd202;
                     end
                 end
-                else if(dict5[8'd207] && dict4[8'd206] && dict3[8'd205] && dict2[8'd204] && dict1[8'd203] ) begin
+                else if(dict1[8'd207] && dict2[8'd206] && dict3[8'd205] && dict4[8'd204] && dict5[8'd203] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd207) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd203;
                     end
                 end
-                else if(dict5[8'd208] && dict4[8'd207] && dict3[8'd206] && dict2[8'd205] && dict1[8'd204] ) begin
+                else if(dict1[8'd208] && dict2[8'd207] && dict3[8'd206] && dict4[8'd205] && dict5[8'd204] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd208) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd204;
                     end
                 end
-                else if(dict5[8'd209] && dict4[8'd208] && dict3[8'd207] && dict2[8'd206] && dict1[8'd205] ) begin
+                else if(dict1[8'd209] && dict2[8'd208] && dict3[8'd207] && dict4[8'd206] && dict5[8'd205] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd209) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd205;
                     end
                 end
-                else if(dict5[8'd210] && dict4[8'd209] && dict3[8'd208] && dict2[8'd207] && dict1[8'd206] ) begin
+                else if(dict1[8'd210] && dict2[8'd209] && dict3[8'd208] && dict4[8'd207] && dict5[8'd206] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd210) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd206;
                     end
                 end
-                else if(dict5[8'd211] && dict4[8'd210] && dict3[8'd209] && dict2[8'd208] && dict1[8'd207] ) begin
+                else if(dict1[8'd211] && dict2[8'd210] && dict3[8'd209] && dict4[8'd208] && dict5[8'd207] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd211) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd207;
                     end
                 end
-                else if(dict5[8'd212] && dict4[8'd211] && dict3[8'd210] && dict2[8'd209] && dict1[8'd208] ) begin
+                else if(dict1[8'd212] && dict2[8'd211] && dict3[8'd210] && dict4[8'd209] && dict5[8'd208] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd212) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd208;
                     end
                 end
-                else if(dict5[8'd213] && dict4[8'd212] && dict3[8'd211] && dict2[8'd210] && dict1[8'd209] ) begin
+                else if(dict1[8'd213] && dict2[8'd212] && dict3[8'd211] && dict4[8'd210] && dict5[8'd209] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd213) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd209;
                     end
                 end
-                else if(dict5[8'd214] && dict4[8'd213] && dict3[8'd212] && dict2[8'd211] && dict1[8'd210] ) begin
+                else if(dict1[8'd214] && dict2[8'd213] && dict3[8'd212] && dict4[8'd211] && dict5[8'd210] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd214) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd210;
                     end
                 end
-                else if(dict5[8'd215] && dict4[8'd214] && dict3[8'd213] && dict2[8'd212] && dict1[8'd211] ) begin
+                else if(dict1[8'd215] && dict2[8'd214] && dict3[8'd213] && dict4[8'd212] && dict5[8'd211] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd215) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd211;
                     end
                 end
-                else if(dict5[8'd216] && dict4[8'd215] && dict3[8'd214] && dict2[8'd213] && dict1[8'd212] ) begin
+                else if(dict1[8'd216] && dict2[8'd215] && dict3[8'd214] && dict4[8'd213] && dict5[8'd212] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd216) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd212;
                     end
                 end
-                else if(dict5[8'd217] && dict4[8'd216] && dict3[8'd215] && dict2[8'd214] && dict1[8'd213] ) begin
+                else if(dict1[8'd217] && dict2[8'd216] && dict3[8'd215] && dict4[8'd214] && dict5[8'd213] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd217) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd213;
                     end
                 end
-                else if(dict5[8'd218] && dict4[8'd217] && dict3[8'd216] && dict2[8'd215] && dict1[8'd214] ) begin
+                else if(dict1[8'd218] && dict2[8'd217] && dict3[8'd216] && dict4[8'd215] && dict5[8'd214] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd218) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd214;
                     end
                 end
-                else if(dict5[8'd219] && dict4[8'd218] && dict3[8'd217] && dict2[8'd216] && dict1[8'd215] ) begin
+                else if(dict1[8'd219] && dict2[8'd218] && dict3[8'd217] && dict4[8'd216] && dict5[8'd215] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd219) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd215;
                     end
                 end
-                else if(dict5[8'd220] && dict4[8'd219] && dict3[8'd218] && dict2[8'd217] && dict1[8'd216] ) begin
+                else if(dict1[8'd220] && dict2[8'd219] && dict3[8'd218] && dict4[8'd217] && dict5[8'd216] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd220) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd216;
                     end
                 end
-                else if(dict5[8'd221] && dict4[8'd220] && dict3[8'd219] && dict2[8'd218] && dict1[8'd217] ) begin
+                else if(dict1[8'd221] && dict2[8'd220] && dict3[8'd219] && dict4[8'd218] && dict5[8'd217] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd221) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd217;
                     end
                 end
-                else if(dict5[8'd222] && dict4[8'd221] && dict3[8'd220] && dict2[8'd219] && dict1[8'd218] ) begin
+                else if(dict1[8'd222] && dict2[8'd221] && dict3[8'd220] && dict4[8'd219] && dict5[8'd218] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd222) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd218;
                     end
                 end
-                else if(dict5[8'd223] && dict4[8'd222] && dict3[8'd221] && dict2[8'd220] && dict1[8'd219] ) begin
+                else if(dict1[8'd223] && dict2[8'd222] && dict3[8'd221] && dict4[8'd220] && dict5[8'd219] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd223) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd219;
                     end
                 end
-                else if(dict5[8'd224] && dict4[8'd223] && dict3[8'd222] && dict2[8'd221] && dict1[8'd220] ) begin
+                else if(dict1[8'd224] && dict2[8'd223] && dict3[8'd222] && dict4[8'd221] && dict5[8'd220] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd224) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd220;
                     end
                 end
-                else if(dict5[8'd225] && dict4[8'd224] && dict3[8'd223] && dict2[8'd222] && dict1[8'd221] ) begin
+                else if(dict1[8'd225] && dict2[8'd224] && dict3[8'd223] && dict4[8'd222] && dict5[8'd221] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd225) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd221;
                     end
                 end
-                else if(dict5[8'd226] && dict4[8'd225] && dict3[8'd224] && dict2[8'd223] && dict1[8'd222] ) begin
+                else if(dict1[8'd226] && dict2[8'd225] && dict3[8'd224] && dict4[8'd223] && dict5[8'd222] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd226) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd222;
                     end
                 end
-                else if(dict5[8'd227] && dict4[8'd226] && dict3[8'd225] && dict2[8'd224] && dict1[8'd223] ) begin
+                else if(dict1[8'd227] && dict2[8'd226] && dict3[8'd225] && dict4[8'd224] && dict5[8'd223] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd227) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd223;
                     end
                 end
-                else if(dict5[8'd228] && dict4[8'd227] && dict3[8'd226] && dict2[8'd225] && dict1[8'd224] ) begin
+                else if(dict1[8'd228] && dict2[8'd227] && dict3[8'd226] && dict4[8'd225] && dict5[8'd224] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd228) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd224;
                     end
                 end
-                else if(dict5[8'd229] && dict4[8'd228] && dict3[8'd227] && dict2[8'd226] && dict1[8'd225] ) begin
+                else if(dict1[8'd229] && dict2[8'd228] && dict3[8'd227] && dict4[8'd226] && dict5[8'd225] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd229) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd225;
                     end
                 end
-                else if(dict5[8'd230] && dict4[8'd229] && dict3[8'd228] && dict2[8'd227] && dict1[8'd226] ) begin
+                else if(dict1[8'd230] && dict2[8'd229] && dict3[8'd228] && dict4[8'd227] && dict5[8'd226] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd230) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd226;
                     end
                 end
-                else if(dict5[8'd231] && dict4[8'd230] && dict3[8'd229] && dict2[8'd228] && dict1[8'd227] ) begin
+                else if(dict1[8'd231] && dict2[8'd230] && dict3[8'd229] && dict4[8'd228] && dict5[8'd227] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd231) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd227;
                     end
                 end
-                else if(dict5[8'd232] && dict4[8'd231] && dict3[8'd230] && dict2[8'd229] && dict1[8'd228] ) begin
+                else if(dict1[8'd232] && dict2[8'd231] && dict3[8'd230] && dict4[8'd229] && dict5[8'd228] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd232) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd228;
                     end
                 end
-                else if(dict5[8'd233] && dict4[8'd232] && dict3[8'd231] && dict2[8'd230] && dict1[8'd229] ) begin
+                else if(dict1[8'd233] && dict2[8'd232] && dict3[8'd231] && dict4[8'd230] && dict5[8'd229] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd233) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd229;
                     end
                 end
-                else if(dict5[8'd234] && dict4[8'd233] && dict3[8'd232] && dict2[8'd231] && dict1[8'd230] ) begin
+                else if(dict1[8'd234] && dict2[8'd233] && dict3[8'd232] && dict4[8'd231] && dict5[8'd230] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd234) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd230;
                     end
                 end
-                else if(dict5[8'd235] && dict4[8'd234] && dict3[8'd233] && dict2[8'd232] && dict1[8'd231] ) begin
+                else if(dict1[8'd235] && dict2[8'd234] && dict3[8'd233] && dict4[8'd232] && dict5[8'd231] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd235) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd231;
                     end
                 end
-                else if(dict5[8'd236] && dict4[8'd235] && dict3[8'd234] && dict2[8'd233] && dict1[8'd232] ) begin
+                else if(dict1[8'd236] && dict2[8'd235] && dict3[8'd234] && dict4[8'd233] && dict5[8'd232] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd236) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd232;
                     end
                 end
-                else if(dict5[8'd237] && dict4[8'd236] && dict3[8'd235] && dict2[8'd234] && dict1[8'd233] ) begin
+                else if(dict1[8'd237] && dict2[8'd236] && dict3[8'd235] && dict4[8'd234] && dict5[8'd233] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd237) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd233;
                     end
                 end
-                else if(dict5[8'd238] && dict4[8'd237] && dict3[8'd236] && dict2[8'd235] && dict1[8'd234] ) begin
+                else if(dict1[8'd238] && dict2[8'd237] && dict3[8'd236] && dict4[8'd235] && dict5[8'd234] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd238) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd234;
                     end
                 end
-                else if(dict5[8'd239] && dict4[8'd238] && dict3[8'd237] && dict2[8'd236] && dict1[8'd235] ) begin
+                else if(dict1[8'd239] && dict2[8'd238] && dict3[8'd237] && dict4[8'd236] && dict5[8'd235] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd239) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd235;
                     end
                 end
-                else if(dict5[8'd240] && dict4[8'd239] && dict3[8'd238] && dict2[8'd237] && dict1[8'd236] ) begin
+                else if(dict1[8'd240] && dict2[8'd239] && dict3[8'd238] && dict4[8'd237] && dict5[8'd236] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd240) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd236;
                     end
                 end
-                else if(dict5[8'd241] && dict4[8'd240] && dict3[8'd239] && dict2[8'd238] && dict1[8'd237] ) begin
+                else if(dict1[8'd241] && dict2[8'd240] && dict3[8'd239] && dict4[8'd238] && dict5[8'd237] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd241) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd237;
                     end
                 end
-                else if(dict5[8'd242] && dict4[8'd241] && dict3[8'd240] && dict2[8'd239] && dict1[8'd238] ) begin
+                else if(dict1[8'd242] && dict2[8'd241] && dict3[8'd240] && dict4[8'd239] && dict5[8'd238] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd242) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd238;
                     end
                 end
-                else if(dict5[8'd243] && dict4[8'd242] && dict3[8'd241] && dict2[8'd240] && dict1[8'd239] ) begin
+                else if(dict1[8'd243] && dict2[8'd242] && dict3[8'd241] && dict4[8'd240] && dict5[8'd239] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd243) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd239;
                     end
                 end
-                else if(dict5[8'd244] && dict4[8'd243] && dict3[8'd242] && dict2[8'd241] && dict1[8'd240] ) begin
+                else if(dict1[8'd244] && dict2[8'd243] && dict3[8'd242] && dict4[8'd241] && dict5[8'd240] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd244) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd240;
                     end
                 end
-                else if(dict5[8'd245] && dict4[8'd244] && dict3[8'd243] && dict2[8'd242] && dict1[8'd241] ) begin
+                else if(dict1[8'd245] && dict2[8'd244] && dict3[8'd243] && dict4[8'd242] && dict5[8'd241] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd245) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd241;
                     end
                 end
-                else if(dict5[8'd246] && dict4[8'd245] && dict3[8'd244] && dict2[8'd243] && dict1[8'd242] ) begin
+                else if(dict1[8'd246] && dict2[8'd245] && dict3[8'd244] && dict4[8'd243] && dict5[8'd242] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd246) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd242;
                     end
                 end
-                else if(dict5[8'd247] && dict4[8'd246] && dict3[8'd245] && dict2[8'd244] && dict1[8'd243] ) begin
+                else if(dict1[8'd247] && dict2[8'd246] && dict3[8'd245] && dict4[8'd244] && dict5[8'd243] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd247) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd243;
                     end
                 end
-                else if(dict5[8'd248] && dict4[8'd247] && dict3[8'd246] && dict2[8'd245] && dict1[8'd244] ) begin
+                else if(dict1[8'd248] && dict2[8'd247] && dict3[8'd246] && dict4[8'd245] && dict5[8'd244] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd248) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd244;
                     end
                 end
-                else if(dict5[8'd249] && dict4[8'd248] && dict3[8'd247] && dict2[8'd246] && dict1[8'd245] ) begin
+                else if(dict1[8'd249] && dict2[8'd248] && dict3[8'd247] && dict4[8'd246] && dict5[8'd245] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd249) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd245;
                     end
                 end
-                else if(dict5[8'd250] && dict4[8'd249] && dict3[8'd248] && dict2[8'd247] && dict1[8'd246] ) begin
+                else if(dict1[8'd250] && dict2[8'd249] && dict3[8'd248] && dict4[8'd247] && dict5[8'd246] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd250) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd246;
                     end
                 end
-                else if(dict5[8'd251] && dict4[8'd250] && dict3[8'd249] && dict2[8'd248] && dict1[8'd247] ) begin
+                else if(dict1[8'd251] && dict2[8'd250] && dict3[8'd249] && dict4[8'd248] && dict5[8'd247] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd251) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd247;
                     end
                 end
-                else if(dict5[8'd252] && dict4[8'd251] && dict3[8'd250] && dict2[8'd249] && dict1[8'd248] ) begin
+                else if(dict1[8'd252] && dict2[8'd251] && dict3[8'd250] && dict4[8'd249] && dict5[8'd248] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd252) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd248;
                     end
                 end
-                else if(dict5[8'd253] && dict4[8'd252] && dict3[8'd251] && dict2[8'd250] && dict1[8'd249] ) begin
+                else if(dict1[8'd253] && dict2[8'd252] && dict3[8'd251] && dict4[8'd250] && dict5[8'd249] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd253) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd249;
                     end
                 end
-                else if(dict5[8'd254] && dict4[8'd253] && dict3[8'd252] && dict2[8'd251] && dict1[8'd250] ) begin
+                else if(dict1[8'd254] && dict2[8'd253] && dict3[8'd252] && dict4[8'd251] && dict5[8'd250] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd254) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd250;
                     end
                 end
-                else if(dict5[8'd255] && dict4[8'd254] && dict3[8'd253] && dict2[8'd252] && dict1[8'd251] ) begin
+                else if(dict1[8'd255] && dict2[8'd254] && dict3[8'd253] && dict4[8'd252] && dict5[8'd251] ) begin
                     if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd255) begin
                         tmp_largest = 3'd5;
                         tmp_largest_pos = 8'd251;
                     end
                 end
-                else if(dict4[8'd3] && dict3[8'd2] && dict2[8'd1] && dict1[8'd0] ) begin
+                else if(dict1[8'd3] && dict2[8'd2] && dict3[8'd1] && dict4[8'd0] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd3) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd0;
                     end
                 end
-                else if(dict4[8'd4] && dict3[8'd3] && dict2[8'd2] && dict1[8'd1] ) begin
+                else if(dict1[8'd4] && dict2[8'd3] && dict3[8'd2] && dict4[8'd1] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd4) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd1;
                     end
                 end
-                else if(dict4[8'd5] && dict3[8'd4] && dict2[8'd3] && dict1[8'd2] ) begin
+                else if(dict1[8'd5] && dict2[8'd4] && dict3[8'd3] && dict4[8'd2] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd5) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd2;
                     end
                 end
-                else if(dict4[8'd6] && dict3[8'd5] && dict2[8'd4] && dict1[8'd3] ) begin
+                else if(dict1[8'd6] && dict2[8'd5] && dict3[8'd4] && dict4[8'd3] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd6) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd3;
                     end
                 end
-                else if(dict4[8'd7] && dict3[8'd6] && dict2[8'd5] && dict1[8'd4] ) begin
+                else if(dict1[8'd7] && dict2[8'd6] && dict3[8'd5] && dict4[8'd4] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd7) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd4;
                     end
                 end
-                else if(dict4[8'd8] && dict3[8'd7] && dict2[8'd6] && dict1[8'd5] ) begin
+                else if(dict1[8'd8] && dict2[8'd7] && dict3[8'd6] && dict4[8'd5] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd8) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd5;
                     end
                 end
-                else if(dict4[8'd9] && dict3[8'd8] && dict2[8'd7] && dict1[8'd6] ) begin
+                else if(dict1[8'd9] && dict2[8'd8] && dict3[8'd7] && dict4[8'd6] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd9) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd6;
                     end
                 end
-                else if(dict4[8'd10] && dict3[8'd9] && dict2[8'd8] && dict1[8'd7] ) begin
+                else if(dict1[8'd10] && dict2[8'd9] && dict3[8'd8] && dict4[8'd7] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd10) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd7;
                     end
                 end
-                else if(dict4[8'd11] && dict3[8'd10] && dict2[8'd9] && dict1[8'd8] ) begin
+                else if(dict1[8'd11] && dict2[8'd10] && dict3[8'd9] && dict4[8'd8] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd11) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd8;
                     end
                 end
-                else if(dict4[8'd12] && dict3[8'd11] && dict2[8'd10] && dict1[8'd9] ) begin
+                else if(dict1[8'd12] && dict2[8'd11] && dict3[8'd10] && dict4[8'd9] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd12) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd9;
                     end
                 end
-                else if(dict4[8'd13] && dict3[8'd12] && dict2[8'd11] && dict1[8'd10] ) begin
+                else if(dict1[8'd13] && dict2[8'd12] && dict3[8'd11] && dict4[8'd10] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd13) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd10;
                     end
                 end
-                else if(dict4[8'd14] && dict3[8'd13] && dict2[8'd12] && dict1[8'd11] ) begin
+                else if(dict1[8'd14] && dict2[8'd13] && dict3[8'd12] && dict4[8'd11] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd14) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd11;
                     end
                 end
-                else if(dict4[8'd15] && dict3[8'd14] && dict2[8'd13] && dict1[8'd12] ) begin
+                else if(dict1[8'd15] && dict2[8'd14] && dict3[8'd13] && dict4[8'd12] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd15) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd12;
                     end
                 end
-                else if(dict4[8'd16] && dict3[8'd15] && dict2[8'd14] && dict1[8'd13] ) begin
+                else if(dict1[8'd16] && dict2[8'd15] && dict3[8'd14] && dict4[8'd13] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd16) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd13;
                     end
                 end
-                else if(dict4[8'd17] && dict3[8'd16] && dict2[8'd15] && dict1[8'd14] ) begin
+                else if(dict1[8'd17] && dict2[8'd16] && dict3[8'd15] && dict4[8'd14] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd17) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd14;
                     end
                 end
-                else if(dict4[8'd18] && dict3[8'd17] && dict2[8'd16] && dict1[8'd15] ) begin
+                else if(dict1[8'd18] && dict2[8'd17] && dict3[8'd16] && dict4[8'd15] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd18) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd15;
                     end
                 end
-                else if(dict4[8'd19] && dict3[8'd18] && dict2[8'd17] && dict1[8'd16] ) begin
+                else if(dict1[8'd19] && dict2[8'd18] && dict3[8'd17] && dict4[8'd16] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd19) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd16;
                     end
                 end
-                else if(dict4[8'd20] && dict3[8'd19] && dict2[8'd18] && dict1[8'd17] ) begin
+                else if(dict1[8'd20] && dict2[8'd19] && dict3[8'd18] && dict4[8'd17] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd20) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd17;
                     end
                 end
-                else if(dict4[8'd21] && dict3[8'd20] && dict2[8'd19] && dict1[8'd18] ) begin
+                else if(dict1[8'd21] && dict2[8'd20] && dict3[8'd19] && dict4[8'd18] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd21) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd18;
                     end
                 end
-                else if(dict4[8'd22] && dict3[8'd21] && dict2[8'd20] && dict1[8'd19] ) begin
+                else if(dict1[8'd22] && dict2[8'd21] && dict3[8'd20] && dict4[8'd19] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd22) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd19;
                     end
                 end
-                else if(dict4[8'd23] && dict3[8'd22] && dict2[8'd21] && dict1[8'd20] ) begin
+                else if(dict1[8'd23] && dict2[8'd22] && dict3[8'd21] && dict4[8'd20] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd23) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd20;
                     end
                 end
-                else if(dict4[8'd24] && dict3[8'd23] && dict2[8'd22] && dict1[8'd21] ) begin
+                else if(dict1[8'd24] && dict2[8'd23] && dict3[8'd22] && dict4[8'd21] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd24) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd21;
                     end
                 end
-                else if(dict4[8'd25] && dict3[8'd24] && dict2[8'd23] && dict1[8'd22] ) begin
+                else if(dict1[8'd25] && dict2[8'd24] && dict3[8'd23] && dict4[8'd22] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd25) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd22;
                     end
                 end
-                else if(dict4[8'd26] && dict3[8'd25] && dict2[8'd24] && dict1[8'd23] ) begin
+                else if(dict1[8'd26] && dict2[8'd25] && dict3[8'd24] && dict4[8'd23] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd26) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd23;
                     end
                 end
-                else if(dict4[8'd27] && dict3[8'd26] && dict2[8'd25] && dict1[8'd24] ) begin
+                else if(dict1[8'd27] && dict2[8'd26] && dict3[8'd25] && dict4[8'd24] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd27) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd24;
                     end
                 end
-                else if(dict4[8'd28] && dict3[8'd27] && dict2[8'd26] && dict1[8'd25] ) begin
+                else if(dict1[8'd28] && dict2[8'd27] && dict3[8'd26] && dict4[8'd25] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd28) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd25;
                     end
                 end
-                else if(dict4[8'd29] && dict3[8'd28] && dict2[8'd27] && dict1[8'd26] ) begin
+                else if(dict1[8'd29] && dict2[8'd28] && dict3[8'd27] && dict4[8'd26] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd29) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd26;
                     end
                 end
-                else if(dict4[8'd30] && dict3[8'd29] && dict2[8'd28] && dict1[8'd27] ) begin
+                else if(dict1[8'd30] && dict2[8'd29] && dict3[8'd28] && dict4[8'd27] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd30) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd27;
                     end
                 end
-                else if(dict4[8'd31] && dict3[8'd30] && dict2[8'd29] && dict1[8'd28] ) begin
+                else if(dict1[8'd31] && dict2[8'd30] && dict3[8'd29] && dict4[8'd28] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd31) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd28;
                     end
                 end
-                else if(dict4[8'd32] && dict3[8'd31] && dict2[8'd30] && dict1[8'd29] ) begin
+                else if(dict1[8'd32] && dict2[8'd31] && dict3[8'd30] && dict4[8'd29] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd32) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd29;
                     end
                 end
-                else if(dict4[8'd33] && dict3[8'd32] && dict2[8'd31] && dict1[8'd30] ) begin
+                else if(dict1[8'd33] && dict2[8'd32] && dict3[8'd31] && dict4[8'd30] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd33) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd30;
                     end
                 end
-                else if(dict4[8'd34] && dict3[8'd33] && dict2[8'd32] && dict1[8'd31] ) begin
+                else if(dict1[8'd34] && dict2[8'd33] && dict3[8'd32] && dict4[8'd31] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd34) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd31;
                     end
                 end
-                else if(dict4[8'd35] && dict3[8'd34] && dict2[8'd33] && dict1[8'd32] ) begin
+                else if(dict1[8'd35] && dict2[8'd34] && dict3[8'd33] && dict4[8'd32] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd35) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd32;
                     end
                 end
-                else if(dict4[8'd36] && dict3[8'd35] && dict2[8'd34] && dict1[8'd33] ) begin
+                else if(dict1[8'd36] && dict2[8'd35] && dict3[8'd34] && dict4[8'd33] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd36) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd33;
                     end
                 end
-                else if(dict4[8'd37] && dict3[8'd36] && dict2[8'd35] && dict1[8'd34] ) begin
+                else if(dict1[8'd37] && dict2[8'd36] && dict3[8'd35] && dict4[8'd34] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd37) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd34;
                     end
                 end
-                else if(dict4[8'd38] && dict3[8'd37] && dict2[8'd36] && dict1[8'd35] ) begin
+                else if(dict1[8'd38] && dict2[8'd37] && dict3[8'd36] && dict4[8'd35] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd38) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd35;
                     end
                 end
-                else if(dict4[8'd39] && dict3[8'd38] && dict2[8'd37] && dict1[8'd36] ) begin
+                else if(dict1[8'd39] && dict2[8'd38] && dict3[8'd37] && dict4[8'd36] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd39) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd36;
                     end
                 end
-                else if(dict4[8'd40] && dict3[8'd39] && dict2[8'd38] && dict1[8'd37] ) begin
+                else if(dict1[8'd40] && dict2[8'd39] && dict3[8'd38] && dict4[8'd37] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd40) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd37;
                     end
                 end
-                else if(dict4[8'd41] && dict3[8'd40] && dict2[8'd39] && dict1[8'd38] ) begin
+                else if(dict1[8'd41] && dict2[8'd40] && dict3[8'd39] && dict4[8'd38] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd41) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd38;
                     end
                 end
-                else if(dict4[8'd42] && dict3[8'd41] && dict2[8'd40] && dict1[8'd39] ) begin
+                else if(dict1[8'd42] && dict2[8'd41] && dict3[8'd40] && dict4[8'd39] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd42) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd39;
                     end
                 end
-                else if(dict4[8'd43] && dict3[8'd42] && dict2[8'd41] && dict1[8'd40] ) begin
+                else if(dict1[8'd43] && dict2[8'd42] && dict3[8'd41] && dict4[8'd40] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd43) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd40;
                     end
                 end
-                else if(dict4[8'd44] && dict3[8'd43] && dict2[8'd42] && dict1[8'd41] ) begin
+                else if(dict1[8'd44] && dict2[8'd43] && dict3[8'd42] && dict4[8'd41] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd44) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd41;
                     end
                 end
-                else if(dict4[8'd45] && dict3[8'd44] && dict2[8'd43] && dict1[8'd42] ) begin
+                else if(dict1[8'd45] && dict2[8'd44] && dict3[8'd43] && dict4[8'd42] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd45) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd42;
                     end
                 end
-                else if(dict4[8'd46] && dict3[8'd45] && dict2[8'd44] && dict1[8'd43] ) begin
+                else if(dict1[8'd46] && dict2[8'd45] && dict3[8'd44] && dict4[8'd43] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd46) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd43;
                     end
                 end
-                else if(dict4[8'd47] && dict3[8'd46] && dict2[8'd45] && dict1[8'd44] ) begin
+                else if(dict1[8'd47] && dict2[8'd46] && dict3[8'd45] && dict4[8'd44] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd47) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd44;
                     end
                 end
-                else if(dict4[8'd48] && dict3[8'd47] && dict2[8'd46] && dict1[8'd45] ) begin
+                else if(dict1[8'd48] && dict2[8'd47] && dict3[8'd46] && dict4[8'd45] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd48) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd45;
                     end
                 end
-                else if(dict4[8'd49] && dict3[8'd48] && dict2[8'd47] && dict1[8'd46] ) begin
+                else if(dict1[8'd49] && dict2[8'd48] && dict3[8'd47] && dict4[8'd46] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd49) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd46;
                     end
                 end
-                else if(dict4[8'd50] && dict3[8'd49] && dict2[8'd48] && dict1[8'd47] ) begin
+                else if(dict1[8'd50] && dict2[8'd49] && dict3[8'd48] && dict4[8'd47] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd50) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd47;
                     end
                 end
-                else if(dict4[8'd51] && dict3[8'd50] && dict2[8'd49] && dict1[8'd48] ) begin
+                else if(dict1[8'd51] && dict2[8'd50] && dict3[8'd49] && dict4[8'd48] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd51) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd48;
                     end
                 end
-                else if(dict4[8'd52] && dict3[8'd51] && dict2[8'd50] && dict1[8'd49] ) begin
+                else if(dict1[8'd52] && dict2[8'd51] && dict3[8'd50] && dict4[8'd49] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd52) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd49;
                     end
                 end
-                else if(dict4[8'd53] && dict3[8'd52] && dict2[8'd51] && dict1[8'd50] ) begin
+                else if(dict1[8'd53] && dict2[8'd52] && dict3[8'd51] && dict4[8'd50] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd53) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd50;
                     end
                 end
-                else if(dict4[8'd54] && dict3[8'd53] && dict2[8'd52] && dict1[8'd51] ) begin
+                else if(dict1[8'd54] && dict2[8'd53] && dict3[8'd52] && dict4[8'd51] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd54) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd51;
                     end
                 end
-                else if(dict4[8'd55] && dict3[8'd54] && dict2[8'd53] && dict1[8'd52] ) begin
+                else if(dict1[8'd55] && dict2[8'd54] && dict3[8'd53] && dict4[8'd52] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd55) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd52;
                     end
                 end
-                else if(dict4[8'd56] && dict3[8'd55] && dict2[8'd54] && dict1[8'd53] ) begin
+                else if(dict1[8'd56] && dict2[8'd55] && dict3[8'd54] && dict4[8'd53] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd56) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd53;
                     end
                 end
-                else if(dict4[8'd57] && dict3[8'd56] && dict2[8'd55] && dict1[8'd54] ) begin
+                else if(dict1[8'd57] && dict2[8'd56] && dict3[8'd55] && dict4[8'd54] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd57) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd54;
                     end
                 end
-                else if(dict4[8'd58] && dict3[8'd57] && dict2[8'd56] && dict1[8'd55] ) begin
+                else if(dict1[8'd58] && dict2[8'd57] && dict3[8'd56] && dict4[8'd55] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd58) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd55;
                     end
                 end
-                else if(dict4[8'd59] && dict3[8'd58] && dict2[8'd57] && dict1[8'd56] ) begin
+                else if(dict1[8'd59] && dict2[8'd58] && dict3[8'd57] && dict4[8'd56] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd59) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd56;
                     end
                 end
-                else if(dict4[8'd60] && dict3[8'd59] && dict2[8'd58] && dict1[8'd57] ) begin
+                else if(dict1[8'd60] && dict2[8'd59] && dict3[8'd58] && dict4[8'd57] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd60) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd57;
                     end
                 end
-                else if(dict4[8'd61] && dict3[8'd60] && dict2[8'd59] && dict1[8'd58] ) begin
+                else if(dict1[8'd61] && dict2[8'd60] && dict3[8'd59] && dict4[8'd58] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd61) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd58;
                     end
                 end
-                else if(dict4[8'd62] && dict3[8'd61] && dict2[8'd60] && dict1[8'd59] ) begin
+                else if(dict1[8'd62] && dict2[8'd61] && dict3[8'd60] && dict4[8'd59] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd62) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd59;
                     end
                 end
-                else if(dict4[8'd63] && dict3[8'd62] && dict2[8'd61] && dict1[8'd60] ) begin
+                else if(dict1[8'd63] && dict2[8'd62] && dict3[8'd61] && dict4[8'd60] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd63) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd60;
                     end
                 end
-                else if(dict4[8'd64] && dict3[8'd63] && dict2[8'd62] && dict1[8'd61] ) begin
+                else if(dict1[8'd64] && dict2[8'd63] && dict3[8'd62] && dict4[8'd61] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd64) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd61;
                     end
                 end
-                else if(dict4[8'd65] && dict3[8'd64] && dict2[8'd63] && dict1[8'd62] ) begin
+                else if(dict1[8'd65] && dict2[8'd64] && dict3[8'd63] && dict4[8'd62] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd65) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd62;
                     end
                 end
-                else if(dict4[8'd66] && dict3[8'd65] && dict2[8'd64] && dict1[8'd63] ) begin
+                else if(dict1[8'd66] && dict2[8'd65] && dict3[8'd64] && dict4[8'd63] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd66) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd63;
                     end
                 end
-                else if(dict4[8'd67] && dict3[8'd66] && dict2[8'd65] && dict1[8'd64] ) begin
+                else if(dict1[8'd67] && dict2[8'd66] && dict3[8'd65] && dict4[8'd64] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd67) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd64;
                     end
                 end
-                else if(dict4[8'd68] && dict3[8'd67] && dict2[8'd66] && dict1[8'd65] ) begin
+                else if(dict1[8'd68] && dict2[8'd67] && dict3[8'd66] && dict4[8'd65] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd68) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd65;
                     end
                 end
-                else if(dict4[8'd69] && dict3[8'd68] && dict2[8'd67] && dict1[8'd66] ) begin
+                else if(dict1[8'd69] && dict2[8'd68] && dict3[8'd67] && dict4[8'd66] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd69) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd66;
                     end
                 end
-                else if(dict4[8'd70] && dict3[8'd69] && dict2[8'd68] && dict1[8'd67] ) begin
+                else if(dict1[8'd70] && dict2[8'd69] && dict3[8'd68] && dict4[8'd67] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd70) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd67;
                     end
                 end
-                else if(dict4[8'd71] && dict3[8'd70] && dict2[8'd69] && dict1[8'd68] ) begin
+                else if(dict1[8'd71] && dict2[8'd70] && dict3[8'd69] && dict4[8'd68] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd71) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd68;
                     end
                 end
-                else if(dict4[8'd72] && dict3[8'd71] && dict2[8'd70] && dict1[8'd69] ) begin
+                else if(dict1[8'd72] && dict2[8'd71] && dict3[8'd70] && dict4[8'd69] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd72) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd69;
                     end
                 end
-                else if(dict4[8'd73] && dict3[8'd72] && dict2[8'd71] && dict1[8'd70] ) begin
+                else if(dict1[8'd73] && dict2[8'd72] && dict3[8'd71] && dict4[8'd70] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd73) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd70;
                     end
                 end
-                else if(dict4[8'd74] && dict3[8'd73] && dict2[8'd72] && dict1[8'd71] ) begin
+                else if(dict1[8'd74] && dict2[8'd73] && dict3[8'd72] && dict4[8'd71] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd74) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd71;
                     end
                 end
-                else if(dict4[8'd75] && dict3[8'd74] && dict2[8'd73] && dict1[8'd72] ) begin
+                else if(dict1[8'd75] && dict2[8'd74] && dict3[8'd73] && dict4[8'd72] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd75) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd72;
                     end
                 end
-                else if(dict4[8'd76] && dict3[8'd75] && dict2[8'd74] && dict1[8'd73] ) begin
+                else if(dict1[8'd76] && dict2[8'd75] && dict3[8'd74] && dict4[8'd73] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd76) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd73;
                     end
                 end
-                else if(dict4[8'd77] && dict3[8'd76] && dict2[8'd75] && dict1[8'd74] ) begin
+                else if(dict1[8'd77] && dict2[8'd76] && dict3[8'd75] && dict4[8'd74] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd77) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd74;
                     end
                 end
-                else if(dict4[8'd78] && dict3[8'd77] && dict2[8'd76] && dict1[8'd75] ) begin
+                else if(dict1[8'd78] && dict2[8'd77] && dict3[8'd76] && dict4[8'd75] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd78) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd75;
                     end
                 end
-                else if(dict4[8'd79] && dict3[8'd78] && dict2[8'd77] && dict1[8'd76] ) begin
+                else if(dict1[8'd79] && dict2[8'd78] && dict3[8'd77] && dict4[8'd76] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd79) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd76;
                     end
                 end
-                else if(dict4[8'd80] && dict3[8'd79] && dict2[8'd78] && dict1[8'd77] ) begin
+                else if(dict1[8'd80] && dict2[8'd79] && dict3[8'd78] && dict4[8'd77] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd80) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd77;
                     end
                 end
-                else if(dict4[8'd81] && dict3[8'd80] && dict2[8'd79] && dict1[8'd78] ) begin
+                else if(dict1[8'd81] && dict2[8'd80] && dict3[8'd79] && dict4[8'd78] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd81) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd78;
                     end
                 end
-                else if(dict4[8'd82] && dict3[8'd81] && dict2[8'd80] && dict1[8'd79] ) begin
+                else if(dict1[8'd82] && dict2[8'd81] && dict3[8'd80] && dict4[8'd79] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd82) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd79;
                     end
                 end
-                else if(dict4[8'd83] && dict3[8'd82] && dict2[8'd81] && dict1[8'd80] ) begin
+                else if(dict1[8'd83] && dict2[8'd82] && dict3[8'd81] && dict4[8'd80] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd83) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd80;
                     end
                 end
-                else if(dict4[8'd84] && dict3[8'd83] && dict2[8'd82] && dict1[8'd81] ) begin
+                else if(dict1[8'd84] && dict2[8'd83] && dict3[8'd82] && dict4[8'd81] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd84) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd81;
                     end
                 end
-                else if(dict4[8'd85] && dict3[8'd84] && dict2[8'd83] && dict1[8'd82] ) begin
+                else if(dict1[8'd85] && dict2[8'd84] && dict3[8'd83] && dict4[8'd82] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd85) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd82;
                     end
                 end
-                else if(dict4[8'd86] && dict3[8'd85] && dict2[8'd84] && dict1[8'd83] ) begin
+                else if(dict1[8'd86] && dict2[8'd85] && dict3[8'd84] && dict4[8'd83] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd86) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd83;
                     end
                 end
-                else if(dict4[8'd87] && dict3[8'd86] && dict2[8'd85] && dict1[8'd84] ) begin
+                else if(dict1[8'd87] && dict2[8'd86] && dict3[8'd85] && dict4[8'd84] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd87) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd84;
                     end
                 end
-                else if(dict4[8'd88] && dict3[8'd87] && dict2[8'd86] && dict1[8'd85] ) begin
+                else if(dict1[8'd88] && dict2[8'd87] && dict3[8'd86] && dict4[8'd85] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd88) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd85;
                     end
                 end
-                else if(dict4[8'd89] && dict3[8'd88] && dict2[8'd87] && dict1[8'd86] ) begin
+                else if(dict1[8'd89] && dict2[8'd88] && dict3[8'd87] && dict4[8'd86] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd89) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd86;
                     end
                 end
-                else if(dict4[8'd90] && dict3[8'd89] && dict2[8'd88] && dict1[8'd87] ) begin
+                else if(dict1[8'd90] && dict2[8'd89] && dict3[8'd88] && dict4[8'd87] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd90) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd87;
                     end
                 end
-                else if(dict4[8'd91] && dict3[8'd90] && dict2[8'd89] && dict1[8'd88] ) begin
+                else if(dict1[8'd91] && dict2[8'd90] && dict3[8'd89] && dict4[8'd88] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd91) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd88;
                     end
                 end
-                else if(dict4[8'd92] && dict3[8'd91] && dict2[8'd90] && dict1[8'd89] ) begin
+                else if(dict1[8'd92] && dict2[8'd91] && dict3[8'd90] && dict4[8'd89] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd92) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd89;
                     end
                 end
-                else if(dict4[8'd93] && dict3[8'd92] && dict2[8'd91] && dict1[8'd90] ) begin
+                else if(dict1[8'd93] && dict2[8'd92] && dict3[8'd91] && dict4[8'd90] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd93) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd90;
                     end
                 end
-                else if(dict4[8'd94] && dict3[8'd93] && dict2[8'd92] && dict1[8'd91] ) begin
+                else if(dict1[8'd94] && dict2[8'd93] && dict3[8'd92] && dict4[8'd91] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd94) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd91;
                     end
                 end
-                else if(dict4[8'd95] && dict3[8'd94] && dict2[8'd93] && dict1[8'd92] ) begin
+                else if(dict1[8'd95] && dict2[8'd94] && dict3[8'd93] && dict4[8'd92] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd95) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd92;
                     end
                 end
-                else if(dict4[8'd96] && dict3[8'd95] && dict2[8'd94] && dict1[8'd93] ) begin
+                else if(dict1[8'd96] && dict2[8'd95] && dict3[8'd94] && dict4[8'd93] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd96) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd93;
                     end
                 end
-                else if(dict4[8'd97] && dict3[8'd96] && dict2[8'd95] && dict1[8'd94] ) begin
+                else if(dict1[8'd97] && dict2[8'd96] && dict3[8'd95] && dict4[8'd94] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd97) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd94;
                     end
                 end
-                else if(dict4[8'd98] && dict3[8'd97] && dict2[8'd96] && dict1[8'd95] ) begin
+                else if(dict1[8'd98] && dict2[8'd97] && dict3[8'd96] && dict4[8'd95] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd98) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd95;
                     end
                 end
-                else if(dict4[8'd99] && dict3[8'd98] && dict2[8'd97] && dict1[8'd96] ) begin
+                else if(dict1[8'd99] && dict2[8'd98] && dict3[8'd97] && dict4[8'd96] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd99) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd96;
                     end
                 end
-                else if(dict4[8'd100] && dict3[8'd99] && dict2[8'd98] && dict1[8'd97] ) begin
+                else if(dict1[8'd100] && dict2[8'd99] && dict3[8'd98] && dict4[8'd97] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd100) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd97;
                     end
                 end
-                else if(dict4[8'd101] && dict3[8'd100] && dict2[8'd99] && dict1[8'd98] ) begin
+                else if(dict1[8'd101] && dict2[8'd100] && dict3[8'd99] && dict4[8'd98] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd101) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd98;
                     end
                 end
-                else if(dict4[8'd102] && dict3[8'd101] && dict2[8'd100] && dict1[8'd99] ) begin
+                else if(dict1[8'd102] && dict2[8'd101] && dict3[8'd100] && dict4[8'd99] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd102) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd99;
                     end
                 end
-                else if(dict4[8'd103] && dict3[8'd102] && dict2[8'd101] && dict1[8'd100] ) begin
+                else if(dict1[8'd103] && dict2[8'd102] && dict3[8'd101] && dict4[8'd100] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd103) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd100;
                     end
                 end
-                else if(dict4[8'd104] && dict3[8'd103] && dict2[8'd102] && dict1[8'd101] ) begin
+                else if(dict1[8'd104] && dict2[8'd103] && dict3[8'd102] && dict4[8'd101] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd104) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd101;
                     end
                 end
-                else if(dict4[8'd105] && dict3[8'd104] && dict2[8'd103] && dict1[8'd102] ) begin
+                else if(dict1[8'd105] && dict2[8'd104] && dict3[8'd103] && dict4[8'd102] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd105) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd102;
                     end
                 end
-                else if(dict4[8'd106] && dict3[8'd105] && dict2[8'd104] && dict1[8'd103] ) begin
+                else if(dict1[8'd106] && dict2[8'd105] && dict3[8'd104] && dict4[8'd103] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd106) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd103;
                     end
                 end
-                else if(dict4[8'd107] && dict3[8'd106] && dict2[8'd105] && dict1[8'd104] ) begin
+                else if(dict1[8'd107] && dict2[8'd106] && dict3[8'd105] && dict4[8'd104] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd107) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd104;
                     end
                 end
-                else if(dict4[8'd108] && dict3[8'd107] && dict2[8'd106] && dict1[8'd105] ) begin
+                else if(dict1[8'd108] && dict2[8'd107] && dict3[8'd106] && dict4[8'd105] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd108) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd105;
                     end
                 end
-                else if(dict4[8'd109] && dict3[8'd108] && dict2[8'd107] && dict1[8'd106] ) begin
+                else if(dict1[8'd109] && dict2[8'd108] && dict3[8'd107] && dict4[8'd106] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd109) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd106;
                     end
                 end
-                else if(dict4[8'd110] && dict3[8'd109] && dict2[8'd108] && dict1[8'd107] ) begin
+                else if(dict1[8'd110] && dict2[8'd109] && dict3[8'd108] && dict4[8'd107] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd110) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd107;
                     end
                 end
-                else if(dict4[8'd111] && dict3[8'd110] && dict2[8'd109] && dict1[8'd108] ) begin
+                else if(dict1[8'd111] && dict2[8'd110] && dict3[8'd109] && dict4[8'd108] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd111) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd108;
                     end
                 end
-                else if(dict4[8'd112] && dict3[8'd111] && dict2[8'd110] && dict1[8'd109] ) begin
+                else if(dict1[8'd112] && dict2[8'd111] && dict3[8'd110] && dict4[8'd109] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd112) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd109;
                     end
                 end
-                else if(dict4[8'd113] && dict3[8'd112] && dict2[8'd111] && dict1[8'd110] ) begin
+                else if(dict1[8'd113] && dict2[8'd112] && dict3[8'd111] && dict4[8'd110] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd113) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd110;
                     end
                 end
-                else if(dict4[8'd114] && dict3[8'd113] && dict2[8'd112] && dict1[8'd111] ) begin
+                else if(dict1[8'd114] && dict2[8'd113] && dict3[8'd112] && dict4[8'd111] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd114) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd111;
                     end
                 end
-                else if(dict4[8'd115] && dict3[8'd114] && dict2[8'd113] && dict1[8'd112] ) begin
+                else if(dict1[8'd115] && dict2[8'd114] && dict3[8'd113] && dict4[8'd112] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd115) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd112;
                     end
                 end
-                else if(dict4[8'd116] && dict3[8'd115] && dict2[8'd114] && dict1[8'd113] ) begin
+                else if(dict1[8'd116] && dict2[8'd115] && dict3[8'd114] && dict4[8'd113] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd116) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd113;
                     end
                 end
-                else if(dict4[8'd117] && dict3[8'd116] && dict2[8'd115] && dict1[8'd114] ) begin
+                else if(dict1[8'd117] && dict2[8'd116] && dict3[8'd115] && dict4[8'd114] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd117) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd114;
                     end
                 end
-                else if(dict4[8'd118] && dict3[8'd117] && dict2[8'd116] && dict1[8'd115] ) begin
+                else if(dict1[8'd118] && dict2[8'd117] && dict3[8'd116] && dict4[8'd115] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd118) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd115;
                     end
                 end
-                else if(dict4[8'd119] && dict3[8'd118] && dict2[8'd117] && dict1[8'd116] ) begin
+                else if(dict1[8'd119] && dict2[8'd118] && dict3[8'd117] && dict4[8'd116] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd119) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd116;
                     end
                 end
-                else if(dict4[8'd120] && dict3[8'd119] && dict2[8'd118] && dict1[8'd117] ) begin
+                else if(dict1[8'd120] && dict2[8'd119] && dict3[8'd118] && dict4[8'd117] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd120) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd117;
                     end
                 end
-                else if(dict4[8'd121] && dict3[8'd120] && dict2[8'd119] && dict1[8'd118] ) begin
+                else if(dict1[8'd121] && dict2[8'd120] && dict3[8'd119] && dict4[8'd118] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd121) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd118;
                     end
                 end
-                else if(dict4[8'd122] && dict3[8'd121] && dict2[8'd120] && dict1[8'd119] ) begin
+                else if(dict1[8'd122] && dict2[8'd121] && dict3[8'd120] && dict4[8'd119] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd122) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd119;
                     end
                 end
-                else if(dict4[8'd123] && dict3[8'd122] && dict2[8'd121] && dict1[8'd120] ) begin
+                else if(dict1[8'd123] && dict2[8'd122] && dict3[8'd121] && dict4[8'd120] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd123) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd120;
                     end
                 end
-                else if(dict4[8'd124] && dict3[8'd123] && dict2[8'd122] && dict1[8'd121] ) begin
+                else if(dict1[8'd124] && dict2[8'd123] && dict3[8'd122] && dict4[8'd121] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd124) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd121;
                     end
                 end
-                else if(dict4[8'd125] && dict3[8'd124] && dict2[8'd123] && dict1[8'd122] ) begin
+                else if(dict1[8'd125] && dict2[8'd124] && dict3[8'd123] && dict4[8'd122] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd125) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd122;
                     end
                 end
-                else if(dict4[8'd126] && dict3[8'd125] && dict2[8'd124] && dict1[8'd123] ) begin
+                else if(dict1[8'd126] && dict2[8'd125] && dict3[8'd124] && dict4[8'd123] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd126) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd123;
                     end
                 end
-                else if(dict4[8'd127] && dict3[8'd126] && dict2[8'd125] && dict1[8'd124] ) begin
+                else if(dict1[8'd127] && dict2[8'd126] && dict3[8'd125] && dict4[8'd124] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd127) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd124;
                     end
                 end
-                else if(dict4[8'd128] && dict3[8'd127] && dict2[8'd126] && dict1[8'd125] ) begin
+                else if(dict1[8'd128] && dict2[8'd127] && dict3[8'd126] && dict4[8'd125] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd128) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd125;
                     end
                 end
-                else if(dict4[8'd129] && dict3[8'd128] && dict2[8'd127] && dict1[8'd126] ) begin
+                else if(dict1[8'd129] && dict2[8'd128] && dict3[8'd127] && dict4[8'd126] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd129) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd126;
                     end
                 end
-                else if(dict4[8'd130] && dict3[8'd129] && dict2[8'd128] && dict1[8'd127] ) begin
+                else if(dict1[8'd130] && dict2[8'd129] && dict3[8'd128] && dict4[8'd127] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd130) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd127;
                     end
                 end
-                else if(dict4[8'd131] && dict3[8'd130] && dict2[8'd129] && dict1[8'd128] ) begin
+                else if(dict1[8'd131] && dict2[8'd130] && dict3[8'd129] && dict4[8'd128] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd131) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd128;
                     end
                 end
-                else if(dict4[8'd132] && dict3[8'd131] && dict2[8'd130] && dict1[8'd129] ) begin
+                else if(dict1[8'd132] && dict2[8'd131] && dict3[8'd130] && dict4[8'd129] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd132) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd129;
                     end
                 end
-                else if(dict4[8'd133] && dict3[8'd132] && dict2[8'd131] && dict1[8'd130] ) begin
+                else if(dict1[8'd133] && dict2[8'd132] && dict3[8'd131] && dict4[8'd130] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd133) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd130;
                     end
                 end
-                else if(dict4[8'd134] && dict3[8'd133] && dict2[8'd132] && dict1[8'd131] ) begin
+                else if(dict1[8'd134] && dict2[8'd133] && dict3[8'd132] && dict4[8'd131] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd134) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd131;
                     end
                 end
-                else if(dict4[8'd135] && dict3[8'd134] && dict2[8'd133] && dict1[8'd132] ) begin
+                else if(dict1[8'd135] && dict2[8'd134] && dict3[8'd133] && dict4[8'd132] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd135) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd132;
                     end
                 end
-                else if(dict4[8'd136] && dict3[8'd135] && dict2[8'd134] && dict1[8'd133] ) begin
+                else if(dict1[8'd136] && dict2[8'd135] && dict3[8'd134] && dict4[8'd133] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd136) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd133;
                     end
                 end
-                else if(dict4[8'd137] && dict3[8'd136] && dict2[8'd135] && dict1[8'd134] ) begin
+                else if(dict1[8'd137] && dict2[8'd136] && dict3[8'd135] && dict4[8'd134] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd137) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd134;
                     end
                 end
-                else if(dict4[8'd138] && dict3[8'd137] && dict2[8'd136] && dict1[8'd135] ) begin
+                else if(dict1[8'd138] && dict2[8'd137] && dict3[8'd136] && dict4[8'd135] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd138) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd135;
                     end
                 end
-                else if(dict4[8'd139] && dict3[8'd138] && dict2[8'd137] && dict1[8'd136] ) begin
+                else if(dict1[8'd139] && dict2[8'd138] && dict3[8'd137] && dict4[8'd136] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd139) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd136;
                     end
                 end
-                else if(dict4[8'd140] && dict3[8'd139] && dict2[8'd138] && dict1[8'd137] ) begin
+                else if(dict1[8'd140] && dict2[8'd139] && dict3[8'd138] && dict4[8'd137] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd140) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd137;
                     end
                 end
-                else if(dict4[8'd141] && dict3[8'd140] && dict2[8'd139] && dict1[8'd138] ) begin
+                else if(dict1[8'd141] && dict2[8'd140] && dict3[8'd139] && dict4[8'd138] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd141) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd138;
                     end
                 end
-                else if(dict4[8'd142] && dict3[8'd141] && dict2[8'd140] && dict1[8'd139] ) begin
+                else if(dict1[8'd142] && dict2[8'd141] && dict3[8'd140] && dict4[8'd139] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd142) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd139;
                     end
                 end
-                else if(dict4[8'd143] && dict3[8'd142] && dict2[8'd141] && dict1[8'd140] ) begin
+                else if(dict1[8'd143] && dict2[8'd142] && dict3[8'd141] && dict4[8'd140] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd143) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd140;
                     end
                 end
-                else if(dict4[8'd144] && dict3[8'd143] && dict2[8'd142] && dict1[8'd141] ) begin
+                else if(dict1[8'd144] && dict2[8'd143] && dict3[8'd142] && dict4[8'd141] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd144) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd141;
                     end
                 end
-                else if(dict4[8'd145] && dict3[8'd144] && dict2[8'd143] && dict1[8'd142] ) begin
+                else if(dict1[8'd145] && dict2[8'd144] && dict3[8'd143] && dict4[8'd142] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd145) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd142;
                     end
                 end
-                else if(dict4[8'd146] && dict3[8'd145] && dict2[8'd144] && dict1[8'd143] ) begin
+                else if(dict1[8'd146] && dict2[8'd145] && dict3[8'd144] && dict4[8'd143] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd146) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd143;
                     end
                 end
-                else if(dict4[8'd147] && dict3[8'd146] && dict2[8'd145] && dict1[8'd144] ) begin
+                else if(dict1[8'd147] && dict2[8'd146] && dict3[8'd145] && dict4[8'd144] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd147) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd144;
                     end
                 end
-                else if(dict4[8'd148] && dict3[8'd147] && dict2[8'd146] && dict1[8'd145] ) begin
+                else if(dict1[8'd148] && dict2[8'd147] && dict3[8'd146] && dict4[8'd145] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd148) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd145;
                     end
                 end
-                else if(dict4[8'd149] && dict3[8'd148] && dict2[8'd147] && dict1[8'd146] ) begin
+                else if(dict1[8'd149] && dict2[8'd148] && dict3[8'd147] && dict4[8'd146] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd149) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd146;
                     end
                 end
-                else if(dict4[8'd150] && dict3[8'd149] && dict2[8'd148] && dict1[8'd147] ) begin
+                else if(dict1[8'd150] && dict2[8'd149] && dict3[8'd148] && dict4[8'd147] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd150) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd147;
                     end
                 end
-                else if(dict4[8'd151] && dict3[8'd150] && dict2[8'd149] && dict1[8'd148] ) begin
+                else if(dict1[8'd151] && dict2[8'd150] && dict3[8'd149] && dict4[8'd148] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd151) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd148;
                     end
                 end
-                else if(dict4[8'd152] && dict3[8'd151] && dict2[8'd150] && dict1[8'd149] ) begin
+                else if(dict1[8'd152] && dict2[8'd151] && dict3[8'd150] && dict4[8'd149] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd152) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd149;
                     end
                 end
-                else if(dict4[8'd153] && dict3[8'd152] && dict2[8'd151] && dict1[8'd150] ) begin
+                else if(dict1[8'd153] && dict2[8'd152] && dict3[8'd151] && dict4[8'd150] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd153) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd150;
                     end
                 end
-                else if(dict4[8'd154] && dict3[8'd153] && dict2[8'd152] && dict1[8'd151] ) begin
+                else if(dict1[8'd154] && dict2[8'd153] && dict3[8'd152] && dict4[8'd151] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd154) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd151;
                     end
                 end
-                else if(dict4[8'd155] && dict3[8'd154] && dict2[8'd153] && dict1[8'd152] ) begin
+                else if(dict1[8'd155] && dict2[8'd154] && dict3[8'd153] && dict4[8'd152] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd155) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd152;
                     end
                 end
-                else if(dict4[8'd156] && dict3[8'd155] && dict2[8'd154] && dict1[8'd153] ) begin
+                else if(dict1[8'd156] && dict2[8'd155] && dict3[8'd154] && dict4[8'd153] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd156) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd153;
                     end
                 end
-                else if(dict4[8'd157] && dict3[8'd156] && dict2[8'd155] && dict1[8'd154] ) begin
+                else if(dict1[8'd157] && dict2[8'd156] && dict3[8'd155] && dict4[8'd154] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd157) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd154;
                     end
                 end
-                else if(dict4[8'd158] && dict3[8'd157] && dict2[8'd156] && dict1[8'd155] ) begin
+                else if(dict1[8'd158] && dict2[8'd157] && dict3[8'd156] && dict4[8'd155] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd158) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd155;
                     end
                 end
-                else if(dict4[8'd159] && dict3[8'd158] && dict2[8'd157] && dict1[8'd156] ) begin
+                else if(dict1[8'd159] && dict2[8'd158] && dict3[8'd157] && dict4[8'd156] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd159) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd156;
                     end
                 end
-                else if(dict4[8'd160] && dict3[8'd159] && dict2[8'd158] && dict1[8'd157] ) begin
+                else if(dict1[8'd160] && dict2[8'd159] && dict3[8'd158] && dict4[8'd157] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd160) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd157;
                     end
                 end
-                else if(dict4[8'd161] && dict3[8'd160] && dict2[8'd159] && dict1[8'd158] ) begin
+                else if(dict1[8'd161] && dict2[8'd160] && dict3[8'd159] && dict4[8'd158] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd161) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd158;
                     end
                 end
-                else if(dict4[8'd162] && dict3[8'd161] && dict2[8'd160] && dict1[8'd159] ) begin
+                else if(dict1[8'd162] && dict2[8'd161] && dict3[8'd160] && dict4[8'd159] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd162) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd159;
                     end
                 end
-                else if(dict4[8'd163] && dict3[8'd162] && dict2[8'd161] && dict1[8'd160] ) begin
+                else if(dict1[8'd163] && dict2[8'd162] && dict3[8'd161] && dict4[8'd160] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd163) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd160;
                     end
                 end
-                else if(dict4[8'd164] && dict3[8'd163] && dict2[8'd162] && dict1[8'd161] ) begin
+                else if(dict1[8'd164] && dict2[8'd163] && dict3[8'd162] && dict4[8'd161] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd164) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd161;
                     end
                 end
-                else if(dict4[8'd165] && dict3[8'd164] && dict2[8'd163] && dict1[8'd162] ) begin
+                else if(dict1[8'd165] && dict2[8'd164] && dict3[8'd163] && dict4[8'd162] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd165) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd162;
                     end
                 end
-                else if(dict4[8'd166] && dict3[8'd165] && dict2[8'd164] && dict1[8'd163] ) begin
+                else if(dict1[8'd166] && dict2[8'd165] && dict3[8'd164] && dict4[8'd163] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd166) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd163;
                     end
                 end
-                else if(dict4[8'd167] && dict3[8'd166] && dict2[8'd165] && dict1[8'd164] ) begin
+                else if(dict1[8'd167] && dict2[8'd166] && dict3[8'd165] && dict4[8'd164] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd167) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd164;
                     end
                 end
-                else if(dict4[8'd168] && dict3[8'd167] && dict2[8'd166] && dict1[8'd165] ) begin
+                else if(dict1[8'd168] && dict2[8'd167] && dict3[8'd166] && dict4[8'd165] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd168) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd165;
                     end
                 end
-                else if(dict4[8'd169] && dict3[8'd168] && dict2[8'd167] && dict1[8'd166] ) begin
+                else if(dict1[8'd169] && dict2[8'd168] && dict3[8'd167] && dict4[8'd166] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd169) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd166;
                     end
                 end
-                else if(dict4[8'd170] && dict3[8'd169] && dict2[8'd168] && dict1[8'd167] ) begin
+                else if(dict1[8'd170] && dict2[8'd169] && dict3[8'd168] && dict4[8'd167] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd170) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd167;
                     end
                 end
-                else if(dict4[8'd171] && dict3[8'd170] && dict2[8'd169] && dict1[8'd168] ) begin
+                else if(dict1[8'd171] && dict2[8'd170] && dict3[8'd169] && dict4[8'd168] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd171) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd168;
                     end
                 end
-                else if(dict4[8'd172] && dict3[8'd171] && dict2[8'd170] && dict1[8'd169] ) begin
+                else if(dict1[8'd172] && dict2[8'd171] && dict3[8'd170] && dict4[8'd169] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd172) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd169;
                     end
                 end
-                else if(dict4[8'd173] && dict3[8'd172] && dict2[8'd171] && dict1[8'd170] ) begin
+                else if(dict1[8'd173] && dict2[8'd172] && dict3[8'd171] && dict4[8'd170] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd173) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd170;
                     end
                 end
-                else if(dict4[8'd174] && dict3[8'd173] && dict2[8'd172] && dict1[8'd171] ) begin
+                else if(dict1[8'd174] && dict2[8'd173] && dict3[8'd172] && dict4[8'd171] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd174) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd171;
                     end
                 end
-                else if(dict4[8'd175] && dict3[8'd174] && dict2[8'd173] && dict1[8'd172] ) begin
+                else if(dict1[8'd175] && dict2[8'd174] && dict3[8'd173] && dict4[8'd172] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd175) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd172;
                     end
                 end
-                else if(dict4[8'd176] && dict3[8'd175] && dict2[8'd174] && dict1[8'd173] ) begin
+                else if(dict1[8'd176] && dict2[8'd175] && dict3[8'd174] && dict4[8'd173] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd176) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd173;
                     end
                 end
-                else if(dict4[8'd177] && dict3[8'd176] && dict2[8'd175] && dict1[8'd174] ) begin
+                else if(dict1[8'd177] && dict2[8'd176] && dict3[8'd175] && dict4[8'd174] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd177) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd174;
                     end
                 end
-                else if(dict4[8'd178] && dict3[8'd177] && dict2[8'd176] && dict1[8'd175] ) begin
+                else if(dict1[8'd178] && dict2[8'd177] && dict3[8'd176] && dict4[8'd175] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd178) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd175;
                     end
                 end
-                else if(dict4[8'd179] && dict3[8'd178] && dict2[8'd177] && dict1[8'd176] ) begin
+                else if(dict1[8'd179] && dict2[8'd178] && dict3[8'd177] && dict4[8'd176] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd179) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd176;
                     end
                 end
-                else if(dict4[8'd180] && dict3[8'd179] && dict2[8'd178] && dict1[8'd177] ) begin
+                else if(dict1[8'd180] && dict2[8'd179] && dict3[8'd178] && dict4[8'd177] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd180) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd177;
                     end
                 end
-                else if(dict4[8'd181] && dict3[8'd180] && dict2[8'd179] && dict1[8'd178] ) begin
+                else if(dict1[8'd181] && dict2[8'd180] && dict3[8'd179] && dict4[8'd178] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd181) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd178;
                     end
                 end
-                else if(dict4[8'd182] && dict3[8'd181] && dict2[8'd180] && dict1[8'd179] ) begin
+                else if(dict1[8'd182] && dict2[8'd181] && dict3[8'd180] && dict4[8'd179] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd182) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd179;
                     end
                 end
-                else if(dict4[8'd183] && dict3[8'd182] && dict2[8'd181] && dict1[8'd180] ) begin
+                else if(dict1[8'd183] && dict2[8'd182] && dict3[8'd181] && dict4[8'd180] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd183) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd180;
                     end
                 end
-                else if(dict4[8'd184] && dict3[8'd183] && dict2[8'd182] && dict1[8'd181] ) begin
+                else if(dict1[8'd184] && dict2[8'd183] && dict3[8'd182] && dict4[8'd181] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd184) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd181;
                     end
                 end
-                else if(dict4[8'd185] && dict3[8'd184] && dict2[8'd183] && dict1[8'd182] ) begin
+                else if(dict1[8'd185] && dict2[8'd184] && dict3[8'd183] && dict4[8'd182] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd185) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd182;
                     end
                 end
-                else if(dict4[8'd186] && dict3[8'd185] && dict2[8'd184] && dict1[8'd183] ) begin
+                else if(dict1[8'd186] && dict2[8'd185] && dict3[8'd184] && dict4[8'd183] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd186) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd183;
                     end
                 end
-                else if(dict4[8'd187] && dict3[8'd186] && dict2[8'd185] && dict1[8'd184] ) begin
+                else if(dict1[8'd187] && dict2[8'd186] && dict3[8'd185] && dict4[8'd184] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd187) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd184;
                     end
                 end
-                else if(dict4[8'd188] && dict3[8'd187] && dict2[8'd186] && dict1[8'd185] ) begin
+                else if(dict1[8'd188] && dict2[8'd187] && dict3[8'd186] && dict4[8'd185] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd188) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd185;
                     end
                 end
-                else if(dict4[8'd189] && dict3[8'd188] && dict2[8'd187] && dict1[8'd186] ) begin
+                else if(dict1[8'd189] && dict2[8'd188] && dict3[8'd187] && dict4[8'd186] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd189) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd186;
                     end
                 end
-                else if(dict4[8'd190] && dict3[8'd189] && dict2[8'd188] && dict1[8'd187] ) begin
+                else if(dict1[8'd190] && dict2[8'd189] && dict3[8'd188] && dict4[8'd187] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd190) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd187;
                     end
                 end
-                else if(dict4[8'd191] && dict3[8'd190] && dict2[8'd189] && dict1[8'd188] ) begin
+                else if(dict1[8'd191] && dict2[8'd190] && dict3[8'd189] && dict4[8'd188] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd191) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd188;
                     end
                 end
-                else if(dict4[8'd192] && dict3[8'd191] && dict2[8'd190] && dict1[8'd189] ) begin
+                else if(dict1[8'd192] && dict2[8'd191] && dict3[8'd190] && dict4[8'd189] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd192) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd189;
                     end
                 end
-                else if(dict4[8'd193] && dict3[8'd192] && dict2[8'd191] && dict1[8'd190] ) begin
+                else if(dict1[8'd193] && dict2[8'd192] && dict3[8'd191] && dict4[8'd190] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd193) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd190;
                     end
                 end
-                else if(dict4[8'd194] && dict3[8'd193] && dict2[8'd192] && dict1[8'd191] ) begin
+                else if(dict1[8'd194] && dict2[8'd193] && dict3[8'd192] && dict4[8'd191] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd194) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd191;
                     end
                 end
-                else if(dict4[8'd195] && dict3[8'd194] && dict2[8'd193] && dict1[8'd192] ) begin
+                else if(dict1[8'd195] && dict2[8'd194] && dict3[8'd193] && dict4[8'd192] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd195) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd192;
                     end
                 end
-                else if(dict4[8'd196] && dict3[8'd195] && dict2[8'd194] && dict1[8'd193] ) begin
+                else if(dict1[8'd196] && dict2[8'd195] && dict3[8'd194] && dict4[8'd193] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd196) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd193;
                     end
                 end
-                else if(dict4[8'd197] && dict3[8'd196] && dict2[8'd195] && dict1[8'd194] ) begin
+                else if(dict1[8'd197] && dict2[8'd196] && dict3[8'd195] && dict4[8'd194] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd197) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd194;
                     end
                 end
-                else if(dict4[8'd198] && dict3[8'd197] && dict2[8'd196] && dict1[8'd195] ) begin
+                else if(dict1[8'd198] && dict2[8'd197] && dict3[8'd196] && dict4[8'd195] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd198) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd195;
                     end
                 end
-                else if(dict4[8'd199] && dict3[8'd198] && dict2[8'd197] && dict1[8'd196] ) begin
+                else if(dict1[8'd199] && dict2[8'd198] && dict3[8'd197] && dict4[8'd196] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd199) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd196;
                     end
                 end
-                else if(dict4[8'd200] && dict3[8'd199] && dict2[8'd198] && dict1[8'd197] ) begin
+                else if(dict1[8'd200] && dict2[8'd199] && dict3[8'd198] && dict4[8'd197] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd200) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd197;
                     end
                 end
-                else if(dict4[8'd201] && dict3[8'd200] && dict2[8'd199] && dict1[8'd198] ) begin
+                else if(dict1[8'd201] && dict2[8'd200] && dict3[8'd199] && dict4[8'd198] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd201) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd198;
                     end
                 end
-                else if(dict4[8'd202] && dict3[8'd201] && dict2[8'd200] && dict1[8'd199] ) begin
+                else if(dict1[8'd202] && dict2[8'd201] && dict3[8'd200] && dict4[8'd199] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd202) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd199;
                     end
                 end
-                else if(dict4[8'd203] && dict3[8'd202] && dict2[8'd201] && dict1[8'd200] ) begin
+                else if(dict1[8'd203] && dict2[8'd202] && dict3[8'd201] && dict4[8'd200] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd203) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd200;
                     end
                 end
-                else if(dict4[8'd204] && dict3[8'd203] && dict2[8'd202] && dict1[8'd201] ) begin
+                else if(dict1[8'd204] && dict2[8'd203] && dict3[8'd202] && dict4[8'd201] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd204) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd201;
                     end
                 end
-                else if(dict4[8'd205] && dict3[8'd204] && dict2[8'd203] && dict1[8'd202] ) begin
+                else if(dict1[8'd205] && dict2[8'd204] && dict3[8'd203] && dict4[8'd202] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd205) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd202;
                     end
                 end
-                else if(dict4[8'd206] && dict3[8'd205] && dict2[8'd204] && dict1[8'd203] ) begin
+                else if(dict1[8'd206] && dict2[8'd205] && dict3[8'd204] && dict4[8'd203] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd206) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd203;
                     end
                 end
-                else if(dict4[8'd207] && dict3[8'd206] && dict2[8'd205] && dict1[8'd204] ) begin
+                else if(dict1[8'd207] && dict2[8'd206] && dict3[8'd205] && dict4[8'd204] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd207) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd204;
                     end
                 end
-                else if(dict4[8'd208] && dict3[8'd207] && dict2[8'd206] && dict1[8'd205] ) begin
+                else if(dict1[8'd208] && dict2[8'd207] && dict3[8'd206] && dict4[8'd205] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd208) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd205;
                     end
                 end
-                else if(dict4[8'd209] && dict3[8'd208] && dict2[8'd207] && dict1[8'd206] ) begin
+                else if(dict1[8'd209] && dict2[8'd208] && dict3[8'd207] && dict4[8'd206] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd209) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd206;
                     end
                 end
-                else if(dict4[8'd210] && dict3[8'd209] && dict2[8'd208] && dict1[8'd207] ) begin
+                else if(dict1[8'd210] && dict2[8'd209] && dict3[8'd208] && dict4[8'd207] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd210) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd207;
                     end
                 end
-                else if(dict4[8'd211] && dict3[8'd210] && dict2[8'd209] && dict1[8'd208] ) begin
+                else if(dict1[8'd211] && dict2[8'd210] && dict3[8'd209] && dict4[8'd208] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd211) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd208;
                     end
                 end
-                else if(dict4[8'd212] && dict3[8'd211] && dict2[8'd210] && dict1[8'd209] ) begin
+                else if(dict1[8'd212] && dict2[8'd211] && dict3[8'd210] && dict4[8'd209] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd212) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd209;
                     end
                 end
-                else if(dict4[8'd213] && dict3[8'd212] && dict2[8'd211] && dict1[8'd210] ) begin
+                else if(dict1[8'd213] && dict2[8'd212] && dict3[8'd211] && dict4[8'd210] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd213) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd210;
                     end
                 end
-                else if(dict4[8'd214] && dict3[8'd213] && dict2[8'd212] && dict1[8'd211] ) begin
+                else if(dict1[8'd214] && dict2[8'd213] && dict3[8'd212] && dict4[8'd211] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd214) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd211;
                     end
                 end
-                else if(dict4[8'd215] && dict3[8'd214] && dict2[8'd213] && dict1[8'd212] ) begin
+                else if(dict1[8'd215] && dict2[8'd214] && dict3[8'd213] && dict4[8'd212] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd215) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd212;
                     end
                 end
-                else if(dict4[8'd216] && dict3[8'd215] && dict2[8'd214] && dict1[8'd213] ) begin
+                else if(dict1[8'd216] && dict2[8'd215] && dict3[8'd214] && dict4[8'd213] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd216) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd213;
                     end
                 end
-                else if(dict4[8'd217] && dict3[8'd216] && dict2[8'd215] && dict1[8'd214] ) begin
+                else if(dict1[8'd217] && dict2[8'd216] && dict3[8'd215] && dict4[8'd214] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd217) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd214;
                     end
                 end
-                else if(dict4[8'd218] && dict3[8'd217] && dict2[8'd216] && dict1[8'd215] ) begin
+                else if(dict1[8'd218] && dict2[8'd217] && dict3[8'd216] && dict4[8'd215] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd218) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd215;
                     end
                 end
-                else if(dict4[8'd219] && dict3[8'd218] && dict2[8'd217] && dict1[8'd216] ) begin
+                else if(dict1[8'd219] && dict2[8'd218] && dict3[8'd217] && dict4[8'd216] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd219) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd216;
                     end
                 end
-                else if(dict4[8'd220] && dict3[8'd219] && dict2[8'd218] && dict1[8'd217] ) begin
+                else if(dict1[8'd220] && dict2[8'd219] && dict3[8'd218] && dict4[8'd217] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd220) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd217;
                     end
                 end
-                else if(dict4[8'd221] && dict3[8'd220] && dict2[8'd219] && dict1[8'd218] ) begin
+                else if(dict1[8'd221] && dict2[8'd220] && dict3[8'd219] && dict4[8'd218] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd221) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd218;
                     end
                 end
-                else if(dict4[8'd222] && dict3[8'd221] && dict2[8'd220] && dict1[8'd219] ) begin
+                else if(dict1[8'd222] && dict2[8'd221] && dict3[8'd220] && dict4[8'd219] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd222) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd219;
                     end
                 end
-                else if(dict4[8'd223] && dict3[8'd222] && dict2[8'd221] && dict1[8'd220] ) begin
+                else if(dict1[8'd223] && dict2[8'd222] && dict3[8'd221] && dict4[8'd220] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd223) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd220;
                     end
                 end
-                else if(dict4[8'd224] && dict3[8'd223] && dict2[8'd222] && dict1[8'd221] ) begin
+                else if(dict1[8'd224] && dict2[8'd223] && dict3[8'd222] && dict4[8'd221] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd224) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd221;
                     end
                 end
-                else if(dict4[8'd225] && dict3[8'd224] && dict2[8'd223] && dict1[8'd222] ) begin
+                else if(dict1[8'd225] && dict2[8'd224] && dict3[8'd223] && dict4[8'd222] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd225) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd222;
                     end
                 end
-                else if(dict4[8'd226] && dict3[8'd225] && dict2[8'd224] && dict1[8'd223] ) begin
+                else if(dict1[8'd226] && dict2[8'd225] && dict3[8'd224] && dict4[8'd223] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd226) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd223;
                     end
                 end
-                else if(dict4[8'd227] && dict3[8'd226] && dict2[8'd225] && dict1[8'd224] ) begin
+                else if(dict1[8'd227] && dict2[8'd226] && dict3[8'd225] && dict4[8'd224] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd227) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd224;
                     end
                 end
-                else if(dict4[8'd228] && dict3[8'd227] && dict2[8'd226] && dict1[8'd225] ) begin
+                else if(dict1[8'd228] && dict2[8'd227] && dict3[8'd226] && dict4[8'd225] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd228) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd225;
                     end
                 end
-                else if(dict4[8'd229] && dict3[8'd228] && dict2[8'd227] && dict1[8'd226] ) begin
+                else if(dict1[8'd229] && dict2[8'd228] && dict3[8'd227] && dict4[8'd226] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd229) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd226;
                     end
                 end
-                else if(dict4[8'd230] && dict3[8'd229] && dict2[8'd228] && dict1[8'd227] ) begin
+                else if(dict1[8'd230] && dict2[8'd229] && dict3[8'd228] && dict4[8'd227] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd230) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd227;
                     end
                 end
-                else if(dict4[8'd231] && dict3[8'd230] && dict2[8'd229] && dict1[8'd228] ) begin
+                else if(dict1[8'd231] && dict2[8'd230] && dict3[8'd229] && dict4[8'd228] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd231) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd228;
                     end
                 end
-                else if(dict4[8'd232] && dict3[8'd231] && dict2[8'd230] && dict1[8'd229] ) begin
+                else if(dict1[8'd232] && dict2[8'd231] && dict3[8'd230] && dict4[8'd229] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd232) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd229;
                     end
                 end
-                else if(dict4[8'd233] && dict3[8'd232] && dict2[8'd231] && dict1[8'd230] ) begin
+                else if(dict1[8'd233] && dict2[8'd232] && dict3[8'd231] && dict4[8'd230] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd233) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd230;
                     end
                 end
-                else if(dict4[8'd234] && dict3[8'd233] && dict2[8'd232] && dict1[8'd231] ) begin
+                else if(dict1[8'd234] && dict2[8'd233] && dict3[8'd232] && dict4[8'd231] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd234) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd231;
                     end
                 end
-                else if(dict4[8'd235] && dict3[8'd234] && dict2[8'd233] && dict1[8'd232] ) begin
+                else if(dict1[8'd235] && dict2[8'd234] && dict3[8'd233] && dict4[8'd232] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd235) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd232;
                     end
                 end
-                else if(dict4[8'd236] && dict3[8'd235] && dict2[8'd234] && dict1[8'd233] ) begin
+                else if(dict1[8'd236] && dict2[8'd235] && dict3[8'd234] && dict4[8'd233] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd236) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd233;
                     end
                 end
-                else if(dict4[8'd237] && dict3[8'd236] && dict2[8'd235] && dict1[8'd234] ) begin
+                else if(dict1[8'd237] && dict2[8'd236] && dict3[8'd235] && dict4[8'd234] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd237) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd234;
                     end
                 end
-                else if(dict4[8'd238] && dict3[8'd237] && dict2[8'd236] && dict1[8'd235] ) begin
+                else if(dict1[8'd238] && dict2[8'd237] && dict3[8'd236] && dict4[8'd235] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd238) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd235;
                     end
                 end
-                else if(dict4[8'd239] && dict3[8'd238] && dict2[8'd237] && dict1[8'd236] ) begin
+                else if(dict1[8'd239] && dict2[8'd238] && dict3[8'd237] && dict4[8'd236] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd239) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd236;
                     end
                 end
-                else if(dict4[8'd240] && dict3[8'd239] && dict2[8'd238] && dict1[8'd237] ) begin
+                else if(dict1[8'd240] && dict2[8'd239] && dict3[8'd238] && dict4[8'd237] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd240) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd237;
                     end
                 end
-                else if(dict4[8'd241] && dict3[8'd240] && dict2[8'd239] && dict1[8'd238] ) begin
+                else if(dict1[8'd241] && dict2[8'd240] && dict3[8'd239] && dict4[8'd238] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd241) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd238;
                     end
                 end
-                else if(dict4[8'd242] && dict3[8'd241] && dict2[8'd240] && dict1[8'd239] ) begin
+                else if(dict1[8'd242] && dict2[8'd241] && dict3[8'd240] && dict4[8'd239] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd242) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd239;
                     end
                 end
-                else if(dict4[8'd243] && dict3[8'd242] && dict2[8'd241] && dict1[8'd240] ) begin
+                else if(dict1[8'd243] && dict2[8'd242] && dict3[8'd241] && dict4[8'd240] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd243) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd240;
                     end
                 end
-                else if(dict4[8'd244] && dict3[8'd243] && dict2[8'd242] && dict1[8'd241] ) begin
+                else if(dict1[8'd244] && dict2[8'd243] && dict3[8'd242] && dict4[8'd241] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd244) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd241;
                     end
                 end
-                else if(dict4[8'd245] && dict3[8'd244] && dict2[8'd243] && dict1[8'd242] ) begin
+                else if(dict1[8'd245] && dict2[8'd244] && dict3[8'd243] && dict4[8'd242] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd245) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd242;
                     end
                 end
-                else if(dict4[8'd246] && dict3[8'd245] && dict2[8'd244] && dict1[8'd243] ) begin
+                else if(dict1[8'd246] && dict2[8'd245] && dict3[8'd244] && dict4[8'd243] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd246) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd243;
                     end
                 end
-                else if(dict4[8'd247] && dict3[8'd246] && dict2[8'd245] && dict1[8'd244] ) begin
+                else if(dict1[8'd247] && dict2[8'd246] && dict3[8'd245] && dict4[8'd244] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd247) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd244;
                     end
                 end
-                else if(dict4[8'd248] && dict3[8'd247] && dict2[8'd246] && dict1[8'd245] ) begin
+                else if(dict1[8'd248] && dict2[8'd247] && dict3[8'd246] && dict4[8'd245] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd248) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd245;
                     end
                 end
-                else if(dict4[8'd249] && dict3[8'd248] && dict2[8'd247] && dict1[8'd246] ) begin
+                else if(dict1[8'd249] && dict2[8'd248] && dict3[8'd247] && dict4[8'd246] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd249) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd246;
                     end
                 end
-                else if(dict4[8'd250] && dict3[8'd249] && dict2[8'd248] && dict1[8'd247] ) begin
+                else if(dict1[8'd250] && dict2[8'd249] && dict3[8'd248] && dict4[8'd247] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd250) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd247;
                     end
                 end
-                else if(dict4[8'd251] && dict3[8'd250] && dict2[8'd249] && dict1[8'd248] ) begin
+                else if(dict1[8'd251] && dict2[8'd250] && dict3[8'd249] && dict4[8'd248] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd251) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd248;
                     end
                 end
-                else if(dict4[8'd252] && dict3[8'd251] && dict2[8'd250] && dict1[8'd249] ) begin
+                else if(dict1[8'd252] && dict2[8'd251] && dict3[8'd250] && dict4[8'd249] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd252) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd249;
                     end
                 end
-                else if(dict4[8'd253] && dict3[8'd252] && dict2[8'd251] && dict1[8'd250] ) begin
+                else if(dict1[8'd253] && dict2[8'd252] && dict3[8'd251] && dict4[8'd250] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd253) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd250;
                     end
                 end
-                else if(dict4[8'd254] && dict3[8'd253] && dict2[8'd252] && dict1[8'd251] ) begin
+                else if(dict1[8'd254] && dict2[8'd253] && dict3[8'd252] && dict4[8'd251] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd254) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd251;
                     end
                 end
-                else if(dict4[8'd255] && dict3[8'd254] && dict2[8'd253] && dict1[8'd252] ) begin
+                else if(dict1[8'd255] && dict2[8'd254] && dict3[8'd253] && dict4[8'd252] ) begin
                     if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd255) begin
                         tmp_largest = 3'd4;
                         tmp_largest_pos = 8'd252;
                     end
                 end
-                else if(dict3[8'd2] && dict2[8'd1] && dict1[8'd0] ) begin
+                else if(dict1[8'd2] && dict2[8'd1] && dict3[8'd0] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd2) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd0;
                     end
                 end
-                else if(dict3[8'd3] && dict2[8'd2] && dict1[8'd1] ) begin
+                else if(dict1[8'd3] && dict2[8'd2] && dict3[8'd1] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd3) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd1;
                     end
                 end
-                else if(dict3[8'd4] && dict2[8'd3] && dict1[8'd2] ) begin
+                else if(dict1[8'd4] && dict2[8'd3] && dict3[8'd2] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd4) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd2;
                     end
                 end
-                else if(dict3[8'd5] && dict2[8'd4] && dict1[8'd3] ) begin
+                else if(dict1[8'd5] && dict2[8'd4] && dict3[8'd3] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd5) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd3;
                     end
                 end
-                else if(dict3[8'd6] && dict2[8'd5] && dict1[8'd4] ) begin
+                else if(dict1[8'd6] && dict2[8'd5] && dict3[8'd4] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd6) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd4;
                     end
                 end
-                else if(dict3[8'd7] && dict2[8'd6] && dict1[8'd5] ) begin
+                else if(dict1[8'd7] && dict2[8'd6] && dict3[8'd5] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd7) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd5;
                     end
                 end
-                else if(dict3[8'd8] && dict2[8'd7] && dict1[8'd6] ) begin
+                else if(dict1[8'd8] && dict2[8'd7] && dict3[8'd6] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd8) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd6;
                     end
                 end
-                else if(dict3[8'd9] && dict2[8'd8] && dict1[8'd7] ) begin
+                else if(dict1[8'd9] && dict2[8'd8] && dict3[8'd7] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd9) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd7;
                     end
                 end
-                else if(dict3[8'd10] && dict2[8'd9] && dict1[8'd8] ) begin
+                else if(dict1[8'd10] && dict2[8'd9] && dict3[8'd8] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd10) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd8;
                     end
                 end
-                else if(dict3[8'd11] && dict2[8'd10] && dict1[8'd9] ) begin
+                else if(dict1[8'd11] && dict2[8'd10] && dict3[8'd9] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd11) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd9;
                     end
                 end
-                else if(dict3[8'd12] && dict2[8'd11] && dict1[8'd10] ) begin
+                else if(dict1[8'd12] && dict2[8'd11] && dict3[8'd10] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd12) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd10;
                     end
                 end
-                else if(dict3[8'd13] && dict2[8'd12] && dict1[8'd11] ) begin
+                else if(dict1[8'd13] && dict2[8'd12] && dict3[8'd11] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd13) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd11;
                     end
                 end
-                else if(dict3[8'd14] && dict2[8'd13] && dict1[8'd12] ) begin
+                else if(dict1[8'd14] && dict2[8'd13] && dict3[8'd12] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd14) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd12;
                     end
                 end
-                else if(dict3[8'd15] && dict2[8'd14] && dict1[8'd13] ) begin
+                else if(dict1[8'd15] && dict2[8'd14] && dict3[8'd13] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd15) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd13;
                     end
                 end
-                else if(dict3[8'd16] && dict2[8'd15] && dict1[8'd14] ) begin
+                else if(dict1[8'd16] && dict2[8'd15] && dict3[8'd14] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd16) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd14;
                     end
                 end
-                else if(dict3[8'd17] && dict2[8'd16] && dict1[8'd15] ) begin
+                else if(dict1[8'd17] && dict2[8'd16] && dict3[8'd15] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd17) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd15;
                     end
                 end
-                else if(dict3[8'd18] && dict2[8'd17] && dict1[8'd16] ) begin
+                else if(dict1[8'd18] && dict2[8'd17] && dict3[8'd16] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd18) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd16;
                     end
                 end
-                else if(dict3[8'd19] && dict2[8'd18] && dict1[8'd17] ) begin
+                else if(dict1[8'd19] && dict2[8'd18] && dict3[8'd17] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd19) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd17;
                     end
                 end
-                else if(dict3[8'd20] && dict2[8'd19] && dict1[8'd18] ) begin
+                else if(dict1[8'd20] && dict2[8'd19] && dict3[8'd18] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd20) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd18;
                     end
                 end
-                else if(dict3[8'd21] && dict2[8'd20] && dict1[8'd19] ) begin
+                else if(dict1[8'd21] && dict2[8'd20] && dict3[8'd19] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd21) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd19;
                     end
                 end
-                else if(dict3[8'd22] && dict2[8'd21] && dict1[8'd20] ) begin
+                else if(dict1[8'd22] && dict2[8'd21] && dict3[8'd20] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd22) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd20;
                     end
                 end
-                else if(dict3[8'd23] && dict2[8'd22] && dict1[8'd21] ) begin
+                else if(dict1[8'd23] && dict2[8'd22] && dict3[8'd21] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd23) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd21;
                     end
                 end
-                else if(dict3[8'd24] && dict2[8'd23] && dict1[8'd22] ) begin
+                else if(dict1[8'd24] && dict2[8'd23] && dict3[8'd22] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd24) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd22;
                     end
                 end
-                else if(dict3[8'd25] && dict2[8'd24] && dict1[8'd23] ) begin
+                else if(dict1[8'd25] && dict2[8'd24] && dict3[8'd23] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd25) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd23;
                     end
                 end
-                else if(dict3[8'd26] && dict2[8'd25] && dict1[8'd24] ) begin
+                else if(dict1[8'd26] && dict2[8'd25] && dict3[8'd24] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd26) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd24;
                     end
                 end
-                else if(dict3[8'd27] && dict2[8'd26] && dict1[8'd25] ) begin
+                else if(dict1[8'd27] && dict2[8'd26] && dict3[8'd25] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd27) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd25;
                     end
                 end
-                else if(dict3[8'd28] && dict2[8'd27] && dict1[8'd26] ) begin
+                else if(dict1[8'd28] && dict2[8'd27] && dict3[8'd26] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd28) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd26;
                     end
                 end
-                else if(dict3[8'd29] && dict2[8'd28] && dict1[8'd27] ) begin
+                else if(dict1[8'd29] && dict2[8'd28] && dict3[8'd27] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd29) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd27;
                     end
                 end
-                else if(dict3[8'd30] && dict2[8'd29] && dict1[8'd28] ) begin
+                else if(dict1[8'd30] && dict2[8'd29] && dict3[8'd28] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd30) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd28;
                     end
                 end
-                else if(dict3[8'd31] && dict2[8'd30] && dict1[8'd29] ) begin
+                else if(dict1[8'd31] && dict2[8'd30] && dict3[8'd29] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd31) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd29;
                     end
                 end
-                else if(dict3[8'd32] && dict2[8'd31] && dict1[8'd30] ) begin
+                else if(dict1[8'd32] && dict2[8'd31] && dict3[8'd30] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd32) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd30;
                     end
                 end
-                else if(dict3[8'd33] && dict2[8'd32] && dict1[8'd31] ) begin
+                else if(dict1[8'd33] && dict2[8'd32] && dict3[8'd31] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd33) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd31;
                     end
                 end
-                else if(dict3[8'd34] && dict2[8'd33] && dict1[8'd32] ) begin
+                else if(dict1[8'd34] && dict2[8'd33] && dict3[8'd32] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd34) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd32;
                     end
                 end
-                else if(dict3[8'd35] && dict2[8'd34] && dict1[8'd33] ) begin
+                else if(dict1[8'd35] && dict2[8'd34] && dict3[8'd33] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd35) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd33;
                     end
                 end
-                else if(dict3[8'd36] && dict2[8'd35] && dict1[8'd34] ) begin
+                else if(dict1[8'd36] && dict2[8'd35] && dict3[8'd34] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd36) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd34;
                     end
                 end
-                else if(dict3[8'd37] && dict2[8'd36] && dict1[8'd35] ) begin
+                else if(dict1[8'd37] && dict2[8'd36] && dict3[8'd35] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd37) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd35;
                     end
                 end
-                else if(dict3[8'd38] && dict2[8'd37] && dict1[8'd36] ) begin
+                else if(dict1[8'd38] && dict2[8'd37] && dict3[8'd36] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd38) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd36;
                     end
                 end
-                else if(dict3[8'd39] && dict2[8'd38] && dict1[8'd37] ) begin
+                else if(dict1[8'd39] && dict2[8'd38] && dict3[8'd37] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd39) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd37;
                     end
                 end
-                else if(dict3[8'd40] && dict2[8'd39] && dict1[8'd38] ) begin
+                else if(dict1[8'd40] && dict2[8'd39] && dict3[8'd38] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd40) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd38;
                     end
                 end
-                else if(dict3[8'd41] && dict2[8'd40] && dict1[8'd39] ) begin
+                else if(dict1[8'd41] && dict2[8'd40] && dict3[8'd39] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd41) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd39;
                     end
                 end
-                else if(dict3[8'd42] && dict2[8'd41] && dict1[8'd40] ) begin
+                else if(dict1[8'd42] && dict2[8'd41] && dict3[8'd40] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd42) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd40;
                     end
                 end
-                else if(dict3[8'd43] && dict2[8'd42] && dict1[8'd41] ) begin
+                else if(dict1[8'd43] && dict2[8'd42] && dict3[8'd41] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd43) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd41;
                     end
                 end
-                else if(dict3[8'd44] && dict2[8'd43] && dict1[8'd42] ) begin
+                else if(dict1[8'd44] && dict2[8'd43] && dict3[8'd42] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd44) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd42;
                     end
                 end
-                else if(dict3[8'd45] && dict2[8'd44] && dict1[8'd43] ) begin
+                else if(dict1[8'd45] && dict2[8'd44] && dict3[8'd43] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd45) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd43;
                     end
                 end
-                else if(dict3[8'd46] && dict2[8'd45] && dict1[8'd44] ) begin
+                else if(dict1[8'd46] && dict2[8'd45] && dict3[8'd44] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd46) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd44;
                     end
                 end
-                else if(dict3[8'd47] && dict2[8'd46] && dict1[8'd45] ) begin
+                else if(dict1[8'd47] && dict2[8'd46] && dict3[8'd45] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd47) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd45;
                     end
                 end
-                else if(dict3[8'd48] && dict2[8'd47] && dict1[8'd46] ) begin
+                else if(dict1[8'd48] && dict2[8'd47] && dict3[8'd46] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd48) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd46;
                     end
                 end
-                else if(dict3[8'd49] && dict2[8'd48] && dict1[8'd47] ) begin
+                else if(dict1[8'd49] && dict2[8'd48] && dict3[8'd47] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd49) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd47;
                     end
                 end
-                else if(dict3[8'd50] && dict2[8'd49] && dict1[8'd48] ) begin
+                else if(dict1[8'd50] && dict2[8'd49] && dict3[8'd48] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd50) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd48;
                     end
                 end
-                else if(dict3[8'd51] && dict2[8'd50] && dict1[8'd49] ) begin
+                else if(dict1[8'd51] && dict2[8'd50] && dict3[8'd49] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd51) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd49;
                     end
                 end
-                else if(dict3[8'd52] && dict2[8'd51] && dict1[8'd50] ) begin
+                else if(dict1[8'd52] && dict2[8'd51] && dict3[8'd50] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd52) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd50;
                     end
                 end
-                else if(dict3[8'd53] && dict2[8'd52] && dict1[8'd51] ) begin
+                else if(dict1[8'd53] && dict2[8'd52] && dict3[8'd51] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd53) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd51;
                     end
                 end
-                else if(dict3[8'd54] && dict2[8'd53] && dict1[8'd52] ) begin
+                else if(dict1[8'd54] && dict2[8'd53] && dict3[8'd52] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd54) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd52;
                     end
                 end
-                else if(dict3[8'd55] && dict2[8'd54] && dict1[8'd53] ) begin
+                else if(dict1[8'd55] && dict2[8'd54] && dict3[8'd53] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd55) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd53;
                     end
                 end
-                else if(dict3[8'd56] && dict2[8'd55] && dict1[8'd54] ) begin
+                else if(dict1[8'd56] && dict2[8'd55] && dict3[8'd54] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd56) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd54;
                     end
                 end
-                else if(dict3[8'd57] && dict2[8'd56] && dict1[8'd55] ) begin
+                else if(dict1[8'd57] && dict2[8'd56] && dict3[8'd55] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd57) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd55;
                     end
                 end
-                else if(dict3[8'd58] && dict2[8'd57] && dict1[8'd56] ) begin
+                else if(dict1[8'd58] && dict2[8'd57] && dict3[8'd56] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd58) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd56;
                     end
                 end
-                else if(dict3[8'd59] && dict2[8'd58] && dict1[8'd57] ) begin
+                else if(dict1[8'd59] && dict2[8'd58] && dict3[8'd57] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd59) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd57;
                     end
                 end
-                else if(dict3[8'd60] && dict2[8'd59] && dict1[8'd58] ) begin
+                else if(dict1[8'd60] && dict2[8'd59] && dict3[8'd58] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd60) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd58;
                     end
                 end
-                else if(dict3[8'd61] && dict2[8'd60] && dict1[8'd59] ) begin
+                else if(dict1[8'd61] && dict2[8'd60] && dict3[8'd59] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd61) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd59;
                     end
                 end
-                else if(dict3[8'd62] && dict2[8'd61] && dict1[8'd60] ) begin
+                else if(dict1[8'd62] && dict2[8'd61] && dict3[8'd60] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd62) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd60;
                     end
                 end
-                else if(dict3[8'd63] && dict2[8'd62] && dict1[8'd61] ) begin
+                else if(dict1[8'd63] && dict2[8'd62] && dict3[8'd61] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd63) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd61;
                     end
                 end
-                else if(dict3[8'd64] && dict2[8'd63] && dict1[8'd62] ) begin
+                else if(dict1[8'd64] && dict2[8'd63] && dict3[8'd62] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd64) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd62;
                     end
                 end
-                else if(dict3[8'd65] && dict2[8'd64] && dict1[8'd63] ) begin
+                else if(dict1[8'd65] && dict2[8'd64] && dict3[8'd63] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd65) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd63;
                     end
                 end
-                else if(dict3[8'd66] && dict2[8'd65] && dict1[8'd64] ) begin
+                else if(dict1[8'd66] && dict2[8'd65] && dict3[8'd64] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd66) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd64;
                     end
                 end
-                else if(dict3[8'd67] && dict2[8'd66] && dict1[8'd65] ) begin
+                else if(dict1[8'd67] && dict2[8'd66] && dict3[8'd65] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd67) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd65;
                     end
                 end
-                else if(dict3[8'd68] && dict2[8'd67] && dict1[8'd66] ) begin
+                else if(dict1[8'd68] && dict2[8'd67] && dict3[8'd66] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd68) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd66;
                     end
                 end
-                else if(dict3[8'd69] && dict2[8'd68] && dict1[8'd67] ) begin
+                else if(dict1[8'd69] && dict2[8'd68] && dict3[8'd67] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd69) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd67;
                     end
                 end
-                else if(dict3[8'd70] && dict2[8'd69] && dict1[8'd68] ) begin
+                else if(dict1[8'd70] && dict2[8'd69] && dict3[8'd68] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd70) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd68;
                     end
                 end
-                else if(dict3[8'd71] && dict2[8'd70] && dict1[8'd69] ) begin
+                else if(dict1[8'd71] && dict2[8'd70] && dict3[8'd69] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd71) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd69;
                     end
                 end
-                else if(dict3[8'd72] && dict2[8'd71] && dict1[8'd70] ) begin
+                else if(dict1[8'd72] && dict2[8'd71] && dict3[8'd70] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd72) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd70;
                     end
                 end
-                else if(dict3[8'd73] && dict2[8'd72] && dict1[8'd71] ) begin
+                else if(dict1[8'd73] && dict2[8'd72] && dict3[8'd71] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd73) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd71;
                     end
                 end
-                else if(dict3[8'd74] && dict2[8'd73] && dict1[8'd72] ) begin
+                else if(dict1[8'd74] && dict2[8'd73] && dict3[8'd72] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd74) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd72;
                     end
                 end
-                else if(dict3[8'd75] && dict2[8'd74] && dict1[8'd73] ) begin
+                else if(dict1[8'd75] && dict2[8'd74] && dict3[8'd73] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd75) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd73;
                     end
                 end
-                else if(dict3[8'd76] && dict2[8'd75] && dict1[8'd74] ) begin
+                else if(dict1[8'd76] && dict2[8'd75] && dict3[8'd74] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd76) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd74;
                     end
                 end
-                else if(dict3[8'd77] && dict2[8'd76] && dict1[8'd75] ) begin
+                else if(dict1[8'd77] && dict2[8'd76] && dict3[8'd75] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd77) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd75;
                     end
                 end
-                else if(dict3[8'd78] && dict2[8'd77] && dict1[8'd76] ) begin
+                else if(dict1[8'd78] && dict2[8'd77] && dict3[8'd76] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd78) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd76;
                     end
                 end
-                else if(dict3[8'd79] && dict2[8'd78] && dict1[8'd77] ) begin
+                else if(dict1[8'd79] && dict2[8'd78] && dict3[8'd77] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd79) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd77;
                     end
                 end
-                else if(dict3[8'd80] && dict2[8'd79] && dict1[8'd78] ) begin
+                else if(dict1[8'd80] && dict2[8'd79] && dict3[8'd78] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd80) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd78;
                     end
                 end
-                else if(dict3[8'd81] && dict2[8'd80] && dict1[8'd79] ) begin
+                else if(dict1[8'd81] && dict2[8'd80] && dict3[8'd79] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd81) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd79;
                     end
                 end
-                else if(dict3[8'd82] && dict2[8'd81] && dict1[8'd80] ) begin
+                else if(dict1[8'd82] && dict2[8'd81] && dict3[8'd80] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd82) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd80;
                     end
                 end
-                else if(dict3[8'd83] && dict2[8'd82] && dict1[8'd81] ) begin
+                else if(dict1[8'd83] && dict2[8'd82] && dict3[8'd81] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd83) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd81;
                     end
                 end
-                else if(dict3[8'd84] && dict2[8'd83] && dict1[8'd82] ) begin
+                else if(dict1[8'd84] && dict2[8'd83] && dict3[8'd82] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd84) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd82;
                     end
                 end
-                else if(dict3[8'd85] && dict2[8'd84] && dict1[8'd83] ) begin
+                else if(dict1[8'd85] && dict2[8'd84] && dict3[8'd83] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd85) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd83;
                     end
                 end
-                else if(dict3[8'd86] && dict2[8'd85] && dict1[8'd84] ) begin
+                else if(dict1[8'd86] && dict2[8'd85] && dict3[8'd84] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd86) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd84;
                     end
                 end
-                else if(dict3[8'd87] && dict2[8'd86] && dict1[8'd85] ) begin
+                else if(dict1[8'd87] && dict2[8'd86] && dict3[8'd85] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd87) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd85;
                     end
                 end
-                else if(dict3[8'd88] && dict2[8'd87] && dict1[8'd86] ) begin
+                else if(dict1[8'd88] && dict2[8'd87] && dict3[8'd86] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd88) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd86;
                     end
                 end
-                else if(dict3[8'd89] && dict2[8'd88] && dict1[8'd87] ) begin
+                else if(dict1[8'd89] && dict2[8'd88] && dict3[8'd87] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd89) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd87;
                     end
                 end
-                else if(dict3[8'd90] && dict2[8'd89] && dict1[8'd88] ) begin
+                else if(dict1[8'd90] && dict2[8'd89] && dict3[8'd88] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd90) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd88;
                     end
                 end
-                else if(dict3[8'd91] && dict2[8'd90] && dict1[8'd89] ) begin
+                else if(dict1[8'd91] && dict2[8'd90] && dict3[8'd89] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd91) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd89;
                     end
                 end
-                else if(dict3[8'd92] && dict2[8'd91] && dict1[8'd90] ) begin
+                else if(dict1[8'd92] && dict2[8'd91] && dict3[8'd90] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd92) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd90;
                     end
                 end
-                else if(dict3[8'd93] && dict2[8'd92] && dict1[8'd91] ) begin
+                else if(dict1[8'd93] && dict2[8'd92] && dict3[8'd91] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd93) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd91;
                     end
                 end
-                else if(dict3[8'd94] && dict2[8'd93] && dict1[8'd92] ) begin
+                else if(dict1[8'd94] && dict2[8'd93] && dict3[8'd92] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd94) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd92;
                     end
                 end
-                else if(dict3[8'd95] && dict2[8'd94] && dict1[8'd93] ) begin
+                else if(dict1[8'd95] && dict2[8'd94] && dict3[8'd93] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd95) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd93;
                     end
                 end
-                else if(dict3[8'd96] && dict2[8'd95] && dict1[8'd94] ) begin
+                else if(dict1[8'd96] && dict2[8'd95] && dict3[8'd94] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd96) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd94;
                     end
                 end
-                else if(dict3[8'd97] && dict2[8'd96] && dict1[8'd95] ) begin
+                else if(dict1[8'd97] && dict2[8'd96] && dict3[8'd95] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd97) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd95;
                     end
                 end
-                else if(dict3[8'd98] && dict2[8'd97] && dict1[8'd96] ) begin
+                else if(dict1[8'd98] && dict2[8'd97] && dict3[8'd96] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd98) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd96;
                     end
                 end
-                else if(dict3[8'd99] && dict2[8'd98] && dict1[8'd97] ) begin
+                else if(dict1[8'd99] && dict2[8'd98] && dict3[8'd97] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd99) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd97;
                     end
                 end
-                else if(dict3[8'd100] && dict2[8'd99] && dict1[8'd98] ) begin
+                else if(dict1[8'd100] && dict2[8'd99] && dict3[8'd98] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd100) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd98;
                     end
                 end
-                else if(dict3[8'd101] && dict2[8'd100] && dict1[8'd99] ) begin
+                else if(dict1[8'd101] && dict2[8'd100] && dict3[8'd99] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd101) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd99;
                     end
                 end
-                else if(dict3[8'd102] && dict2[8'd101] && dict1[8'd100] ) begin
+                else if(dict1[8'd102] && dict2[8'd101] && dict3[8'd100] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd102) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd100;
                     end
                 end
-                else if(dict3[8'd103] && dict2[8'd102] && dict1[8'd101] ) begin
+                else if(dict1[8'd103] && dict2[8'd102] && dict3[8'd101] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd103) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd101;
                     end
                 end
-                else if(dict3[8'd104] && dict2[8'd103] && dict1[8'd102] ) begin
+                else if(dict1[8'd104] && dict2[8'd103] && dict3[8'd102] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd104) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd102;
                     end
                 end
-                else if(dict3[8'd105] && dict2[8'd104] && dict1[8'd103] ) begin
+                else if(dict1[8'd105] && dict2[8'd104] && dict3[8'd103] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd105) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd103;
                     end
                 end
-                else if(dict3[8'd106] && dict2[8'd105] && dict1[8'd104] ) begin
+                else if(dict1[8'd106] && dict2[8'd105] && dict3[8'd104] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd106) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd104;
                     end
                 end
-                else if(dict3[8'd107] && dict2[8'd106] && dict1[8'd105] ) begin
+                else if(dict1[8'd107] && dict2[8'd106] && dict3[8'd105] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd107) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd105;
                     end
                 end
-                else if(dict3[8'd108] && dict2[8'd107] && dict1[8'd106] ) begin
+                else if(dict1[8'd108] && dict2[8'd107] && dict3[8'd106] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd108) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd106;
                     end
                 end
-                else if(dict3[8'd109] && dict2[8'd108] && dict1[8'd107] ) begin
+                else if(dict1[8'd109] && dict2[8'd108] && dict3[8'd107] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd109) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd107;
                     end
                 end
-                else if(dict3[8'd110] && dict2[8'd109] && dict1[8'd108] ) begin
+                else if(dict1[8'd110] && dict2[8'd109] && dict3[8'd108] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd110) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd108;
                     end
                 end
-                else if(dict3[8'd111] && dict2[8'd110] && dict1[8'd109] ) begin
+                else if(dict1[8'd111] && dict2[8'd110] && dict3[8'd109] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd111) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd109;
                     end
                 end
-                else if(dict3[8'd112] && dict2[8'd111] && dict1[8'd110] ) begin
+                else if(dict1[8'd112] && dict2[8'd111] && dict3[8'd110] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd112) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd110;
                     end
                 end
-                else if(dict3[8'd113] && dict2[8'd112] && dict1[8'd111] ) begin
+                else if(dict1[8'd113] && dict2[8'd112] && dict3[8'd111] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd113) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd111;
                     end
                 end
-                else if(dict3[8'd114] && dict2[8'd113] && dict1[8'd112] ) begin
+                else if(dict1[8'd114] && dict2[8'd113] && dict3[8'd112] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd114) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd112;
                     end
                 end
-                else if(dict3[8'd115] && dict2[8'd114] && dict1[8'd113] ) begin
+                else if(dict1[8'd115] && dict2[8'd114] && dict3[8'd113] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd115) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd113;
                     end
                 end
-                else if(dict3[8'd116] && dict2[8'd115] && dict1[8'd114] ) begin
+                else if(dict1[8'd116] && dict2[8'd115] && dict3[8'd114] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd116) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd114;
                     end
                 end
-                else if(dict3[8'd117] && dict2[8'd116] && dict1[8'd115] ) begin
+                else if(dict1[8'd117] && dict2[8'd116] && dict3[8'd115] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd117) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd115;
                     end
                 end
-                else if(dict3[8'd118] && dict2[8'd117] && dict1[8'd116] ) begin
+                else if(dict1[8'd118] && dict2[8'd117] && dict3[8'd116] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd118) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd116;
                     end
                 end
-                else if(dict3[8'd119] && dict2[8'd118] && dict1[8'd117] ) begin
+                else if(dict1[8'd119] && dict2[8'd118] && dict3[8'd117] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd119) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd117;
                     end
                 end
-                else if(dict3[8'd120] && dict2[8'd119] && dict1[8'd118] ) begin
+                else if(dict1[8'd120] && dict2[8'd119] && dict3[8'd118] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd120) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd118;
                     end
                 end
-                else if(dict3[8'd121] && dict2[8'd120] && dict1[8'd119] ) begin
+                else if(dict1[8'd121] && dict2[8'd120] && dict3[8'd119] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd121) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd119;
                     end
                 end
-                else if(dict3[8'd122] && dict2[8'd121] && dict1[8'd120] ) begin
+                else if(dict1[8'd122] && dict2[8'd121] && dict3[8'd120] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd122) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd120;
                     end
                 end
-                else if(dict3[8'd123] && dict2[8'd122] && dict1[8'd121] ) begin
+                else if(dict1[8'd123] && dict2[8'd122] && dict3[8'd121] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd123) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd121;
                     end
                 end
-                else if(dict3[8'd124] && dict2[8'd123] && dict1[8'd122] ) begin
+                else if(dict1[8'd124] && dict2[8'd123] && dict3[8'd122] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd124) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd122;
                     end
                 end
-                else if(dict3[8'd125] && dict2[8'd124] && dict1[8'd123] ) begin
+                else if(dict1[8'd125] && dict2[8'd124] && dict3[8'd123] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd125) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd123;
                     end
                 end
-                else if(dict3[8'd126] && dict2[8'd125] && dict1[8'd124] ) begin
+                else if(dict1[8'd126] && dict2[8'd125] && dict3[8'd124] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd126) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd124;
                     end
                 end
-                else if(dict3[8'd127] && dict2[8'd126] && dict1[8'd125] ) begin
+                else if(dict1[8'd127] && dict2[8'd126] && dict3[8'd125] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd127) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd125;
                     end
                 end
-                else if(dict3[8'd128] && dict2[8'd127] && dict1[8'd126] ) begin
+                else if(dict1[8'd128] && dict2[8'd127] && dict3[8'd126] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd128) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd126;
                     end
                 end
-                else if(dict3[8'd129] && dict2[8'd128] && dict1[8'd127] ) begin
+                else if(dict1[8'd129] && dict2[8'd128] && dict3[8'd127] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd129) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd127;
                     end
                 end
-                else if(dict3[8'd130] && dict2[8'd129] && dict1[8'd128] ) begin
+                else if(dict1[8'd130] && dict2[8'd129] && dict3[8'd128] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd130) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd128;
                     end
                 end
-                else if(dict3[8'd131] && dict2[8'd130] && dict1[8'd129] ) begin
+                else if(dict1[8'd131] && dict2[8'd130] && dict3[8'd129] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd131) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd129;
                     end
                 end
-                else if(dict3[8'd132] && dict2[8'd131] && dict1[8'd130] ) begin
+                else if(dict1[8'd132] && dict2[8'd131] && dict3[8'd130] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd132) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd130;
                     end
                 end
-                else if(dict3[8'd133] && dict2[8'd132] && dict1[8'd131] ) begin
+                else if(dict1[8'd133] && dict2[8'd132] && dict3[8'd131] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd133) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd131;
                     end
                 end
-                else if(dict3[8'd134] && dict2[8'd133] && dict1[8'd132] ) begin
+                else if(dict1[8'd134] && dict2[8'd133] && dict3[8'd132] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd134) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd132;
                     end
                 end
-                else if(dict3[8'd135] && dict2[8'd134] && dict1[8'd133] ) begin
+                else if(dict1[8'd135] && dict2[8'd134] && dict3[8'd133] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd135) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd133;
                     end
                 end
-                else if(dict3[8'd136] && dict2[8'd135] && dict1[8'd134] ) begin
+                else if(dict1[8'd136] && dict2[8'd135] && dict3[8'd134] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd136) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd134;
                     end
                 end
-                else if(dict3[8'd137] && dict2[8'd136] && dict1[8'd135] ) begin
+                else if(dict1[8'd137] && dict2[8'd136] && dict3[8'd135] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd137) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd135;
                     end
                 end
-                else if(dict3[8'd138] && dict2[8'd137] && dict1[8'd136] ) begin
+                else if(dict1[8'd138] && dict2[8'd137] && dict3[8'd136] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd138) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd136;
                     end
                 end
-                else if(dict3[8'd139] && dict2[8'd138] && dict1[8'd137] ) begin
+                else if(dict1[8'd139] && dict2[8'd138] && dict3[8'd137] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd139) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd137;
                     end
                 end
-                else if(dict3[8'd140] && dict2[8'd139] && dict1[8'd138] ) begin
+                else if(dict1[8'd140] && dict2[8'd139] && dict3[8'd138] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd140) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd138;
                     end
                 end
-                else if(dict3[8'd141] && dict2[8'd140] && dict1[8'd139] ) begin
+                else if(dict1[8'd141] && dict2[8'd140] && dict3[8'd139] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd141) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd139;
                     end
                 end
-                else if(dict3[8'd142] && dict2[8'd141] && dict1[8'd140] ) begin
+                else if(dict1[8'd142] && dict2[8'd141] && dict3[8'd140] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd142) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd140;
                     end
                 end
-                else if(dict3[8'd143] && dict2[8'd142] && dict1[8'd141] ) begin
+                else if(dict1[8'd143] && dict2[8'd142] && dict3[8'd141] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd143) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd141;
                     end
                 end
-                else if(dict3[8'd144] && dict2[8'd143] && dict1[8'd142] ) begin
+                else if(dict1[8'd144] && dict2[8'd143] && dict3[8'd142] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd144) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd142;
                     end
                 end
-                else if(dict3[8'd145] && dict2[8'd144] && dict1[8'd143] ) begin
+                else if(dict1[8'd145] && dict2[8'd144] && dict3[8'd143] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd145) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd143;
                     end
                 end
-                else if(dict3[8'd146] && dict2[8'd145] && dict1[8'd144] ) begin
+                else if(dict1[8'd146] && dict2[8'd145] && dict3[8'd144] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd146) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd144;
                     end
                 end
-                else if(dict3[8'd147] && dict2[8'd146] && dict1[8'd145] ) begin
+                else if(dict1[8'd147] && dict2[8'd146] && dict3[8'd145] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd147) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd145;
                     end
                 end
-                else if(dict3[8'd148] && dict2[8'd147] && dict1[8'd146] ) begin
+                else if(dict1[8'd148] && dict2[8'd147] && dict3[8'd146] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd148) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd146;
                     end
                 end
-                else if(dict3[8'd149] && dict2[8'd148] && dict1[8'd147] ) begin
+                else if(dict1[8'd149] && dict2[8'd148] && dict3[8'd147] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd149) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd147;
                     end
                 end
-                else if(dict3[8'd150] && dict2[8'd149] && dict1[8'd148] ) begin
+                else if(dict1[8'd150] && dict2[8'd149] && dict3[8'd148] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd150) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd148;
                     end
                 end
-                else if(dict3[8'd151] && dict2[8'd150] && dict1[8'd149] ) begin
+                else if(dict1[8'd151] && dict2[8'd150] && dict3[8'd149] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd151) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd149;
                     end
                 end
-                else if(dict3[8'd152] && dict2[8'd151] && dict1[8'd150] ) begin
+                else if(dict1[8'd152] && dict2[8'd151] && dict3[8'd150] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd152) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd150;
                     end
                 end
-                else if(dict3[8'd153] && dict2[8'd152] && dict1[8'd151] ) begin
+                else if(dict1[8'd153] && dict2[8'd152] && dict3[8'd151] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd153) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd151;
                     end
                 end
-                else if(dict3[8'd154] && dict2[8'd153] && dict1[8'd152] ) begin
+                else if(dict1[8'd154] && dict2[8'd153] && dict3[8'd152] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd154) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd152;
                     end
                 end
-                else if(dict3[8'd155] && dict2[8'd154] && dict1[8'd153] ) begin
+                else if(dict1[8'd155] && dict2[8'd154] && dict3[8'd153] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd155) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd153;
                     end
                 end
-                else if(dict3[8'd156] && dict2[8'd155] && dict1[8'd154] ) begin
+                else if(dict1[8'd156] && dict2[8'd155] && dict3[8'd154] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd156) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd154;
                     end
                 end
-                else if(dict3[8'd157] && dict2[8'd156] && dict1[8'd155] ) begin
+                else if(dict1[8'd157] && dict2[8'd156] && dict3[8'd155] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd157) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd155;
                     end
                 end
-                else if(dict3[8'd158] && dict2[8'd157] && dict1[8'd156] ) begin
+                else if(dict1[8'd158] && dict2[8'd157] && dict3[8'd156] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd158) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd156;
                     end
                 end
-                else if(dict3[8'd159] && dict2[8'd158] && dict1[8'd157] ) begin
+                else if(dict1[8'd159] && dict2[8'd158] && dict3[8'd157] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd159) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd157;
                     end
                 end
-                else if(dict3[8'd160] && dict2[8'd159] && dict1[8'd158] ) begin
+                else if(dict1[8'd160] && dict2[8'd159] && dict3[8'd158] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd160) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd158;
                     end
                 end
-                else if(dict3[8'd161] && dict2[8'd160] && dict1[8'd159] ) begin
+                else if(dict1[8'd161] && dict2[8'd160] && dict3[8'd159] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd161) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd159;
                     end
                 end
-                else if(dict3[8'd162] && dict2[8'd161] && dict1[8'd160] ) begin
+                else if(dict1[8'd162] && dict2[8'd161] && dict3[8'd160] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd162) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd160;
                     end
                 end
-                else if(dict3[8'd163] && dict2[8'd162] && dict1[8'd161] ) begin
+                else if(dict1[8'd163] && dict2[8'd162] && dict3[8'd161] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd163) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd161;
                     end
                 end
-                else if(dict3[8'd164] && dict2[8'd163] && dict1[8'd162] ) begin
+                else if(dict1[8'd164] && dict2[8'd163] && dict3[8'd162] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd164) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd162;
                     end
                 end
-                else if(dict3[8'd165] && dict2[8'd164] && dict1[8'd163] ) begin
+                else if(dict1[8'd165] && dict2[8'd164] && dict3[8'd163] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd165) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd163;
                     end
                 end
-                else if(dict3[8'd166] && dict2[8'd165] && dict1[8'd164] ) begin
+                else if(dict1[8'd166] && dict2[8'd165] && dict3[8'd164] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd166) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd164;
                     end
                 end
-                else if(dict3[8'd167] && dict2[8'd166] && dict1[8'd165] ) begin
+                else if(dict1[8'd167] && dict2[8'd166] && dict3[8'd165] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd167) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd165;
                     end
                 end
-                else if(dict3[8'd168] && dict2[8'd167] && dict1[8'd166] ) begin
+                else if(dict1[8'd168] && dict2[8'd167] && dict3[8'd166] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd168) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd166;
                     end
                 end
-                else if(dict3[8'd169] && dict2[8'd168] && dict1[8'd167] ) begin
+                else if(dict1[8'd169] && dict2[8'd168] && dict3[8'd167] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd169) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd167;
                     end
                 end
-                else if(dict3[8'd170] && dict2[8'd169] && dict1[8'd168] ) begin
+                else if(dict1[8'd170] && dict2[8'd169] && dict3[8'd168] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd170) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd168;
                     end
                 end
-                else if(dict3[8'd171] && dict2[8'd170] && dict1[8'd169] ) begin
+                else if(dict1[8'd171] && dict2[8'd170] && dict3[8'd169] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd171) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd169;
                     end
                 end
-                else if(dict3[8'd172] && dict2[8'd171] && dict1[8'd170] ) begin
+                else if(dict1[8'd172] && dict2[8'd171] && dict3[8'd170] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd172) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd170;
                     end
                 end
-                else if(dict3[8'd173] && dict2[8'd172] && dict1[8'd171] ) begin
+                else if(dict1[8'd173] && dict2[8'd172] && dict3[8'd171] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd173) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd171;
                     end
                 end
-                else if(dict3[8'd174] && dict2[8'd173] && dict1[8'd172] ) begin
+                else if(dict1[8'd174] && dict2[8'd173] && dict3[8'd172] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd174) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd172;
                     end
                 end
-                else if(dict3[8'd175] && dict2[8'd174] && dict1[8'd173] ) begin
+                else if(dict1[8'd175] && dict2[8'd174] && dict3[8'd173] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd175) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd173;
                     end
                 end
-                else if(dict3[8'd176] && dict2[8'd175] && dict1[8'd174] ) begin
+                else if(dict1[8'd176] && dict2[8'd175] && dict3[8'd174] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd176) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd174;
                     end
                 end
-                else if(dict3[8'd177] && dict2[8'd176] && dict1[8'd175] ) begin
+                else if(dict1[8'd177] && dict2[8'd176] && dict3[8'd175] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd177) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd175;
                     end
                 end
-                else if(dict3[8'd178] && dict2[8'd177] && dict1[8'd176] ) begin
+                else if(dict1[8'd178] && dict2[8'd177] && dict3[8'd176] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd178) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd176;
                     end
                 end
-                else if(dict3[8'd179] && dict2[8'd178] && dict1[8'd177] ) begin
+                else if(dict1[8'd179] && dict2[8'd178] && dict3[8'd177] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd179) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd177;
                     end
                 end
-                else if(dict3[8'd180] && dict2[8'd179] && dict1[8'd178] ) begin
+                else if(dict1[8'd180] && dict2[8'd179] && dict3[8'd178] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd180) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd178;
                     end
                 end
-                else if(dict3[8'd181] && dict2[8'd180] && dict1[8'd179] ) begin
+                else if(dict1[8'd181] && dict2[8'd180] && dict3[8'd179] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd181) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd179;
                     end
                 end
-                else if(dict3[8'd182] && dict2[8'd181] && dict1[8'd180] ) begin
+                else if(dict1[8'd182] && dict2[8'd181] && dict3[8'd180] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd182) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd180;
                     end
                 end
-                else if(dict3[8'd183] && dict2[8'd182] && dict1[8'd181] ) begin
+                else if(dict1[8'd183] && dict2[8'd182] && dict3[8'd181] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd183) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd181;
                     end
                 end
-                else if(dict3[8'd184] && dict2[8'd183] && dict1[8'd182] ) begin
+                else if(dict1[8'd184] && dict2[8'd183] && dict3[8'd182] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd184) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd182;
                     end
                 end
-                else if(dict3[8'd185] && dict2[8'd184] && dict1[8'd183] ) begin
+                else if(dict1[8'd185] && dict2[8'd184] && dict3[8'd183] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd185) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd183;
                     end
                 end
-                else if(dict3[8'd186] && dict2[8'd185] && dict1[8'd184] ) begin
+                else if(dict1[8'd186] && dict2[8'd185] && dict3[8'd184] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd186) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd184;
                     end
                 end
-                else if(dict3[8'd187] && dict2[8'd186] && dict1[8'd185] ) begin
+                else if(dict1[8'd187] && dict2[8'd186] && dict3[8'd185] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd187) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd185;
                     end
                 end
-                else if(dict3[8'd188] && dict2[8'd187] && dict1[8'd186] ) begin
+                else if(dict1[8'd188] && dict2[8'd187] && dict3[8'd186] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd188) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd186;
                     end
                 end
-                else if(dict3[8'd189] && dict2[8'd188] && dict1[8'd187] ) begin
+                else if(dict1[8'd189] && dict2[8'd188] && dict3[8'd187] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd189) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd187;
                     end
                 end
-                else if(dict3[8'd190] && dict2[8'd189] && dict1[8'd188] ) begin
+                else if(dict1[8'd190] && dict2[8'd189] && dict3[8'd188] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd190) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd188;
                     end
                 end
-                else if(dict3[8'd191] && dict2[8'd190] && dict1[8'd189] ) begin
+                else if(dict1[8'd191] && dict2[8'd190] && dict3[8'd189] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd191) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd189;
                     end
                 end
-                else if(dict3[8'd192] && dict2[8'd191] && dict1[8'd190] ) begin
+                else if(dict1[8'd192] && dict2[8'd191] && dict3[8'd190] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd192) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd190;
                     end
                 end
-                else if(dict3[8'd193] && dict2[8'd192] && dict1[8'd191] ) begin
+                else if(dict1[8'd193] && dict2[8'd192] && dict3[8'd191] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd193) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd191;
                     end
                 end
-                else if(dict3[8'd194] && dict2[8'd193] && dict1[8'd192] ) begin
+                else if(dict1[8'd194] && dict2[8'd193] && dict3[8'd192] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd194) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd192;
                     end
                 end
-                else if(dict3[8'd195] && dict2[8'd194] && dict1[8'd193] ) begin
+                else if(dict1[8'd195] && dict2[8'd194] && dict3[8'd193] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd195) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd193;
                     end
                 end
-                else if(dict3[8'd196] && dict2[8'd195] && dict1[8'd194] ) begin
+                else if(dict1[8'd196] && dict2[8'd195] && dict3[8'd194] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd196) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd194;
                     end
                 end
-                else if(dict3[8'd197] && dict2[8'd196] && dict1[8'd195] ) begin
+                else if(dict1[8'd197] && dict2[8'd196] && dict3[8'd195] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd197) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd195;
                     end
                 end
-                else if(dict3[8'd198] && dict2[8'd197] && dict1[8'd196] ) begin
+                else if(dict1[8'd198] && dict2[8'd197] && dict3[8'd196] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd198) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd196;
                     end
                 end
-                else if(dict3[8'd199] && dict2[8'd198] && dict1[8'd197] ) begin
+                else if(dict1[8'd199] && dict2[8'd198] && dict3[8'd197] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd199) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd197;
                     end
                 end
-                else if(dict3[8'd200] && dict2[8'd199] && dict1[8'd198] ) begin
+                else if(dict1[8'd200] && dict2[8'd199] && dict3[8'd198] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd200) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd198;
                     end
                 end
-                else if(dict3[8'd201] && dict2[8'd200] && dict1[8'd199] ) begin
+                else if(dict1[8'd201] && dict2[8'd200] && dict3[8'd199] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd201) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd199;
                     end
                 end
-                else if(dict3[8'd202] && dict2[8'd201] && dict1[8'd200] ) begin
+                else if(dict1[8'd202] && dict2[8'd201] && dict3[8'd200] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd202) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd200;
                     end
                 end
-                else if(dict3[8'd203] && dict2[8'd202] && dict1[8'd201] ) begin
+                else if(dict1[8'd203] && dict2[8'd202] && dict3[8'd201] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd203) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd201;
                     end
                 end
-                else if(dict3[8'd204] && dict2[8'd203] && dict1[8'd202] ) begin
+                else if(dict1[8'd204] && dict2[8'd203] && dict3[8'd202] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd204) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd202;
                     end
                 end
-                else if(dict3[8'd205] && dict2[8'd204] && dict1[8'd203] ) begin
+                else if(dict1[8'd205] && dict2[8'd204] && dict3[8'd203] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd205) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd203;
                     end
                 end
-                else if(dict3[8'd206] && dict2[8'd205] && dict1[8'd204] ) begin
+                else if(dict1[8'd206] && dict2[8'd205] && dict3[8'd204] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd206) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd204;
                     end
                 end
-                else if(dict3[8'd207] && dict2[8'd206] && dict1[8'd205] ) begin
+                else if(dict1[8'd207] && dict2[8'd206] && dict3[8'd205] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd207) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd205;
                     end
                 end
-                else if(dict3[8'd208] && dict2[8'd207] && dict1[8'd206] ) begin
+                else if(dict1[8'd208] && dict2[8'd207] && dict3[8'd206] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd208) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd206;
                     end
                 end
-                else if(dict3[8'd209] && dict2[8'd208] && dict1[8'd207] ) begin
+                else if(dict1[8'd209] && dict2[8'd208] && dict3[8'd207] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd209) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd207;
                     end
                 end
-                else if(dict3[8'd210] && dict2[8'd209] && dict1[8'd208] ) begin
+                else if(dict1[8'd210] && dict2[8'd209] && dict3[8'd208] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd210) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd208;
                     end
                 end
-                else if(dict3[8'd211] && dict2[8'd210] && dict1[8'd209] ) begin
+                else if(dict1[8'd211] && dict2[8'd210] && dict3[8'd209] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd211) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd209;
                     end
                 end
-                else if(dict3[8'd212] && dict2[8'd211] && dict1[8'd210] ) begin
+                else if(dict1[8'd212] && dict2[8'd211] && dict3[8'd210] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd212) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd210;
                     end
                 end
-                else if(dict3[8'd213] && dict2[8'd212] && dict1[8'd211] ) begin
+                else if(dict1[8'd213] && dict2[8'd212] && dict3[8'd211] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd213) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd211;
                     end
                 end
-                else if(dict3[8'd214] && dict2[8'd213] && dict1[8'd212] ) begin
+                else if(dict1[8'd214] && dict2[8'd213] && dict3[8'd212] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd214) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd212;
                     end
                 end
-                else if(dict3[8'd215] && dict2[8'd214] && dict1[8'd213] ) begin
+                else if(dict1[8'd215] && dict2[8'd214] && dict3[8'd213] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd215) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd213;
                     end
                 end
-                else if(dict3[8'd216] && dict2[8'd215] && dict1[8'd214] ) begin
+                else if(dict1[8'd216] && dict2[8'd215] && dict3[8'd214] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd216) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd214;
                     end
                 end
-                else if(dict3[8'd217] && dict2[8'd216] && dict1[8'd215] ) begin
+                else if(dict1[8'd217] && dict2[8'd216] && dict3[8'd215] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd217) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd215;
                     end
                 end
-                else if(dict3[8'd218] && dict2[8'd217] && dict1[8'd216] ) begin
+                else if(dict1[8'd218] && dict2[8'd217] && dict3[8'd216] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd218) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd216;
                     end
                 end
-                else if(dict3[8'd219] && dict2[8'd218] && dict1[8'd217] ) begin
+                else if(dict1[8'd219] && dict2[8'd218] && dict3[8'd217] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd219) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd217;
                     end
                 end
-                else if(dict3[8'd220] && dict2[8'd219] && dict1[8'd218] ) begin
+                else if(dict1[8'd220] && dict2[8'd219] && dict3[8'd218] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd220) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd218;
                     end
                 end
-                else if(dict3[8'd221] && dict2[8'd220] && dict1[8'd219] ) begin
+                else if(dict1[8'd221] && dict2[8'd220] && dict3[8'd219] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd221) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd219;
                     end
                 end
-                else if(dict3[8'd222] && dict2[8'd221] && dict1[8'd220] ) begin
+                else if(dict1[8'd222] && dict2[8'd221] && dict3[8'd220] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd222) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd220;
                     end
                 end
-                else if(dict3[8'd223] && dict2[8'd222] && dict1[8'd221] ) begin
+                else if(dict1[8'd223] && dict2[8'd222] && dict3[8'd221] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd223) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd221;
                     end
                 end
-                else if(dict3[8'd224] && dict2[8'd223] && dict1[8'd222] ) begin
+                else if(dict1[8'd224] && dict2[8'd223] && dict3[8'd222] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd224) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd222;
                     end
                 end
-                else if(dict3[8'd225] && dict2[8'd224] && dict1[8'd223] ) begin
+                else if(dict1[8'd225] && dict2[8'd224] && dict3[8'd223] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd225) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd223;
                     end
                 end
-                else if(dict3[8'd226] && dict2[8'd225] && dict1[8'd224] ) begin
+                else if(dict1[8'd226] && dict2[8'd225] && dict3[8'd224] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd226) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd224;
                     end
                 end
-                else if(dict3[8'd227] && dict2[8'd226] && dict1[8'd225] ) begin
+                else if(dict1[8'd227] && dict2[8'd226] && dict3[8'd225] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd227) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd225;
                     end
                 end
-                else if(dict3[8'd228] && dict2[8'd227] && dict1[8'd226] ) begin
+                else if(dict1[8'd228] && dict2[8'd227] && dict3[8'd226] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd228) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd226;
                     end
                 end
-                else if(dict3[8'd229] && dict2[8'd228] && dict1[8'd227] ) begin
+                else if(dict1[8'd229] && dict2[8'd228] && dict3[8'd227] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd229) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd227;
                     end
                 end
-                else if(dict3[8'd230] && dict2[8'd229] && dict1[8'd228] ) begin
+                else if(dict1[8'd230] && dict2[8'd229] && dict3[8'd228] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd230) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd228;
                     end
                 end
-                else if(dict3[8'd231] && dict2[8'd230] && dict1[8'd229] ) begin
+                else if(dict1[8'd231] && dict2[8'd230] && dict3[8'd229] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd231) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd229;
                     end
                 end
-                else if(dict3[8'd232] && dict2[8'd231] && dict1[8'd230] ) begin
+                else if(dict1[8'd232] && dict2[8'd231] && dict3[8'd230] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd232) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd230;
                     end
                 end
-                else if(dict3[8'd233] && dict2[8'd232] && dict1[8'd231] ) begin
+                else if(dict1[8'd233] && dict2[8'd232] && dict3[8'd231] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd233) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd231;
                     end
                 end
-                else if(dict3[8'd234] && dict2[8'd233] && dict1[8'd232] ) begin
+                else if(dict1[8'd234] && dict2[8'd233] && dict3[8'd232] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd234) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd232;
                     end
                 end
-                else if(dict3[8'd235] && dict2[8'd234] && dict1[8'd233] ) begin
+                else if(dict1[8'd235] && dict2[8'd234] && dict3[8'd233] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd235) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd233;
                     end
                 end
-                else if(dict3[8'd236] && dict2[8'd235] && dict1[8'd234] ) begin
+                else if(dict1[8'd236] && dict2[8'd235] && dict3[8'd234] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd236) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd234;
                     end
                 end
-                else if(dict3[8'd237] && dict2[8'd236] && dict1[8'd235] ) begin
+                else if(dict1[8'd237] && dict2[8'd236] && dict3[8'd235] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd237) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd235;
                     end
                 end
-                else if(dict3[8'd238] && dict2[8'd237] && dict1[8'd236] ) begin
+                else if(dict1[8'd238] && dict2[8'd237] && dict3[8'd236] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd238) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd236;
                     end
                 end
-                else if(dict3[8'd239] && dict2[8'd238] && dict1[8'd237] ) begin
+                else if(dict1[8'd239] && dict2[8'd238] && dict3[8'd237] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd239) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd237;
                     end
                 end
-                else if(dict3[8'd240] && dict2[8'd239] && dict1[8'd238] ) begin
+                else if(dict1[8'd240] && dict2[8'd239] && dict3[8'd238] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd240) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd238;
                     end
                 end
-                else if(dict3[8'd241] && dict2[8'd240] && dict1[8'd239] ) begin
+                else if(dict1[8'd241] && dict2[8'd240] && dict3[8'd239] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd241) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd239;
                     end
                 end
-                else if(dict3[8'd242] && dict2[8'd241] && dict1[8'd240] ) begin
+                else if(dict1[8'd242] && dict2[8'd241] && dict3[8'd240] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd242) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd240;
                     end
                 end
-                else if(dict3[8'd243] && dict2[8'd242] && dict1[8'd241] ) begin
+                else if(dict1[8'd243] && dict2[8'd242] && dict3[8'd241] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd243) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd241;
                     end
                 end
-                else if(dict3[8'd244] && dict2[8'd243] && dict1[8'd242] ) begin
+                else if(dict1[8'd244] && dict2[8'd243] && dict3[8'd242] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd244) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd242;
                     end
                 end
-                else if(dict3[8'd245] && dict2[8'd244] && dict1[8'd243] ) begin
+                else if(dict1[8'd245] && dict2[8'd244] && dict3[8'd243] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd245) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd243;
                     end
                 end
-                else if(dict3[8'd246] && dict2[8'd245] && dict1[8'd244] ) begin
+                else if(dict1[8'd246] && dict2[8'd245] && dict3[8'd244] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd246) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd244;
                     end
                 end
-                else if(dict3[8'd247] && dict2[8'd246] && dict1[8'd245] ) begin
+                else if(dict1[8'd247] && dict2[8'd246] && dict3[8'd245] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd247) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd245;
                     end
                 end
-                else if(dict3[8'd248] && dict2[8'd247] && dict1[8'd246] ) begin
+                else if(dict1[8'd248] && dict2[8'd247] && dict3[8'd246] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd248) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd246;
                     end
                 end
-                else if(dict3[8'd249] && dict2[8'd248] && dict1[8'd247] ) begin
+                else if(dict1[8'd249] && dict2[8'd248] && dict3[8'd247] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd249) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd247;
                     end
                 end
-                else if(dict3[8'd250] && dict2[8'd249] && dict1[8'd248] ) begin
+                else if(dict1[8'd250] && dict2[8'd249] && dict3[8'd248] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd250) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd248;
                     end
                 end
-                else if(dict3[8'd251] && dict2[8'd250] && dict1[8'd249] ) begin
+                else if(dict1[8'd251] && dict2[8'd250] && dict3[8'd249] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd251) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd249;
                     end
                 end
-                else if(dict3[8'd252] && dict2[8'd251] && dict1[8'd250] ) begin
+                else if(dict1[8'd252] && dict2[8'd251] && dict3[8'd250] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd252) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd250;
                     end
                 end
-                else if(dict3[8'd253] && dict2[8'd252] && dict1[8'd251] ) begin
+                else if(dict1[8'd253] && dict2[8'd252] && dict3[8'd251] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd253) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd251;
                     end
                 end
-                else if(dict3[8'd254] && dict2[8'd253] && dict1[8'd252] ) begin
+                else if(dict1[8'd254] && dict2[8'd253] && dict3[8'd252] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd254) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd252;
                     end
                 end
-                else if(dict3[8'd255] && dict2[8'd254] && dict1[8'd253] ) begin
+                else if(dict1[8'd255] && dict2[8'd254] && dict3[8'd253] ) begin
                     if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd255) begin
                         tmp_largest = 3'd3;
                         tmp_largest_pos = 8'd253;
                     end
                 end
-                else if(dict2[8'd1] && dict1[8'd0] ) begin
+                else if(dict1[8'd1] && dict2[8'd0] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd1) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd0;
                     end
                 end
-                else if(dict2[8'd2] && dict1[8'd1] ) begin
+                else if(dict1[8'd2] && dict2[8'd1] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd2) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd1;
                     end
                 end
-                else if(dict2[8'd3] && dict1[8'd2] ) begin
+                else if(dict1[8'd3] && dict2[8'd2] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd3) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd2;
                     end
                 end
-                else if(dict2[8'd4] && dict1[8'd3] ) begin
+                else if(dict1[8'd4] && dict2[8'd3] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd4) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd3;
                     end
                 end
-                else if(dict2[8'd5] && dict1[8'd4] ) begin
+                else if(dict1[8'd5] && dict2[8'd4] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd5) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd4;
                     end
                 end
-                else if(dict2[8'd6] && dict1[8'd5] ) begin
+                else if(dict1[8'd6] && dict2[8'd5] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd6) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd5;
                     end
                 end
-                else if(dict2[8'd7] && dict1[8'd6] ) begin
+                else if(dict1[8'd7] && dict2[8'd6] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd7) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd6;
                     end
                 end
-                else if(dict2[8'd8] && dict1[8'd7] ) begin
+                else if(dict1[8'd8] && dict2[8'd7] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd8) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd7;
                     end
                 end
-                else if(dict2[8'd9] && dict1[8'd8] ) begin
+                else if(dict1[8'd9] && dict2[8'd8] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd9) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd8;
                     end
                 end
-                else if(dict2[8'd10] && dict1[8'd9] ) begin
+                else if(dict1[8'd10] && dict2[8'd9] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd10) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd9;
                     end
                 end
-                else if(dict2[8'd11] && dict1[8'd10] ) begin
+                else if(dict1[8'd11] && dict2[8'd10] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd11) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd10;
                     end
                 end
-                else if(dict2[8'd12] && dict1[8'd11] ) begin
+                else if(dict1[8'd12] && dict2[8'd11] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd12) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd11;
                     end
                 end
-                else if(dict2[8'd13] && dict1[8'd12] ) begin
+                else if(dict1[8'd13] && dict2[8'd12] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd13) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd12;
                     end
                 end
-                else if(dict2[8'd14] && dict1[8'd13] ) begin
+                else if(dict1[8'd14] && dict2[8'd13] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd14) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd13;
                     end
                 end
-                else if(dict2[8'd15] && dict1[8'd14] ) begin
+                else if(dict1[8'd15] && dict2[8'd14] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd15) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd14;
                     end
                 end
-                else if(dict2[8'd16] && dict1[8'd15] ) begin
+                else if(dict1[8'd16] && dict2[8'd15] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd16) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd15;
                     end
                 end
-                else if(dict2[8'd17] && dict1[8'd16] ) begin
+                else if(dict1[8'd17] && dict2[8'd16] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd17) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd16;
                     end
                 end
-                else if(dict2[8'd18] && dict1[8'd17] ) begin
+                else if(dict1[8'd18] && dict2[8'd17] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd18) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd17;
                     end
                 end
-                else if(dict2[8'd19] && dict1[8'd18] ) begin
+                else if(dict1[8'd19] && dict2[8'd18] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd19) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd18;
                     end
                 end
-                else if(dict2[8'd20] && dict1[8'd19] ) begin
+                else if(dict1[8'd20] && dict2[8'd19] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd20) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd19;
                     end
                 end
-                else if(dict2[8'd21] && dict1[8'd20] ) begin
+                else if(dict1[8'd21] && dict2[8'd20] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd21) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd20;
                     end
                 end
-                else if(dict2[8'd22] && dict1[8'd21] ) begin
+                else if(dict1[8'd22] && dict2[8'd21] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd22) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd21;
                     end
                 end
-                else if(dict2[8'd23] && dict1[8'd22] ) begin
+                else if(dict1[8'd23] && dict2[8'd22] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd23) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd22;
                     end
                 end
-                else if(dict2[8'd24] && dict1[8'd23] ) begin
+                else if(dict1[8'd24] && dict2[8'd23] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd24) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd23;
                     end
                 end
-                else if(dict2[8'd25] && dict1[8'd24] ) begin
+                else if(dict1[8'd25] && dict2[8'd24] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd25) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd24;
                     end
                 end
-                else if(dict2[8'd26] && dict1[8'd25] ) begin
+                else if(dict1[8'd26] && dict2[8'd25] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd26) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd25;
                     end
                 end
-                else if(dict2[8'd27] && dict1[8'd26] ) begin
+                else if(dict1[8'd27] && dict2[8'd26] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd27) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd26;
                     end
                 end
-                else if(dict2[8'd28] && dict1[8'd27] ) begin
+                else if(dict1[8'd28] && dict2[8'd27] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd28) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd27;
                     end
                 end
-                else if(dict2[8'd29] && dict1[8'd28] ) begin
+                else if(dict1[8'd29] && dict2[8'd28] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd29) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd28;
                     end
                 end
-                else if(dict2[8'd30] && dict1[8'd29] ) begin
+                else if(dict1[8'd30] && dict2[8'd29] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd30) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd29;
                     end
                 end
-                else if(dict2[8'd31] && dict1[8'd30] ) begin
+                else if(dict1[8'd31] && dict2[8'd30] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd31) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd30;
                     end
                 end
-                else if(dict2[8'd32] && dict1[8'd31] ) begin
+                else if(dict1[8'd32] && dict2[8'd31] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd32) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd31;
                     end
                 end
-                else if(dict2[8'd33] && dict1[8'd32] ) begin
+                else if(dict1[8'd33] && dict2[8'd32] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd33) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd32;
                     end
                 end
-                else if(dict2[8'd34] && dict1[8'd33] ) begin
+                else if(dict1[8'd34] && dict2[8'd33] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd34) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd33;
                     end
                 end
-                else if(dict2[8'd35] && dict1[8'd34] ) begin
+                else if(dict1[8'd35] && dict2[8'd34] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd35) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd34;
                     end
                 end
-                else if(dict2[8'd36] && dict1[8'd35] ) begin
+                else if(dict1[8'd36] && dict2[8'd35] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd36) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd35;
                     end
                 end
-                else if(dict2[8'd37] && dict1[8'd36] ) begin
+                else if(dict1[8'd37] && dict2[8'd36] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd37) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd36;
                     end
                 end
-                else if(dict2[8'd38] && dict1[8'd37] ) begin
+                else if(dict1[8'd38] && dict2[8'd37] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd38) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd37;
                     end
                 end
-                else if(dict2[8'd39] && dict1[8'd38] ) begin
+                else if(dict1[8'd39] && dict2[8'd38] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd39) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd38;
                     end
                 end
-                else if(dict2[8'd40] && dict1[8'd39] ) begin
+                else if(dict1[8'd40] && dict2[8'd39] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd40) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd39;
                     end
                 end
-                else if(dict2[8'd41] && dict1[8'd40] ) begin
+                else if(dict1[8'd41] && dict2[8'd40] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd41) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd40;
                     end
                 end
-                else if(dict2[8'd42] && dict1[8'd41] ) begin
+                else if(dict1[8'd42] && dict2[8'd41] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd42) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd41;
                     end
                 end
-                else if(dict2[8'd43] && dict1[8'd42] ) begin
+                else if(dict1[8'd43] && dict2[8'd42] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd43) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd42;
                     end
                 end
-                else if(dict2[8'd44] && dict1[8'd43] ) begin
+                else if(dict1[8'd44] && dict2[8'd43] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd44) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd43;
                     end
                 end
-                else if(dict2[8'd45] && dict1[8'd44] ) begin
+                else if(dict1[8'd45] && dict2[8'd44] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd45) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd44;
                     end
                 end
-                else if(dict2[8'd46] && dict1[8'd45] ) begin
+                else if(dict1[8'd46] && dict2[8'd45] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd46) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd45;
                     end
                 end
-                else if(dict2[8'd47] && dict1[8'd46] ) begin
+                else if(dict1[8'd47] && dict2[8'd46] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd47) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd46;
                     end
                 end
-                else if(dict2[8'd48] && dict1[8'd47] ) begin
+                else if(dict1[8'd48] && dict2[8'd47] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd48) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd47;
                     end
                 end
-                else if(dict2[8'd49] && dict1[8'd48] ) begin
+                else if(dict1[8'd49] && dict2[8'd48] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd49) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd48;
                     end
                 end
-                else if(dict2[8'd50] && dict1[8'd49] ) begin
+                else if(dict1[8'd50] && dict2[8'd49] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd50) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd49;
                     end
                 end
-                else if(dict2[8'd51] && dict1[8'd50] ) begin
+                else if(dict1[8'd51] && dict2[8'd50] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd51) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd50;
                     end
                 end
-                else if(dict2[8'd52] && dict1[8'd51] ) begin
+                else if(dict1[8'd52] && dict2[8'd51] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd52) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd51;
                     end
                 end
-                else if(dict2[8'd53] && dict1[8'd52] ) begin
+                else if(dict1[8'd53] && dict2[8'd52] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd53) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd52;
                     end
                 end
-                else if(dict2[8'd54] && dict1[8'd53] ) begin
+                else if(dict1[8'd54] && dict2[8'd53] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd54) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd53;
                     end
                 end
-                else if(dict2[8'd55] && dict1[8'd54] ) begin
+                else if(dict1[8'd55] && dict2[8'd54] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd55) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd54;
                     end
                 end
-                else if(dict2[8'd56] && dict1[8'd55] ) begin
+                else if(dict1[8'd56] && dict2[8'd55] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd56) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd55;
                     end
                 end
-                else if(dict2[8'd57] && dict1[8'd56] ) begin
+                else if(dict1[8'd57] && dict2[8'd56] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd57) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd56;
                     end
                 end
-                else if(dict2[8'd58] && dict1[8'd57] ) begin
+                else if(dict1[8'd58] && dict2[8'd57] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd58) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd57;
                     end
                 end
-                else if(dict2[8'd59] && dict1[8'd58] ) begin
+                else if(dict1[8'd59] && dict2[8'd58] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd59) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd58;
                     end
                 end
-                else if(dict2[8'd60] && dict1[8'd59] ) begin
+                else if(dict1[8'd60] && dict2[8'd59] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd60) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd59;
                     end
                 end
-                else if(dict2[8'd61] && dict1[8'd60] ) begin
+                else if(dict1[8'd61] && dict2[8'd60] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd61) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd60;
                     end
                 end
-                else if(dict2[8'd62] && dict1[8'd61] ) begin
+                else if(dict1[8'd62] && dict2[8'd61] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd62) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd61;
                     end
                 end
-                else if(dict2[8'd63] && dict1[8'd62] ) begin
+                else if(dict1[8'd63] && dict2[8'd62] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd63) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd62;
                     end
                 end
-                else if(dict2[8'd64] && dict1[8'd63] ) begin
+                else if(dict1[8'd64] && dict2[8'd63] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd64) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd63;
                     end
                 end
-                else if(dict2[8'd65] && dict1[8'd64] ) begin
+                else if(dict1[8'd65] && dict2[8'd64] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd65) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd64;
                     end
                 end
-                else if(dict2[8'd66] && dict1[8'd65] ) begin
+                else if(dict1[8'd66] && dict2[8'd65] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd66) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd65;
                     end
                 end
-                else if(dict2[8'd67] && dict1[8'd66] ) begin
+                else if(dict1[8'd67] && dict2[8'd66] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd67) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd66;
                     end
                 end
-                else if(dict2[8'd68] && dict1[8'd67] ) begin
+                else if(dict1[8'd68] && dict2[8'd67] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd68) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd67;
                     end
                 end
-                else if(dict2[8'd69] && dict1[8'd68] ) begin
+                else if(dict1[8'd69] && dict2[8'd68] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd69) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd68;
                     end
                 end
-                else if(dict2[8'd70] && dict1[8'd69] ) begin
+                else if(dict1[8'd70] && dict2[8'd69] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd70) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd69;
                     end
                 end
-                else if(dict2[8'd71] && dict1[8'd70] ) begin
+                else if(dict1[8'd71] && dict2[8'd70] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd71) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd70;
                     end
                 end
-                else if(dict2[8'd72] && dict1[8'd71] ) begin
+                else if(dict1[8'd72] && dict2[8'd71] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd72) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd71;
                     end
                 end
-                else if(dict2[8'd73] && dict1[8'd72] ) begin
+                else if(dict1[8'd73] && dict2[8'd72] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd73) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd72;
                     end
                 end
-                else if(dict2[8'd74] && dict1[8'd73] ) begin
+                else if(dict1[8'd74] && dict2[8'd73] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd74) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd73;
                     end
                 end
-                else if(dict2[8'd75] && dict1[8'd74] ) begin
+                else if(dict1[8'd75] && dict2[8'd74] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd75) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd74;
                     end
                 end
-                else if(dict2[8'd76] && dict1[8'd75] ) begin
+                else if(dict1[8'd76] && dict2[8'd75] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd76) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd75;
                     end
                 end
-                else if(dict2[8'd77] && dict1[8'd76] ) begin
+                else if(dict1[8'd77] && dict2[8'd76] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd77) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd76;
                     end
                 end
-                else if(dict2[8'd78] && dict1[8'd77] ) begin
+                else if(dict1[8'd78] && dict2[8'd77] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd78) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd77;
                     end
                 end
-                else if(dict2[8'd79] && dict1[8'd78] ) begin
+                else if(dict1[8'd79] && dict2[8'd78] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd79) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd78;
                     end
                 end
-                else if(dict2[8'd80] && dict1[8'd79] ) begin
+                else if(dict1[8'd80] && dict2[8'd79] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd80) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd79;
                     end
                 end
-                else if(dict2[8'd81] && dict1[8'd80] ) begin
+                else if(dict1[8'd81] && dict2[8'd80] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd81) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd80;
                     end
                 end
-                else if(dict2[8'd82] && dict1[8'd81] ) begin
+                else if(dict1[8'd82] && dict2[8'd81] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd82) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd81;
                     end
                 end
-                else if(dict2[8'd83] && dict1[8'd82] ) begin
+                else if(dict1[8'd83] && dict2[8'd82] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd83) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd82;
                     end
                 end
-                else if(dict2[8'd84] && dict1[8'd83] ) begin
+                else if(dict1[8'd84] && dict2[8'd83] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd84) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd83;
                     end
                 end
-                else if(dict2[8'd85] && dict1[8'd84] ) begin
+                else if(dict1[8'd85] && dict2[8'd84] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd85) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd84;
                     end
                 end
-                else if(dict2[8'd86] && dict1[8'd85] ) begin
+                else if(dict1[8'd86] && dict2[8'd85] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd86) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd85;
                     end
                 end
-                else if(dict2[8'd87] && dict1[8'd86] ) begin
+                else if(dict1[8'd87] && dict2[8'd86] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd87) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd86;
                     end
                 end
-                else if(dict2[8'd88] && dict1[8'd87] ) begin
+                else if(dict1[8'd88] && dict2[8'd87] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd88) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd87;
                     end
                 end
-                else if(dict2[8'd89] && dict1[8'd88] ) begin
+                else if(dict1[8'd89] && dict2[8'd88] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd89) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd88;
                     end
                 end
-                else if(dict2[8'd90] && dict1[8'd89] ) begin
+                else if(dict1[8'd90] && dict2[8'd89] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd90) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd89;
                     end
                 end
-                else if(dict2[8'd91] && dict1[8'd90] ) begin
+                else if(dict1[8'd91] && dict2[8'd90] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd91) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd90;
                     end
                 end
-                else if(dict2[8'd92] && dict1[8'd91] ) begin
+                else if(dict1[8'd92] && dict2[8'd91] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd92) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd91;
                     end
                 end
-                else if(dict2[8'd93] && dict1[8'd92] ) begin
+                else if(dict1[8'd93] && dict2[8'd92] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd93) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd92;
                     end
                 end
-                else if(dict2[8'd94] && dict1[8'd93] ) begin
+                else if(dict1[8'd94] && dict2[8'd93] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd94) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd93;
                     end
                 end
-                else if(dict2[8'd95] && dict1[8'd94] ) begin
+                else if(dict1[8'd95] && dict2[8'd94] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd95) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd94;
                     end
                 end
-                else if(dict2[8'd96] && dict1[8'd95] ) begin
+                else if(dict1[8'd96] && dict2[8'd95] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd96) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd95;
                     end
                 end
-                else if(dict2[8'd97] && dict1[8'd96] ) begin
+                else if(dict1[8'd97] && dict2[8'd96] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd97) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd96;
                     end
                 end
-                else if(dict2[8'd98] && dict1[8'd97] ) begin
+                else if(dict1[8'd98] && dict2[8'd97] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd98) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd97;
                     end
                 end
-                else if(dict2[8'd99] && dict1[8'd98] ) begin
+                else if(dict1[8'd99] && dict2[8'd98] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd99) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd98;
                     end
                 end
-                else if(dict2[8'd100] && dict1[8'd99] ) begin
+                else if(dict1[8'd100] && dict2[8'd99] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd100) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd99;
                     end
                 end
-                else if(dict2[8'd101] && dict1[8'd100] ) begin
+                else if(dict1[8'd101] && dict2[8'd100] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd101) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd100;
                     end
                 end
-                else if(dict2[8'd102] && dict1[8'd101] ) begin
+                else if(dict1[8'd102] && dict2[8'd101] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd102) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd101;
                     end
                 end
-                else if(dict2[8'd103] && dict1[8'd102] ) begin
+                else if(dict1[8'd103] && dict2[8'd102] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd103) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd102;
                     end
                 end
-                else if(dict2[8'd104] && dict1[8'd103] ) begin
+                else if(dict1[8'd104] && dict2[8'd103] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd104) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd103;
                     end
                 end
-                else if(dict2[8'd105] && dict1[8'd104] ) begin
+                else if(dict1[8'd105] && dict2[8'd104] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd105) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd104;
                     end
                 end
-                else if(dict2[8'd106] && dict1[8'd105] ) begin
+                else if(dict1[8'd106] && dict2[8'd105] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd106) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd105;
                     end
                 end
-                else if(dict2[8'd107] && dict1[8'd106] ) begin
+                else if(dict1[8'd107] && dict2[8'd106] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd107) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd106;
                     end
                 end
-                else if(dict2[8'd108] && dict1[8'd107] ) begin
+                else if(dict1[8'd108] && dict2[8'd107] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd108) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd107;
                     end
                 end
-                else if(dict2[8'd109] && dict1[8'd108] ) begin
+                else if(dict1[8'd109] && dict2[8'd108] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd109) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd108;
                     end
                 end
-                else if(dict2[8'd110] && dict1[8'd109] ) begin
+                else if(dict1[8'd110] && dict2[8'd109] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd110) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd109;
                     end
                 end
-                else if(dict2[8'd111] && dict1[8'd110] ) begin
+                else if(dict1[8'd111] && dict2[8'd110] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd111) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd110;
                     end
                 end
-                else if(dict2[8'd112] && dict1[8'd111] ) begin
+                else if(dict1[8'd112] && dict2[8'd111] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd112) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd111;
                     end
                 end
-                else if(dict2[8'd113] && dict1[8'd112] ) begin
+                else if(dict1[8'd113] && dict2[8'd112] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd113) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd112;
                     end
                 end
-                else if(dict2[8'd114] && dict1[8'd113] ) begin
+                else if(dict1[8'd114] && dict2[8'd113] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd114) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd113;
                     end
                 end
-                else if(dict2[8'd115] && dict1[8'd114] ) begin
+                else if(dict1[8'd115] && dict2[8'd114] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd115) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd114;
                     end
                 end
-                else if(dict2[8'd116] && dict1[8'd115] ) begin
+                else if(dict1[8'd116] && dict2[8'd115] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd116) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd115;
                     end
                 end
-                else if(dict2[8'd117] && dict1[8'd116] ) begin
+                else if(dict1[8'd117] && dict2[8'd116] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd117) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd116;
                     end
                 end
-                else if(dict2[8'd118] && dict1[8'd117] ) begin
+                else if(dict1[8'd118] && dict2[8'd117] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd118) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd117;
                     end
                 end
-                else if(dict2[8'd119] && dict1[8'd118] ) begin
+                else if(dict1[8'd119] && dict2[8'd118] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd119) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd118;
                     end
                 end
-                else if(dict2[8'd120] && dict1[8'd119] ) begin
+                else if(dict1[8'd120] && dict2[8'd119] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd120) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd119;
                     end
                 end
-                else if(dict2[8'd121] && dict1[8'd120] ) begin
+                else if(dict1[8'd121] && dict2[8'd120] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd121) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd120;
                     end
                 end
-                else if(dict2[8'd122] && dict1[8'd121] ) begin
+                else if(dict1[8'd122] && dict2[8'd121] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd122) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd121;
                     end
                 end
-                else if(dict2[8'd123] && dict1[8'd122] ) begin
+                else if(dict1[8'd123] && dict2[8'd122] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd123) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd122;
                     end
                 end
-                else if(dict2[8'd124] && dict1[8'd123] ) begin
+                else if(dict1[8'd124] && dict2[8'd123] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd124) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd123;
                     end
                 end
-                else if(dict2[8'd125] && dict1[8'd124] ) begin
+                else if(dict1[8'd125] && dict2[8'd124] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd125) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd124;
                     end
                 end
-                else if(dict2[8'd126] && dict1[8'd125] ) begin
+                else if(dict1[8'd126] && dict2[8'd125] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd126) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd125;
                     end
                 end
-                else if(dict2[8'd127] && dict1[8'd126] ) begin
+                else if(dict1[8'd127] && dict2[8'd126] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd127) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd126;
                     end
                 end
-                else if(dict2[8'd128] && dict1[8'd127] ) begin
+                else if(dict1[8'd128] && dict2[8'd127] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd128) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd127;
                     end
                 end
-                else if(dict2[8'd129] && dict1[8'd128] ) begin
+                else if(dict1[8'd129] && dict2[8'd128] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd129) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd128;
                     end
                 end
-                else if(dict2[8'd130] && dict1[8'd129] ) begin
+                else if(dict1[8'd130] && dict2[8'd129] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd130) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd129;
                     end
                 end
-                else if(dict2[8'd131] && dict1[8'd130] ) begin
+                else if(dict1[8'd131] && dict2[8'd130] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd131) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd130;
                     end
                 end
-                else if(dict2[8'd132] && dict1[8'd131] ) begin
+                else if(dict1[8'd132] && dict2[8'd131] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd132) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd131;
                     end
                 end
-                else if(dict2[8'd133] && dict1[8'd132] ) begin
+                else if(dict1[8'd133] && dict2[8'd132] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd133) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd132;
                     end
                 end
-                else if(dict2[8'd134] && dict1[8'd133] ) begin
+                else if(dict1[8'd134] && dict2[8'd133] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd134) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd133;
                     end
                 end
-                else if(dict2[8'd135] && dict1[8'd134] ) begin
+                else if(dict1[8'd135] && dict2[8'd134] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd135) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd134;
                     end
                 end
-                else if(dict2[8'd136] && dict1[8'd135] ) begin
+                else if(dict1[8'd136] && dict2[8'd135] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd136) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd135;
                     end
                 end
-                else if(dict2[8'd137] && dict1[8'd136] ) begin
+                else if(dict1[8'd137] && dict2[8'd136] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd137) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd136;
                     end
                 end
-                else if(dict2[8'd138] && dict1[8'd137] ) begin
+                else if(dict1[8'd138] && dict2[8'd137] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd138) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd137;
                     end
                 end
-                else if(dict2[8'd139] && dict1[8'd138] ) begin
+                else if(dict1[8'd139] && dict2[8'd138] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd139) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd138;
                     end
                 end
-                else if(dict2[8'd140] && dict1[8'd139] ) begin
+                else if(dict1[8'd140] && dict2[8'd139] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd140) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd139;
                     end
                 end
-                else if(dict2[8'd141] && dict1[8'd140] ) begin
+                else if(dict1[8'd141] && dict2[8'd140] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd141) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd140;
                     end
                 end
-                else if(dict2[8'd142] && dict1[8'd141] ) begin
+                else if(dict1[8'd142] && dict2[8'd141] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd142) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd141;
                     end
                 end
-                else if(dict2[8'd143] && dict1[8'd142] ) begin
+                else if(dict1[8'd143] && dict2[8'd142] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd143) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd142;
                     end
                 end
-                else if(dict2[8'd144] && dict1[8'd143] ) begin
+                else if(dict1[8'd144] && dict2[8'd143] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd144) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd143;
                     end
                 end
-                else if(dict2[8'd145] && dict1[8'd144] ) begin
+                else if(dict1[8'd145] && dict2[8'd144] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd145) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd144;
                     end
                 end
-                else if(dict2[8'd146] && dict1[8'd145] ) begin
+                else if(dict1[8'd146] && dict2[8'd145] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd146) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd145;
                     end
                 end
-                else if(dict2[8'd147] && dict1[8'd146] ) begin
+                else if(dict1[8'd147] && dict2[8'd146] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd147) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd146;
                     end
                 end
-                else if(dict2[8'd148] && dict1[8'd147] ) begin
+                else if(dict1[8'd148] && dict2[8'd147] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd148) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd147;
                     end
                 end
-                else if(dict2[8'd149] && dict1[8'd148] ) begin
+                else if(dict1[8'd149] && dict2[8'd148] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd149) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd148;
                     end
                 end
-                else if(dict2[8'd150] && dict1[8'd149] ) begin
+                else if(dict1[8'd150] && dict2[8'd149] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd150) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd149;
                     end
                 end
-                else if(dict2[8'd151] && dict1[8'd150] ) begin
+                else if(dict1[8'd151] && dict2[8'd150] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd151) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd150;
                     end
                 end
-                else if(dict2[8'd152] && dict1[8'd151] ) begin
+                else if(dict1[8'd152] && dict2[8'd151] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd152) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd151;
                     end
                 end
-                else if(dict2[8'd153] && dict1[8'd152] ) begin
+                else if(dict1[8'd153] && dict2[8'd152] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd153) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd152;
                     end
                 end
-                else if(dict2[8'd154] && dict1[8'd153] ) begin
+                else if(dict1[8'd154] && dict2[8'd153] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd154) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd153;
                     end
                 end
-                else if(dict2[8'd155] && dict1[8'd154] ) begin
+                else if(dict1[8'd155] && dict2[8'd154] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd155) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd154;
                     end
                 end
-                else if(dict2[8'd156] && dict1[8'd155] ) begin
+                else if(dict1[8'd156] && dict2[8'd155] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd156) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd155;
                     end
                 end
-                else if(dict2[8'd157] && dict1[8'd156] ) begin
+                else if(dict1[8'd157] && dict2[8'd156] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd157) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd156;
                     end
                 end
-                else if(dict2[8'd158] && dict1[8'd157] ) begin
+                else if(dict1[8'd158] && dict2[8'd157] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd158) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd157;
                     end
                 end
-                else if(dict2[8'd159] && dict1[8'd158] ) begin
+                else if(dict1[8'd159] && dict2[8'd158] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd159) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd158;
                     end
                 end
-                else if(dict2[8'd160] && dict1[8'd159] ) begin
+                else if(dict1[8'd160] && dict2[8'd159] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd160) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd159;
                     end
                 end
-                else if(dict2[8'd161] && dict1[8'd160] ) begin
+                else if(dict1[8'd161] && dict2[8'd160] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd161) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd160;
                     end
                 end
-                else if(dict2[8'd162] && dict1[8'd161] ) begin
+                else if(dict1[8'd162] && dict2[8'd161] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd162) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd161;
                     end
                 end
-                else if(dict2[8'd163] && dict1[8'd162] ) begin
+                else if(dict1[8'd163] && dict2[8'd162] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd163) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd162;
                     end
                 end
-                else if(dict2[8'd164] && dict1[8'd163] ) begin
+                else if(dict1[8'd164] && dict2[8'd163] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd164) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd163;
                     end
                 end
-                else if(dict2[8'd165] && dict1[8'd164] ) begin
+                else if(dict1[8'd165] && dict2[8'd164] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd165) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd164;
                     end
                 end
-                else if(dict2[8'd166] && dict1[8'd165] ) begin
+                else if(dict1[8'd166] && dict2[8'd165] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd166) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd165;
                     end
                 end
-                else if(dict2[8'd167] && dict1[8'd166] ) begin
+                else if(dict1[8'd167] && dict2[8'd166] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd167) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd166;
                     end
                 end
-                else if(dict2[8'd168] && dict1[8'd167] ) begin
+                else if(dict1[8'd168] && dict2[8'd167] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd168) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd167;
                     end
                 end
-                else if(dict2[8'd169] && dict1[8'd168] ) begin
+                else if(dict1[8'd169] && dict2[8'd168] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd169) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd168;
                     end
                 end
-                else if(dict2[8'd170] && dict1[8'd169] ) begin
+                else if(dict1[8'd170] && dict2[8'd169] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd170) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd169;
                     end
                 end
-                else if(dict2[8'd171] && dict1[8'd170] ) begin
+                else if(dict1[8'd171] && dict2[8'd170] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd171) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd170;
                     end
                 end
-                else if(dict2[8'd172] && dict1[8'd171] ) begin
+                else if(dict1[8'd172] && dict2[8'd171] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd172) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd171;
                     end
                 end
-                else if(dict2[8'd173] && dict1[8'd172] ) begin
+                else if(dict1[8'd173] && dict2[8'd172] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd173) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd172;
                     end
                 end
-                else if(dict2[8'd174] && dict1[8'd173] ) begin
+                else if(dict1[8'd174] && dict2[8'd173] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd174) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd173;
                     end
                 end
-                else if(dict2[8'd175] && dict1[8'd174] ) begin
+                else if(dict1[8'd175] && dict2[8'd174] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd175) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd174;
                     end
                 end
-                else if(dict2[8'd176] && dict1[8'd175] ) begin
+                else if(dict1[8'd176] && dict2[8'd175] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd176) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd175;
                     end
                 end
-                else if(dict2[8'd177] && dict1[8'd176] ) begin
+                else if(dict1[8'd177] && dict2[8'd176] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd177) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd176;
                     end
                 end
-                else if(dict2[8'd178] && dict1[8'd177] ) begin
+                else if(dict1[8'd178] && dict2[8'd177] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd178) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd177;
                     end
                 end
-                else if(dict2[8'd179] && dict1[8'd178] ) begin
+                else if(dict1[8'd179] && dict2[8'd178] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd179) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd178;
                     end
                 end
-                else if(dict2[8'd180] && dict1[8'd179] ) begin
+                else if(dict1[8'd180] && dict2[8'd179] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd180) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd179;
                     end
                 end
-                else if(dict2[8'd181] && dict1[8'd180] ) begin
+                else if(dict1[8'd181] && dict2[8'd180] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd181) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd180;
                     end
                 end
-                else if(dict2[8'd182] && dict1[8'd181] ) begin
+                else if(dict1[8'd182] && dict2[8'd181] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd182) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd181;
                     end
                 end
-                else if(dict2[8'd183] && dict1[8'd182] ) begin
+                else if(dict1[8'd183] && dict2[8'd182] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd183) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd182;
                     end
                 end
-                else if(dict2[8'd184] && dict1[8'd183] ) begin
+                else if(dict1[8'd184] && dict2[8'd183] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd184) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd183;
                     end
                 end
-                else if(dict2[8'd185] && dict1[8'd184] ) begin
+                else if(dict1[8'd185] && dict2[8'd184] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd185) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd184;
                     end
                 end
-                else if(dict2[8'd186] && dict1[8'd185] ) begin
+                else if(dict1[8'd186] && dict2[8'd185] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd186) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd185;
                     end
                 end
-                else if(dict2[8'd187] && dict1[8'd186] ) begin
+                else if(dict1[8'd187] && dict2[8'd186] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd187) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd186;
                     end
                 end
-                else if(dict2[8'd188] && dict1[8'd187] ) begin
+                else if(dict1[8'd188] && dict2[8'd187] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd188) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd187;
                     end
                 end
-                else if(dict2[8'd189] && dict1[8'd188] ) begin
+                else if(dict1[8'd189] && dict2[8'd188] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd189) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd188;
                     end
                 end
-                else if(dict2[8'd190] && dict1[8'd189] ) begin
+                else if(dict1[8'd190] && dict2[8'd189] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd190) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd189;
                     end
                 end
-                else if(dict2[8'd191] && dict1[8'd190] ) begin
+                else if(dict1[8'd191] && dict2[8'd190] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd191) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd190;
                     end
                 end
-                else if(dict2[8'd192] && dict1[8'd191] ) begin
+                else if(dict1[8'd192] && dict2[8'd191] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd192) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd191;
                     end
                 end
-                else if(dict2[8'd193] && dict1[8'd192] ) begin
+                else if(dict1[8'd193] && dict2[8'd192] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd193) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd192;
                     end
                 end
-                else if(dict2[8'd194] && dict1[8'd193] ) begin
+                else if(dict1[8'd194] && dict2[8'd193] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd194) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd193;
                     end
                 end
-                else if(dict2[8'd195] && dict1[8'd194] ) begin
+                else if(dict1[8'd195] && dict2[8'd194] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd195) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd194;
                     end
                 end
-                else if(dict2[8'd196] && dict1[8'd195] ) begin
+                else if(dict1[8'd196] && dict2[8'd195] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd196) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd195;
                     end
                 end
-                else if(dict2[8'd197] && dict1[8'd196] ) begin
+                else if(dict1[8'd197] && dict2[8'd196] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd197) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd196;
                     end
                 end
-                else if(dict2[8'd198] && dict1[8'd197] ) begin
+                else if(dict1[8'd198] && dict2[8'd197] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd198) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd197;
                     end
                 end
-                else if(dict2[8'd199] && dict1[8'd198] ) begin
+                else if(dict1[8'd199] && dict2[8'd198] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd199) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd198;
                     end
                 end
-                else if(dict2[8'd200] && dict1[8'd199] ) begin
+                else if(dict1[8'd200] && dict2[8'd199] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd200) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd199;
                     end
                 end
-                else if(dict2[8'd201] && dict1[8'd200] ) begin
+                else if(dict1[8'd201] && dict2[8'd200] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd201) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd200;
                     end
                 end
-                else if(dict2[8'd202] && dict1[8'd201] ) begin
+                else if(dict1[8'd202] && dict2[8'd201] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd202) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd201;
                     end
                 end
-                else if(dict2[8'd203] && dict1[8'd202] ) begin
+                else if(dict1[8'd203] && dict2[8'd202] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd203) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd202;
                     end
                 end
-                else if(dict2[8'd204] && dict1[8'd203] ) begin
+                else if(dict1[8'd204] && dict2[8'd203] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd204) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd203;
                     end
                 end
-                else if(dict2[8'd205] && dict1[8'd204] ) begin
+                else if(dict1[8'd205] && dict2[8'd204] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd205) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd204;
                     end
                 end
-                else if(dict2[8'd206] && dict1[8'd205] ) begin
+                else if(dict1[8'd206] && dict2[8'd205] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd206) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd205;
                     end
                 end
-                else if(dict2[8'd207] && dict1[8'd206] ) begin
+                else if(dict1[8'd207] && dict2[8'd206] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd207) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd206;
                     end
                 end
-                else if(dict2[8'd208] && dict1[8'd207] ) begin
+                else if(dict1[8'd208] && dict2[8'd207] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd208) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd207;
                     end
                 end
-                else if(dict2[8'd209] && dict1[8'd208] ) begin
+                else if(dict1[8'd209] && dict2[8'd208] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd209) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd208;
                     end
                 end
-                else if(dict2[8'd210] && dict1[8'd209] ) begin
+                else if(dict1[8'd210] && dict2[8'd209] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd210) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd209;
                     end
                 end
-                else if(dict2[8'd211] && dict1[8'd210] ) begin
+                else if(dict1[8'd211] && dict2[8'd210] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd211) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd210;
                     end
                 end
-                else if(dict2[8'd212] && dict1[8'd211] ) begin
+                else if(dict1[8'd212] && dict2[8'd211] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd212) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd211;
                     end
                 end
-                else if(dict2[8'd213] && dict1[8'd212] ) begin
+                else if(dict1[8'd213] && dict2[8'd212] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd213) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd212;
                     end
                 end
-                else if(dict2[8'd214] && dict1[8'd213] ) begin
+                else if(dict1[8'd214] && dict2[8'd213] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd214) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd213;
                     end
                 end
-                else if(dict2[8'd215] && dict1[8'd214] ) begin
+                else if(dict1[8'd215] && dict2[8'd214] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd215) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd214;
                     end
                 end
-                else if(dict2[8'd216] && dict1[8'd215] ) begin
+                else if(dict1[8'd216] && dict2[8'd215] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd216) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd215;
                     end
                 end
-                else if(dict2[8'd217] && dict1[8'd216] ) begin
+                else if(dict1[8'd217] && dict2[8'd216] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd217) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd216;
                     end
                 end
-                else if(dict2[8'd218] && dict1[8'd217] ) begin
+                else if(dict1[8'd218] && dict2[8'd217] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd218) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd217;
                     end
                 end
-                else if(dict2[8'd219] && dict1[8'd218] ) begin
+                else if(dict1[8'd219] && dict2[8'd218] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd219) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd218;
                     end
                 end
-                else if(dict2[8'd220] && dict1[8'd219] ) begin
+                else if(dict1[8'd220] && dict2[8'd219] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd220) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd219;
                     end
                 end
-                else if(dict2[8'd221] && dict1[8'd220] ) begin
+                else if(dict1[8'd221] && dict2[8'd220] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd221) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd220;
                     end
                 end
-                else if(dict2[8'd222] && dict1[8'd221] ) begin
+                else if(dict1[8'd222] && dict2[8'd221] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd222) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd221;
                     end
                 end
-                else if(dict2[8'd223] && dict1[8'd222] ) begin
+                else if(dict1[8'd223] && dict2[8'd222] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd223) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd222;
                     end
                 end
-                else if(dict2[8'd224] && dict1[8'd223] ) begin
+                else if(dict1[8'd224] && dict2[8'd223] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd224) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd223;
                     end
                 end
-                else if(dict2[8'd225] && dict1[8'd224] ) begin
+                else if(dict1[8'd225] && dict2[8'd224] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd225) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd224;
                     end
                 end
-                else if(dict2[8'd226] && dict1[8'd225] ) begin
+                else if(dict1[8'd226] && dict2[8'd225] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd226) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd225;
                     end
                 end
-                else if(dict2[8'd227] && dict1[8'd226] ) begin
+                else if(dict1[8'd227] && dict2[8'd226] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd227) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd226;
                     end
                 end
-                else if(dict2[8'd228] && dict1[8'd227] ) begin
+                else if(dict1[8'd228] && dict2[8'd227] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd228) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd227;
                     end
                 end
-                else if(dict2[8'd229] && dict1[8'd228] ) begin
+                else if(dict1[8'd229] && dict2[8'd228] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd229) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd228;
                     end
                 end
-                else if(dict2[8'd230] && dict1[8'd229] ) begin
+                else if(dict1[8'd230] && dict2[8'd229] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd230) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd229;
                     end
                 end
-                else if(dict2[8'd231] && dict1[8'd230] ) begin
+                else if(dict1[8'd231] && dict2[8'd230] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd231) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd230;
                     end
                 end
-                else if(dict2[8'd232] && dict1[8'd231] ) begin
+                else if(dict1[8'd232] && dict2[8'd231] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd232) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd231;
                     end
                 end
-                else if(dict2[8'd233] && dict1[8'd232] ) begin
+                else if(dict1[8'd233] && dict2[8'd232] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd233) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd232;
                     end
                 end
-                else if(dict2[8'd234] && dict1[8'd233] ) begin
+                else if(dict1[8'd234] && dict2[8'd233] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd234) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd233;
                     end
                 end
-                else if(dict2[8'd235] && dict1[8'd234] ) begin
+                else if(dict1[8'd235] && dict2[8'd234] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd235) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd234;
                     end
                 end
-                else if(dict2[8'd236] && dict1[8'd235] ) begin
+                else if(dict1[8'd236] && dict2[8'd235] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd236) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd235;
                     end
                 end
-                else if(dict2[8'd237] && dict1[8'd236] ) begin
+                else if(dict1[8'd237] && dict2[8'd236] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd237) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd236;
                     end
                 end
-                else if(dict2[8'd238] && dict1[8'd237] ) begin
+                else if(dict1[8'd238] && dict2[8'd237] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd238) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd237;
                     end
                 end
-                else if(dict2[8'd239] && dict1[8'd238] ) begin
+                else if(dict1[8'd239] && dict2[8'd238] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd239) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd238;
                     end
                 end
-                else if(dict2[8'd240] && dict1[8'd239] ) begin
+                else if(dict1[8'd240] && dict2[8'd239] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd240) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd239;
                     end
                 end
-                else if(dict2[8'd241] && dict1[8'd240] ) begin
+                else if(dict1[8'd241] && dict2[8'd240] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd241) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd240;
                     end
                 end
-                else if(dict2[8'd242] && dict1[8'd241] ) begin
+                else if(dict1[8'd242] && dict2[8'd241] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd242) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd241;
                     end
                 end
-                else if(dict2[8'd243] && dict1[8'd242] ) begin
+                else if(dict1[8'd243] && dict2[8'd242] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd243) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd242;
                     end
                 end
-                else if(dict2[8'd244] && dict1[8'd243] ) begin
+                else if(dict1[8'd244] && dict2[8'd243] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd244) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd243;
                     end
                 end
-                else if(dict2[8'd245] && dict1[8'd244] ) begin
+                else if(dict1[8'd245] && dict2[8'd244] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd245) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd244;
                     end
                 end
-                else if(dict2[8'd246] && dict1[8'd245] ) begin
+                else if(dict1[8'd246] && dict2[8'd245] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd246) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd245;
                     end
                 end
-                else if(dict2[8'd247] && dict1[8'd246] ) begin
+                else if(dict1[8'd247] && dict2[8'd246] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd247) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd246;
                     end
                 end
-                else if(dict2[8'd248] && dict1[8'd247] ) begin
+                else if(dict1[8'd248] && dict2[8'd247] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd248) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd247;
                     end
                 end
-                else if(dict2[8'd249] && dict1[8'd248] ) begin
+                else if(dict1[8'd249] && dict2[8'd248] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd249) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd248;
                     end
                 end
-                else if(dict2[8'd250] && dict1[8'd249] ) begin
+                else if(dict1[8'd250] && dict2[8'd249] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd250) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd249;
                     end
                 end
-                else if(dict2[8'd251] && dict1[8'd250] ) begin
+                else if(dict1[8'd251] && dict2[8'd250] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd251) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd250;
                     end
                 end
-                else if(dict2[8'd252] && dict1[8'd251] ) begin
+                else if(dict1[8'd252] && dict2[8'd251] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd252) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd251;
                     end
                 end
-                else if(dict2[8'd253] && dict1[8'd252] ) begin
+                else if(dict1[8'd253] && dict2[8'd252] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd253) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd252;
                     end
                 end
-                else if(dict2[8'd254] && dict1[8'd253] ) begin
+                else if(dict1[8'd254] && dict2[8'd253] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd254) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd253;
                     end
                 end
-                else if(dict2[8'd255] && dict1[8'd254] ) begin
+                else if(dict1[8'd255] && dict2[8'd254] ) begin
                     if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd255) begin
                         tmp_largest = 3'd2;
                         tmp_largest_pos = 8'd254;

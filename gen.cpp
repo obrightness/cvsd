@@ -4,7 +4,7 @@ using namespace std;
 int main() {
 
 	for(int dict_pos = 4; dict_pos < 256; dict_pos++) {
-		cout<<"                else if(dict5[8'd"<<dict_pos<<"] && dict4[8'd"<<dict_pos-1<<"] && dict3[8'd"<<dict_pos-2<<"] && dict2[8'd"<<dict_pos-3<<"] && dict1[8'd"<<dict_pos-4<<"] ) begin"<<endl;
+		cout<<"                else if(dict1[8'd"<<dict_pos<<"] && dict2[8'd"<<dict_pos-1<<"] && dict3[8'd"<<dict_pos-2<<"] && dict4[8'd"<<dict_pos-3<<"] && dict5[8'd"<<dict_pos-4<<"] ) begin"<<endl;
 		cout<<"                    if(tmp_largest < 3'd5 && l_LA_buf > 3'd4 && dict_size > 9'd"<<dict_pos<<") begin"<<endl;
 		cout<<"                        tmp_largest = 3'd5;"<<endl;
 		cout<<"                        tmp_largest_pos = 8'd"<<dict_pos-4<<";"<<endl;
@@ -13,7 +13,7 @@ int main() {
 	}
 
 	for(int dict_pos = 3; dict_pos < 256; dict_pos++) {
-		cout<<"                else if(dict4[8'd"<<dict_pos<<"] && dict3[8'd"<<dict_pos-1<<"] && dict2[8'd"<<dict_pos-2<<"] && dict1[8'd"<<dict_pos-3<<"] ) begin"<<endl;
+		cout<<"                else if(dict1[8'd"<<dict_pos<<"] && dict2[8'd"<<dict_pos-1<<"] && dict3[8'd"<<dict_pos-2<<"] && dict4[8'd"<<dict_pos-3<<"] ) begin"<<endl;
 		cout<<"                    if(tmp_largest < 3'd4 && l_LA_buf > 3'd3 && dict_size > 9'd"<<dict_pos<<") begin"<<endl;
 		cout<<"                        tmp_largest = 3'd4;"<<endl;
 		cout<<"                        tmp_largest_pos = 8'd"<<dict_pos-3<<";"<<endl;
@@ -23,7 +23,7 @@ int main() {
 
 
 	for(int dict_pos = 2; dict_pos < 256; dict_pos++) {
-		cout<<"                else if(dict3[8'd"<<dict_pos<<"] && dict2[8'd"<<dict_pos-1<<"] && dict1[8'd"<<dict_pos-2<<"] ) begin"<<endl;
+		cout<<"                else if(dict1[8'd"<<dict_pos<<"] && dict2[8'd"<<dict_pos-1<<"] && dict3[8'd"<<dict_pos-2<<"] ) begin"<<endl;
 		cout<<"                    if(tmp_largest < 3'd3 && l_LA_buf > 3'd2 && dict_size > 9'd"<<dict_pos<<") begin"<<endl;
 		cout<<"                        tmp_largest = 3'd3;"<<endl;
 		cout<<"                        tmp_largest_pos = 8'd"<<dict_pos-2<<";"<<endl;
@@ -32,7 +32,7 @@ int main() {
 	}
 
 	for(int dict_pos = 1; dict_pos < 256; dict_pos++) {
-		cout<<"                else if(dict2[8'd"<<dict_pos<<"] && dict1[8'd"<<dict_pos-1<<"] ) begin"<<endl;
+		cout<<"                else if(dict1[8'd"<<dict_pos<<"] && dict2[8'd"<<dict_pos-1<<"] ) begin"<<endl;
 		cout<<"                    if(tmp_largest < 3'd2 && l_LA_buf > 3'd1 && dict_size > 9'd"<<dict_pos<<") begin"<<endl;
 		cout<<"                        tmp_largest = 3'd2;"<<endl;
 		cout<<"                        tmp_largest_pos = 8'd"<<dict_pos-1<<";"<<endl;
