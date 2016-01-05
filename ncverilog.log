@@ -1,38 +1,16 @@
 ncverilog: 10.20-s114: (c) Copyright 1995-2012 Cadence Design Systems, Inc.
-TOOL:	ncverilog	10.20-s114: Started on Jan 05, 2016 at 12:12:39 CST
+TOOL:	ncverilog	10.20-s114: Started on Jan 05, 2016 at 12:44:49 CST
 ncverilog
 	testfixture1.v
 	LZSS.v
-	+access+r
-Recompiling... reason: file './LZSS.v' is newer than expected.
-	expected: Mon Jan  4 15:37:53 2016
-	actual:   Tue Jan  5 12:12:25 2016
-file: LZSS.v
-	module worklib.LZSS:v
-		errors: 0, warnings: 0
-		Caching library 'worklib' ....... Done
-	Elaborating the design hierarchy:
-	Building instance overlay tables: .................... Done
-	Generating native compiled code:
-		worklib.LZSS:v <0x080aad82>
-			streams:  14, words: 612915
-	Loading native compiled code:     .................... Done
-	Building instance specific data structures.
-	Design hierarchy summary:
-		                  Instances  Unique
-		Modules:                  2       2
-		Registers:               54      54
-		Scalar wires:          1287       -
-		Vectored wires:           8       -
-		Always blocks:            8       8
-		Initial blocks:           8       8
-		Cont. assignments:        6    1285
-		Pseudo assignments:       1       1
-		Simulation timescale:  10ps
-	Writing initial simulation snapshot: worklib.test:v
 Loading snapshot worklib.test:v .................... Done
 ncsim> source /usr/Cadence/INCISIV/INCISIV/cur/tools/inca/files/ncsimrc
 ncsim> run
+ncsim: *W,DVEXACC: some objects excluded from $dumpvars due to access restrictions, use +access+r on command line for access to all objects.
+            File: ./testfixture1.v, line = 71, pos = 8
+           Scope: test
+            Time: 0 FS + 0
+
 ---------------------------------------------------------------
 
 Congratulations! All data have been encoded successfully!
@@ -46,4 +24,4 @@ The compression ratio is 0.575790
 Simulation complete via $finish(1) at time 12990 NS + 0
 ./testfixture1.v:168 		#(`CYCLE/2) $finish;		
 ncsim> exit
-TOOL:	ncverilog	10.20-s114: Exiting on Jan 05, 2016 at 12:13:28 CST  (total: 00:00:49)
+TOOL:	ncverilog	10.20-s114: Exiting on Jan 05, 2016 at 12:44:52 CST  (total: 00:00:03)
