@@ -7729,7 +7729,7 @@ always@(posedge clk or posedge reset)begin
             dict_org[i-1] <= 8'd0;
 	end
     else begin
-		tmp_buf	<=	 data_valid ? data : 32'dz;
+		tmp_buf	    <=	 data          ;
         busy        <=   n_busy        ;  
         codeword    <=   n_codeword    ;  
         enc_num     <=   n_enc_num     ;  

@@ -1,8 +1,36 @@
 ncverilog: 10.20-s114: (c) Copyright 1995-2012 Cadence Design Systems, Inc.
-TOOL:	ncverilog	10.20-s114: Started on Jan 05, 2016 at 12:44:49 CST
+TOOL:	ncverilog	10.20-s114: Started on Jan 05, 2016 at 13:07:11 CST
 ncverilog
 	testfixture1.v
 	LZSS.v
+Recompiling... reason: file './LZSS.v' is newer than expected.
+	expected: Tue Jan  5 12:44:27 2016
+	actual:   Tue Jan  5 13:07:02 2016
+file: LZSS.v
+	module worklib.LZSS:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.LZSS:v <0x2c38bf75>
+			streams:  14, words: 594606
+		worklib.test:v <0x6799c12a>
+			streams:  14, words:  9398
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  2       2
+		Registers:               52      52
+		Scalar wires:          1287       -
+		Vectored wires:           8       -
+		Always blocks:            8       8
+		Initial blocks:           8       8
+		Cont. assignments:        6    1285
+		Pseudo assignments:       1       1
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.test:v
 Loading snapshot worklib.test:v .................... Done
 ncsim> source /usr/Cadence/INCISIV/INCISIV/cur/tools/inca/files/ncsimrc
 ncsim> run
@@ -24,4 +52,4 @@ The compression ratio is 0.575790
 Simulation complete via $finish(1) at time 12990 NS + 0
 ./testfixture1.v:168 		#(`CYCLE/2) $finish;		
 ncsim> exit
-TOOL:	ncverilog	10.20-s114: Exiting on Jan 05, 2016 at 12:44:52 CST  (total: 00:00:03)
+TOOL:	ncverilog	10.20-s114: Exiting on Jan 05, 2016 at 13:07:18 CST  (total: 00:00:07)
